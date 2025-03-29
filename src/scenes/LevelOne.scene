@@ -23,6 +23,26 @@
             "y": 384
         },
         {
+            "type": "Image",
+            "id": "d94a3714-972b-4006-a92f-42a2b36d5dea",
+            "label": "footer",
+            "texture": {
+                "key": "footer"
+            },
+            "x": 512,
+            "y": 701
+        },
+        {
+            "type": "Image",
+            "id": "65f39a2a-66d8-4153-b835-95b57e45b0db",
+            "label": "header",
+            "texture": {
+                "key": "header"
+            },
+            "x": 512,
+            "y": 78
+        },
+        {
             "type": "Rectangle",
             "id": "e7ca05d3-b60a-4e58-9808-52f410877287",
             "label": "rectangle_1",
@@ -3169,6 +3189,52 @@
                     "body.height": 80
                 }
             ]
+        },
+        {
+            "type": "ArcadeImage",
+            "id": "2536cb5e-e15b-48aa-80f8-3908bf37e9df",
+            "label": "score_once",
+            "texture": {
+                "key": "score_once"
+            },
+            "x": 261,
+            "y": 241,
+            "body.width": 85,
+            "body.height": 39
+        },
+        {
+            "type": "ArcadeImage",
+            "id": "896735d4-ee17-4044-aa7a-9afaf2331747",
+            "label": "score_a",
+            "texture": {
+                "key": "score_a"
+            },
+            "x": 441,
+            "y": 533,
+            "body.width": 21,
+            "body.height": 40
+        },
+        {
+            "type": "ArcadeImage",
+            "id": "7b7749a0-41f0-4cd7-bf42-70948f00f587",
+            "label": "score_day",
+            "texture": {
+                "key": "score_day"
+            },
+            "x": 801,
+            "y": 367,
+            "body.width": 59,
+            "body.height": 40
+        },
+        {
+            "type": "Image",
+            "id": "04e108a8-d17d-4174-80f2-75adb0cb2989",
+            "label": "level_1_button",
+            "texture": {
+                "key": "level_1_button"
+            },
+            "x": 512,
+            "y": 682.5
         }
     ],
     "plainObjects": [
@@ -3190,6 +3256,17 @@
             "object2": "roads",
             "overlapOnly": true,
             "collideCallback": "this.unlockRoad"
+        },
+        {
+            "id": "38faac79-b44d-40ca-bcd1-95e250957cc6",
+            "type": "Collider",
+            "label": "scoreCollider",
+            "scope": "LOCAL",
+            "object1": "player",
+            "object2": "scores",
+            "overlapOnly": true,
+            "collideCallback": "this.onScore",
+            "callbackContext": "this"
         }
     ],
     "meta": {
@@ -3479,6 +3556,16 @@
                 "47bd8afc-f4c6-42d8-8a92-749fb4db67d8",
                 "4bbf51f4-f89f-449f-9e91-477b2b36c431",
                 "40fd6376-89f6-48e2-8e73-255acf227a4c"
+            ],
+            "scope": "METHOD"
+        },
+        {
+            "id": "4550fafb-6c06-4a3f-bff2-5bf53a6d71a8",
+            "label": "scores",
+            "objectIds": [
+                "2536cb5e-e15b-48aa-80f8-3908bf37e9df",
+                "896735d4-ee17-4044-aa7a-9afaf2331747",
+                "7b7749a0-41f0-4cd7-bf42-70948f00f587"
             ],
             "scope": "METHOD"
         }

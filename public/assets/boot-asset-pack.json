@@ -12,6 +12,16 @@
                 "key": "background_game"
             },
             {
+                "url": "assets/footer.png",
+                "type": "image",
+                "key": "footer"
+            },
+            {
+                "url": "assets/header.png",
+                "type": "image",
+                "key": "header"
+            },
+            {
                 "url": "assets/home_button_light.png",
                 "type": "image",
                 "key": "home_button_light"
@@ -22,9 +32,29 @@
                 "key": "level 1"
             },
             {
+                "url": "assets/level_1_button.png",
+                "type": "image",
+                "key": "level_1_button"
+            },
+            {
                 "url": "assets/player.png",
                 "type": "image",
                 "key": "player"
+            },
+            {
+                "url": "assets/score_a.png",
+                "type": "image",
+                "key": "score_a"
+            },
+            {
+                "url": "assets/score_day.png",
+                "type": "image",
+                "key": "score_day"
+            },
+            {
+                "url": "assets/score_once.png",
+                "type": "image",
+                "key": "score_once"
             },
             {
                 "url": "assets/scratch_bg.png",
