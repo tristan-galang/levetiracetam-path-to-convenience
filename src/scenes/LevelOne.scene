@@ -1,0 +1,113 @@
+{
+    "id": "e6ca4543-cc89-4d96-af49-5632e8007d35",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "LevelOne",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1024,
+        "borderHeight": 768
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "6ccc0f95-f35b-4ae0-aa0f-53928495b27a",
+            "label": "background_game",
+            "texture": {
+                "key": "background_game"
+            },
+            "x": 512,
+            "y": 384
+        },
+        {
+            "type": "Image",
+            "id": "621af0c0-06dc-4497-8d44-bfbd858bbab7",
+            "label": "level_1",
+            "texture": {
+                "key": "level 1"
+            },
+            "x": 512,
+            "y": 384
+        },
+        {
+            "type": "ArcadeImage",
+            "id": "39989bd4-5ea7-4fc5-ba2c-b9b74cf39a4e",
+            "label": "player",
+            "scope": "CLASS",
+            "texture": {
+                "key": "home_button_light"
+            },
+            "x": 117,
+            "y": 202,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "body.drag.x": 1000,
+            "body.drag.y": 1000,
+            "collideWorldBounds": true,
+            "useDamping": true,
+            "body.width": 66,
+            "body.height": 61
+        },
+        {
+            "type": "ArcadeSprite",
+            "id": "a844cd4f-d4c0-450a-a6b5-4cbcf10e5e56",
+            "label": "wallSprite",
+            "x": 101,
+            "y": 297,
+            "scaleX": 0.3584993731685987,
+            "scaleY": 0.3326603341020854,
+            "originX": 0,
+            "originY": 0,
+            "immovable": true,
+            "body.width": 456,
+            "body.height": 20
+        },
+        {
+            "type": "ArcadeSprite",
+            "id": "64fdf4a9-81b4-470f-b703-32ce15a4c767",
+            "label": "wallSprite_1",
+            "x": 91,
+            "y": 171,
+            "scaleX": 0.3584993731685987,
+            "scaleY": 0.3326603341020854,
+            "originX": 0,
+            "originY": 0,
+            "immovable": true,
+            "body.width": 24,
+            "body.height": 1269,
+            "body.offset.x": 3,
+            "body.offset.y": 1
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "ca26a83a-94ae-4ac9-b2ce-2c0ccb91c7ad",
+            "type": "Collider",
+            "label": "collider",
+            "scope": "LOCAL",
+            "object1": "player",
+            "object2": "walls",
+            "collideCallback": "this.colliderCallBack"
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "lists": [
+        {
+            "id": "9dd0709c-28b0-43ac-ae66-88f58d5a6c8d",
+            "label": "walls",
+            "objectIds": [
+                "a844cd4f-d4c0-450a-a6b5-4cbcf10e5e56",
+                "64fdf4a9-81b4-470f-b703-32ce15a4c767"
+            ],
+            "scope": "METHOD"
+        }
+    ]
+}
