@@ -20,6 +20,136 @@
                 "url": "assets/level 1.png",
                 "type": "image",
                 "key": "level 1"
+            },
+            {
+                "url": "assets/wall_level_1__0000.png",
+                "type": "image",
+                "key": "wall_level_1__0000"
+            },
+            {
+                "url": "assets/wall_level_1__0001.png",
+                "type": "image",
+                "key": "wall_level_1__0001"
+            },
+            {
+                "url": "assets/wall_level_1__0004.png",
+                "type": "image",
+                "key": "wall_level_1__0004"
+            },
+            {
+                "url": "assets/wall_level_1__0005.png",
+                "type": "image",
+                "key": "wall_level_1__0005"
+            },
+            {
+                "url": "assets/wall_level_1__0006.png",
+                "type": "image",
+                "key": "wall_level_1__0006"
+            },
+            {
+                "url": "assets/wall_level_1__0007.png",
+                "type": "image",
+                "key": "wall_level_1__0007"
+            },
+            {
+                "url": "assets/wall_level_1__0008.png",
+                "type": "image",
+                "key": "wall_level_1__0008"
+            },
+            {
+                "url": "assets/wall_level_1__0009.png",
+                "type": "image",
+                "key": "wall_level_1__0009"
+            },
+            {
+                "url": "assets/wall_level_1__0010_Layer-3.png",
+                "type": "image",
+                "key": "wall_level_1__0010_Layer-3"
+            },
+            {
+                "url": "assets/wall_level_1__0011_Layer-4.png",
+                "type": "image",
+                "key": "wall_level_1__0011_Layer-4"
+            },
+            {
+                "url": "assets/wall_level_1__0012_Layer-5.png",
+                "type": "image",
+                "key": "wall_level_1__0012_Layer-5"
+            },
+            {
+                "url": "assets/wall_level_1__0013_Layer-6.png",
+                "type": "image",
+                "key": "wall_level_1__0013_Layer-6"
+            },
+            {
+                "url": "assets/wall_level_1__0014_Layer-7.png",
+                "type": "image",
+                "key": "wall_level_1__0014_Layer-7"
+            },
+            {
+                "url": "assets/wall_level_1__0015_Layer-8.png",
+                "type": "image",
+                "key": "wall_level_1__0015_Layer-8"
+            },
+            {
+                "url": "assets/wall_level_1__0016_Layer-9.png",
+                "type": "image",
+                "key": "wall_level_1__0016_Layer-9"
+            },
+            {
+                "url": "assets/wall_level_1__0017_Layer-10.png",
+                "type": "image",
+                "key": "wall_level_1__0017_Layer-10"
+            },
+            {
+                "url": "assets/wall_level_1__0018_Layer-11.png",
+                "type": "image",
+                "key": "wall_level_1__0018_Layer-11"
+            },
+            {
+                "url": "assets/wall_level_1__0019_Layer-12.png",
+                "type": "image",
+                "key": "wall_level_1__0019_Layer-12"
+            },
+            {
+                "url": "assets/wall_level_1__0020_Layer-13.png",
+                "type": "image",
+                "key": "wall_level_1__0020_Layer-13"
+            },
+            {
+                "url": "assets/wall_level_1__0021_Layer-14.png",
+                "type": "image",
+                "key": "wall_level_1__0021_Layer-14"
+            },
+            {
+                "url": "assets/wall_level_1__0022_Layer-15.png",
+                "type": "image",
+                "key": "wall_level_1__0022_Layer-15"
+            },
+            {
+                "url": "assets/wall_level_1__0023_Layer-16.png",
+                "type": "image",
+                "key": "wall_level_1__0023_Layer-16"
+            },
+            {
+                "url": "assets/wall_level_1__0024_Layer-17.png",
+                "type": "image",
+                "key": "wall_level_1__0024_Layer-17"
+            },
+            {
+                "url": "assets/wall_level_1__0025_Layer-18.png",
+                "type": "image",
+                "key": "wall_level_1__0025_Layer-18"
+            },
+            {
+                "url": "assets/wall_level_1__0026_Layer-19.png",
+                "type": "image",
+                "key": "wall_level_1__0026_Layer-19"
+            },
+            {
+                "url": "assets/wall_level_1__0027_Layer-20.png",
+                "type": "image",
+                "key": "wall_level_1__0027_Layer-20"
             }
         ]
     },
