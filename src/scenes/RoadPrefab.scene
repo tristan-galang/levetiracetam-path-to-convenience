@@ -1,0 +1,36 @@
+{
+    "id": "5ba0f823-9ad4-4495-b922-23220f11f0f0",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1024,
+        "borderHeight": 768
+    },
+    "displayList": [
+        {
+            "type": "ArcadeImage",
+            "id": "9f07eba8-5202-475e-bd7d-a7b37aeb3e10",
+            "label": "road",
+            "texture": {
+                "key": "scratch_bg"
+            },
+            "immovable": true,
+            "body.width": 22,
+            "body.height": 20,
+            "body.offset.x": 10,
+            "body.offset.y": 11
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
