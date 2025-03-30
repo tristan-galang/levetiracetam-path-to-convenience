@@ -43,6 +43,17 @@
             "type": {
                 "id": "number"
             }
+        },
+        {
+            "name": "onComplete",
+            "label": "onComplete",
+            "tooltip": "",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "expression",
+                "expressionType": "() => void"
+            }
         }
     ]
 }

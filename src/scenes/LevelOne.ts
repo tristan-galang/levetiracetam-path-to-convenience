@@ -1304,6 +1304,7 @@ export default class LevelOne extends Phaser.Scene {
 
 		// timer (prefab fields)
 		timer.duration = 60;
+		timer.onComplete = this.onGameOver;
 
 		this.player = player;
 
@@ -1394,9 +1395,9 @@ export default class LevelOne extends Phaser.Scene {
 		console.log("TG>>> player", this.playerScore);
 	}
 
-	// private onGameOver() {
-	// 	alert("game over");
-	// }
+	private onGameOver() {
+		alert("game over");
+	}
 
 	/* END-USER-CODE */
 }

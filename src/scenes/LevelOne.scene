@@ -3253,10 +3253,12 @@
                 "x",
                 "y",
                 "timerCallBack",
-                "duration"
+                "duration",
+                "onComplete"
             ],
             "label": "timer",
             "duration": 60,
+            "onComplete": "this.onGameOver",
             "x": 852,
             "y": 98
         }

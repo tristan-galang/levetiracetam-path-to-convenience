@@ -21,16 +21,14 @@
             "texture": {
                 "key": "player"
             },
-            "scaleX": 0.8,
-            "scaleY": 0.8,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
             "body.drag.x": 1000,
             "body.drag.y": 1000,
             "collideWorldBounds": true,
             "useDamping": true,
-            "body.width": 30,
-            "body.height": 30,
-            "body.offset.x": 6.5,
-            "body.offset.y": 6.5
+            "body.width": 43,
+            "body.height": 43
         }
     ],
     "plainObjects": [],

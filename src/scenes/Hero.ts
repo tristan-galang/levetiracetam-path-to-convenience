@@ -17,15 +17,14 @@ export default class Hero extends Phaser.Physics.Arcade.Image {
 		super(scene, x ?? 0, y ?? 0, texture || "player", frame);
 
 		this.blendMode = Phaser.BlendModes.SCREEN;
-		this.scaleX = 0.8;
-		this.scaleY = 0.8;
+		this.scaleX = 0.6;
+		this.scaleY = 0.6;
 		scene.physics.add.existing(this, false);
 		this.body.drag.x = 1000;
 		this.body.drag.y = 1000;
 		this.body.useDamping = true;
 		this.body.collideWorldBounds = true;
-		this.body.setOffset(6.5, 6.5);
-		this.body.setSize(30, 30, false);
+		this.body.setSize(43, 43, false);
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
