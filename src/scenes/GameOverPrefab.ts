@@ -45,6 +45,7 @@ export default class GameOverPrefab extends Phaser.GameObjects.Container {
 
 		/* START-USER-CTR-CODE */
 		this.game_retry_button.on("pointerdown", () => this.onRetry());
+		this.game_skip_button.on("pointerdown", () => this.onSkip());
 		/* END-USER-CTR-CODE */
 	}
 
@@ -53,6 +54,7 @@ export default class GameOverPrefab extends Phaser.GameObjects.Container {
 	private game_retry_button: Phaser.GameObjects.Image;
 	private game_skip_button: Phaser.GameObjects.Image;
 	public onRetry!: () => void;
+	public onSkip!: () => void;
 
 	/* START-USER-CODE */
 	public show() {

@@ -3286,11 +3286,13 @@
             "unlock": [
                 "x",
                 "y",
-                "onRetry"
+                "onRetry",
+                "onSkip"
             ],
             "label": "gameOverPrefab",
             "scope": "CLASS",
             "onRetry": "this.retry.bind(this)",
+            "onSkip": "this.onNext.bind(this)",
             "x": 0,
             "y": 768
         }

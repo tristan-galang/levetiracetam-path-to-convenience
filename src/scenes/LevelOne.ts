@@ -1322,6 +1322,7 @@ export default class LevelOne extends Phaser.Scene {
 
 		// gameOverPrefab (prefab fields)
 		gameOverPrefab.onRetry = this.retry.bind(this);
+		gameOverPrefab.onSkip = this.onNext.bind(this);
 
 		this.player = player;
 		this.timer = timer;
