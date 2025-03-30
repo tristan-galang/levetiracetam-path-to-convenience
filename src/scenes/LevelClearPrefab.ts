@@ -1,14 +1,13 @@
 // You can write more code here
-import Phaser from "phaser";
 
 /* START OF COMPILED CODE */
 
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class GameOverPrefab extends Phaser.GameObjects.Container {
+export default class LevelClearPrefab extends Phaser.GameObjects.Container {
 	constructor(scene: Phaser.Scene, x?: number, y?: number) {
-		super(scene, x ?? 102, y ?? 109);
+		super(scene, x ?? 0, y ?? 0);
 
 		// background
 		const background = scene.add.rectangle(0, 0, 1024, 768);
@@ -19,46 +18,54 @@ export default class GameOverPrefab extends Phaser.GameObjects.Container {
 		this.add(background);
 
 		// title
-		const title = scene.add.image(512, 280, "game_over");
+		const title = scene.add.image(512, 344, "game_level_clear");
 		this.add(title);
 
-		// game_retry_button
-		const game_retry_button = scene.add.image(354, 502, "game_retry_button");
-		game_retry_button.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 203, 75),
-			Phaser.Geom.Rectangle.Contains
-		);
-		this.add(game_retry_button);
-
-		// game_skip_button
-		const game_skip_button = scene.add.image(660, 502, "game_skip_button");
-		game_skip_button.setInteractive(
+		// nextButton
+		const nextButton = scene.add.image(660, 502, "game_next_button");
+		nextButton.setInteractive(
 			new Phaser.Geom.Rectangle(0, 0, 204, 75),
 			Phaser.Geom.Rectangle.Contains
 		);
-		this.add(game_skip_button);
+		this.add(nextButton);
+
+		// retryButton
+		const retryButton = scene.add.image(354, 502, "game_retry_button");
+		retryButton.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 203, 75),
+			Phaser.Geom.Rectangle.Contains
+		);
+		this.add(retryButton);
 
 		this.background = background;
 		this.title = title;
-		this.game_retry_button = game_retry_button;
-		this.game_skip_button = game_skip_button;
+		this.nextButton = nextButton;
+		this.retryButton = retryButton;
 
 		/* START-USER-CTR-CODE */
-		this.game_retry_button.on("pointerdown", () => this.onRetry());
+		// Write your code here.
+		this.startAction();
 		/* END-USER-CTR-CODE */
 	}
 
 	private background: Phaser.GameObjects.Rectangle;
 	private title: Phaser.GameObjects.Image;
-	private game_retry_button: Phaser.GameObjects.Image;
-	private game_skip_button: Phaser.GameObjects.Image;
+	private nextButton: Phaser.GameObjects.Image;
+	private retryButton: Phaser.GameObjects.Image;
 	public onRetry!: () => void;
+	public onNext!: () => void;
 
 	/* START-USER-CODE */
+
+	private startAction() {
+		this.nextButton.on("pointerdown", () => this.onNext());
+		this.retryButton.on("pointerdown", () => this.onRetry());
+	}
+
 	public show() {
 		this.title.setPosition(512, 900);
-		this.game_retry_button.setPosition(354, 900);
-		this.game_skip_button.setPosition(660, 900);
+		this.retryButton.setPosition(354, 900);
+		this.nextButton.setPosition(660, 900);
 		this.background.alpha = 0;
 
 		this.scene.tweens.add({
@@ -77,7 +84,7 @@ export default class GameOverPrefab extends Phaser.GameObjects.Container {
 		});
 
 		this.scene.tweens.add({
-			targets: this.game_retry_button,
+			targets: this.retryButton,
 			y: 502,
 			duration: 500,
 			ease: "Back.Out",
@@ -85,7 +92,7 @@ export default class GameOverPrefab extends Phaser.GameObjects.Container {
 		});
 
 		this.scene.tweens.add({
-			targets: this.game_skip_button,
+			targets: this.nextButton,
 			y: 502,
 			duration: 500,
 			ease: "Back.Out",

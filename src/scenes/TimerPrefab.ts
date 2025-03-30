@@ -10,7 +10,7 @@ export default class TimerPrefab extends Phaser.GameObjects.Text {
 		super(scene, x ?? -3, y ?? -6, "", {});
 
 		this.setOrigin(0.5, 0.5);
-		this.text = "10";
+		this.text = "00";
 		this.setStyle({
 			align: "center",
 			fontFamily: "digitalFont",
@@ -52,6 +52,10 @@ export default class TimerPrefab extends Phaser.GameObjects.Text {
 
 	private formatTime(time: number): string {
 		return time < 10 ? `0${time}` : `${time}`;
+	}
+
+	public stopTimer() {
+		this.timerEvent?.remove();
 	}
 	/* END-USER-CODE */
 }

@@ -1,9 +1,7 @@
 {
-    "id": "d28bc70e-188c-4998-a214-2373142933e0",
+    "id": "d9ac11a0-3ada-4729-949f-315faf32dd7a",
     "sceneType": "PREFAB",
     "settings": {
-        "snapWidth": 0,
-        "snapHeight": 0,
         "exportClass": true,
         "autoImport": true,
         "preloadMethodName": "",
@@ -16,14 +14,12 @@
     "displayList": [
         {
             "type": "Container",
-            "id": "ea95f161-b442-4b08-8ac5-17774d06e900",
+            "id": "bd59bd7f-22e9-4fe6-aec2-eec60baf301f",
             "label": "container_1",
-            "x": 102,
-            "y": 109,
             "list": [
                 {
                     "type": "Rectangle",
-                    "id": "de894379-d262-4a6b-bfe9-c23be3046a03",
+                    "id": "0b7d283b-348e-4bc5-a942-18b0eeca06cc",
                     "label": "background",
                     "scope": "CLASS",
                     "originX": 0,
@@ -36,19 +32,33 @@
                 },
                 {
                     "type": "Image",
-                    "id": "05498a4c-f830-436c-9c8b-6210407cddcb",
+                    "id": "99dd05c6-623c-4df3-8378-d6aab0225e69",
                     "label": "title",
                     "scope": "CLASS",
                     "texture": {
-                        "key": "game_over"
+                        "key": "game_level_clear"
                     },
                     "x": 512,
-                    "y": 280
+                    "y": 344
                 },
                 {
                     "type": "Image",
-                    "id": "d9998a80-2da6-43b5-8a9d-a9809ffb8050",
-                    "label": "game_retry_button",
+                    "id": "ed342de2-5bd3-4989-85ee-aae6111c32d2",
+                    "label": "nextButton",
+                    "scope": "CLASS",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.width": 204,
+                    "hitArea.height": 75,
+                    "texture": {
+                        "key": "game_next_button"
+                    },
+                    "x": 660,
+                    "y": 502
+                },
+                {
+                    "type": "Image",
+                    "id": "7ca1cf90-a37d-4300-b54b-8de7b52d69f8",
+                    "label": "retryButton",
                     "scope": "CLASS",
                     "hitArea.shape": "RECTANGLE",
                     "hitArea.width": 203,
@@ -57,20 +67,6 @@
                         "key": "game_retry_button"
                     },
                     "x": 354,
-                    "y": 502
-                },
-                {
-                    "type": "Image",
-                    "id": "18da745a-2d57-4ac8-96d5-6fe2d197dd0b",
-                    "label": "game_skip_button",
-                    "scope": "CLASS",
-                    "hitArea.shape": "RECTANGLE",
-                    "hitArea.width": 204,
-                    "hitArea.height": 75,
-                    "texture": {
-                        "key": "game_skip_button"
-                    },
-                    "x": 660,
                     "y": 502
                 }
             ]
@@ -86,7 +82,18 @@
     "prefabProperties": [
         {
             "name": "onRetry",
-            "label": "On Retry",
+            "label": "On retry",
+            "tooltip": "",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "expression",
+                "expressionType": "() => void"
+            }
+        },
+        {
+            "name": "onNext",
+            "label": "On next",
             "tooltip": "",
             "defValue": "",
             "customDefinition": false,

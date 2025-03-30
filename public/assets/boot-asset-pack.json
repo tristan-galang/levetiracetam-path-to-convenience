@@ -24,6 +24,16 @@
                 "key": "footer"
             },
             {
+                "url": "assets/game_level_clear.png",
+                "type": "image",
+                "key": "game_level_clear"
+            },
+            {
+                "url": "assets/game_next_button.png",
+                "type": "image",
+                "key": "game_next_button"
+            },
+            {
                 "url": "assets/game_over.png",
                 "type": "image",
                 "key": "game_over"

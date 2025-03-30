@@ -3258,26 +3258,41 @@
                 "context"
             ],
             "label": "timer",
-            "duration": 5,
+            "scope": "CLASS",
+            "duration": 30,
             "onComplete": "this.onGameOver.bind(this)",
             "x": 852,
             "y": 98
         },
         {
-            "prefabId": "d28bc70e-188c-4998-a214-2373142933e0",
-            "id": "323f96f2-74bc-4674-9e82-1abf4a5c76f4",
+            "prefabId": "d9ac11a0-3ada-4729-949f-315faf32dd7a",
+            "id": "a6f4e929-265f-413c-b401-7b0cc33e27c0",
             "unlock": [
                 "x",
                 "y",
-                "alpha",
+                "onRetry",
+                "onNext"
+            ],
+            "label": "levelClearPrefab",
+            "scope": "CLASS",
+            "onRetry": "this.retry.bind(this)",
+            "onNext": "this.onNext.bind(this)",
+            "x": 0,
+            "y": 768
+        },
+        {
+            "prefabId": "d28bc70e-188c-4998-a214-2373142933e0",
+            "id": "31a4a25b-2308-4aab-aa82-63e36f6781e8",
+            "unlock": [
+                "x",
+                "y",
                 "onRetry"
             ],
             "label": "gameOverPrefab",
             "scope": "CLASS",
             "onRetry": "this.retry.bind(this)",
             "x": 0,
-            "y": 770,
-            "alpha": 0
+            "y": 768
         }
     ],
     "plainObjects": [

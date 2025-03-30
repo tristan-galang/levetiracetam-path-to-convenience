@@ -5,6 +5,7 @@ import Phaser from "phaser";
 import RoadPrefab from "./RoadPrefab";
 import Hero from "./Hero";
 import TimerPrefab from "./TimerPrefab";
+import LevelClearPrefab from "./LevelClearPrefab";
 import GameOverPrefab from "./GameOverPrefab";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
@@ -1289,10 +1290,13 @@ export default class LevelOne extends Phaser.Scene {
 		this.add.existing(timer);
 		timer.setStyle({  });
 
+		// levelClearPrefab
+		const levelClearPrefab = new LevelClearPrefab(this, 0, 768);
+		this.add.existing(levelClearPrefab);
+
 		// gameOverPrefab
-		const gameOverPrefab = new GameOverPrefab(this, 0, 770);
+		const gameOverPrefab = new GameOverPrefab(this, 0, 768);
 		this.add.existing(gameOverPrefab);
-		gameOverPrefab.alpha = 0;
 
 		// lists
 		const walls = [wall_level_1__0000, wall_level, wall_level_1__0001, wall_level_1, wall_level_1__0004, wall_level_2, wall_level_1__0006, wall_level_1__0007, wall_level_1__0008, wall_level_1__0009, wall_level_1__0010_Layer_3, wall_level_1__0011_Layer_4, wall_level_1__0012_Layer_5, wall_level_1__0014_Layer_7, wall_level_1__0013_Layer_6, wall_level_1__0015_Layer_8, wall_level_1__0016_Layer_9, wall_level_1__0017_Layer_10, wall_level_1__0018_Layer_11, wall_level_1__0019_Layer_12, wall_level_1__0020_Layer_13, wall_level_1__0021_Layer_14, wall_level_1__0022_Layer_15, wall_level_1__0023_Layer_16, wall_level_1__0024_Layer_17, wall_level_1__0025_Layer_18, wall_level_1__0026_Layer_19, wall_level_1__0027_Layer_20, wall_level_1__0028_Layer_21, wall_level_1__0037_Layer_30, wall_level_1__0036_Layer_29, wall_level_1__0035_Layer_28, wall_level_1__0034_Layer_27, wall_level_1__0033_Layer_26, wall_level_1__0032_Layer_25, wall_level_1__0031_Layer_24, wall_level_1__0030_Layer_23, wall_level_1__0029_Layer_22, wall_level_1__0047_Layer_40, wall_level_1__0046_Layer_39, wall_level_1__0045_Layer_38, wall_level_1__0044_Layer_37, wall_level_1__0043_Layer_36, wall_level_1__0042_Layer_35, wall_level_1__0041_Layer_34, wall_level_1__0040_Layer_33, wall_level_1__0039_Layer_32, wall_level_1__0038_Layer_31, wall_level_1__0048_Layer_41, wall_level_1__0057_Layer_50, wall_level_1__0056_Layer_49, wall_level_1__0055_Layer_48, wall_level_1__0054_Layer_47, wall_level_1__0053_Layer_46, wall_level_1__0052_Layer_45, wall_level_1__0051_Layer_44, wall_level_1__0050_Layer_43, wall_level_1__0049_Layer_42, wall_level_1__0069_Layer_62, wall_level_1__0068_Layer_61, wall_level_1__0067_Layer_60, wall_level_1__0066_Layer_59, wall_level_1__0065_Layer_58, wall_level_1__0064_Layer_57, wall_level_1__0063_Layer_56, wall_level_1__0062_Layer_55, wall_level_1__0061_Layer_54, wall_level_1__0060_Layer_53, wall_level_1__0059_Layer_52, wall_level_1__0058_Layer_51];
@@ -1309,19 +1313,27 @@ export default class LevelOne extends Phaser.Scene {
 		this.physics.add.overlap(player, scores, this.onScore, undefined, this);
 
 		// timer (prefab fields)
-		timer.duration = 5;
+		timer.duration = 30;
 		timer.onComplete = this.onGameOver.bind(this);
+
+		// levelClearPrefab (prefab fields)
+		levelClearPrefab.onRetry = this.retry.bind(this);
+		levelClearPrefab.onNext = this.onNext.bind(this);
 
 		// gameOverPrefab (prefab fields)
 		gameOverPrefab.onRetry = this.retry.bind(this);
 
 		this.player = player;
+		this.timer = timer;
+		this.levelClearPrefab = levelClearPrefab;
 		this.gameOverPrefab = gameOverPrefab;
 
 		this.events.emit("scene-awake");
 	}
 
 	private player!: Hero;
+	private timer!: TimerPrefab;
+	private levelClearPrefab!: LevelClearPrefab;
 	private gameOverPrefab!: GameOverPrefab;
 
 	/* START-USER-CODE */
@@ -1338,8 +1350,6 @@ export default class LevelOne extends Phaser.Scene {
 
 		this.player.setInteractive();
 		this.input.setDraggable(this.player);
-
-		this.gameOverPrefab.alpha = 0;
 
 		this.input.on("dragstart", (pointer: any) => {
 			this.isDragging = true;
@@ -1405,22 +1415,30 @@ export default class LevelOne extends Phaser.Scene {
 	private onScore(_player: any, score: any) {
 		score.disableBody();
 		this.playerScore = Number(this.playerScore) + 1;
-		console.log("TG>>> player", this.playerScore);
+
+		if (this.playerScore >= 3) {
+			this.showLevelClear();
+		}
 	}
 
 	private retry() {
+		this.playerScore = 0;
 		this.scene.restart();
+	}
+
+	private showLevelClear() {
+		this.timer.stopTimer();
+		this.levelClearPrefab.setPosition(0, 0);
+		this.levelClearPrefab.show();
 	}
 
 	private onGameOver() {
 		this.gameOverPrefab.setPosition(0, 0);
 		this.gameOverPrefab.show();
-		this.tweens.add({
-			targets: this.gameOverPrefab,
-			alpha: 1.0,
-			duration: 500,
-			ease: "Sine.easeInOut",
-		});
+	}
+
+	private onNext() {
+		console.log("next scene");
 	}
 
 	/* END-USER-CODE */
