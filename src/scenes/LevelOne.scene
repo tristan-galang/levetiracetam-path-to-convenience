@@ -3254,13 +3254,30 @@
                 "y",
                 "timerCallBack",
                 "duration",
-                "onComplete"
+                "onComplete",
+                "context"
             ],
             "label": "timer",
-            "duration": 60,
-            "onComplete": "this.onGameOver",
+            "duration": 5,
+            "onComplete": "this.onGameOver.bind(this)",
             "x": 852,
             "y": 98
+        },
+        {
+            "prefabId": "d28bc70e-188c-4998-a214-2373142933e0",
+            "id": "323f96f2-74bc-4674-9e82-1abf4a5c76f4",
+            "unlock": [
+                "x",
+                "y",
+                "alpha",
+                "onRetry"
+            ],
+            "label": "gameOverPrefab",
+            "scope": "CLASS",
+            "onRetry": "this.retry.bind(this)",
+            "x": 0,
+            "y": 770,
+            "alpha": 0
         }
     ],
     "plainObjects": [

@@ -5,6 +5,7 @@ import Phaser from "phaser";
 import RoadPrefab from "./RoadPrefab";
 import Hero from "./Hero";
 import TimerPrefab from "./TimerPrefab";
+import GameOverPrefab from "./GameOverPrefab";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -1288,6 +1289,11 @@ export default class LevelOne extends Phaser.Scene {
 		this.add.existing(timer);
 		timer.setStyle({  });
 
+		// gameOverPrefab
+		const gameOverPrefab = new GameOverPrefab(this, 0, 770);
+		this.add.existing(gameOverPrefab);
+		gameOverPrefab.alpha = 0;
+
 		// lists
 		const walls = [wall_level_1__0000, wall_level, wall_level_1__0001, wall_level_1, wall_level_1__0004, wall_level_2, wall_level_1__0006, wall_level_1__0007, wall_level_1__0008, wall_level_1__0009, wall_level_1__0010_Layer_3, wall_level_1__0011_Layer_4, wall_level_1__0012_Layer_5, wall_level_1__0014_Layer_7, wall_level_1__0013_Layer_6, wall_level_1__0015_Layer_8, wall_level_1__0016_Layer_9, wall_level_1__0017_Layer_10, wall_level_1__0018_Layer_11, wall_level_1__0019_Layer_12, wall_level_1__0020_Layer_13, wall_level_1__0021_Layer_14, wall_level_1__0022_Layer_15, wall_level_1__0023_Layer_16, wall_level_1__0024_Layer_17, wall_level_1__0025_Layer_18, wall_level_1__0026_Layer_19, wall_level_1__0027_Layer_20, wall_level_1__0028_Layer_21, wall_level_1__0037_Layer_30, wall_level_1__0036_Layer_29, wall_level_1__0035_Layer_28, wall_level_1__0034_Layer_27, wall_level_1__0033_Layer_26, wall_level_1__0032_Layer_25, wall_level_1__0031_Layer_24, wall_level_1__0030_Layer_23, wall_level_1__0029_Layer_22, wall_level_1__0047_Layer_40, wall_level_1__0046_Layer_39, wall_level_1__0045_Layer_38, wall_level_1__0044_Layer_37, wall_level_1__0043_Layer_36, wall_level_1__0042_Layer_35, wall_level_1__0041_Layer_34, wall_level_1__0040_Layer_33, wall_level_1__0039_Layer_32, wall_level_1__0038_Layer_31, wall_level_1__0048_Layer_41, wall_level_1__0057_Layer_50, wall_level_1__0056_Layer_49, wall_level_1__0055_Layer_48, wall_level_1__0054_Layer_47, wall_level_1__0053_Layer_46, wall_level_1__0052_Layer_45, wall_level_1__0051_Layer_44, wall_level_1__0050_Layer_43, wall_level_1__0049_Layer_42, wall_level_1__0069_Layer_62, wall_level_1__0068_Layer_61, wall_level_1__0067_Layer_60, wall_level_1__0066_Layer_59, wall_level_1__0065_Layer_58, wall_level_1__0064_Layer_57, wall_level_1__0063_Layer_56, wall_level_1__0062_Layer_55, wall_level_1__0061_Layer_54, wall_level_1__0060_Layer_53, wall_level_1__0059_Layer_52, wall_level_1__0058_Layer_51];
 		const roads = [road_5, road_18, road_17, road_16, road_15, road_14, road_13, road_12, road_11, road_10, road_9, road_8, road_7, road_6, road_4, road_3, road_2, road_1, road, road_19, road_20, road_21, road_22, road_23, road_24, road_25, road_26, road_27, road_28, road_29, road_30, road_31, road_32, road_33, road_34, road_35, road_36, road_37, road_38, road_39, road_40, road_41, road_42, road_43, road_44, road_45, road_46, road_47, road_48, road_49, road_50, road_51, road_52, road_53, road_54, road_55, road_56, road_57, road_58, road_59, road_60, road_61, road_62, road_63, road_64, road_65, road_66, road_67, road_68, road_69, road_70, road_71, road_72, road_73, road_74, road_75, road_76, road_77, road_78, road_79, road_80, road_81, road_82, road_83, road_84, road_85, road_86, road_87, road_88, road_89, road_90, road_91, road_92, road_93, road_94, road_95, road_96, road_97, road_98, road_99, road_100, road_101, road_102, road_103, road_104, road_105, road_106, road_107, road_108, road_109, road_110, road_111, road_112, road_113, road_114, road_115, road_116, road_117, road_118, road_119, road_120, road_121, road_122, road_123, road_124, road_125, road_126, road_127, road_128, road_129, road_130, road_131, road_132, road_133, road_134, road_135, road_136, road_137, road_138, road_139, road_140, road_141, road_142, road_143, road_144, road_145, road_146, road_147, road_148, road_149, road_150, road_151, road_152, road_153, road_154, road_155, road_156, road_157, road_158, road_159, road_160, road_161, road_162, road_163, road_164, road_165, road_166, road_167, road_168, road_169, road_170, road_171, road_172, road_173, road_174, road_175, road_176, road_177, road_178, road_179, road_180, road_181, road_182, road_183, road_184, road_185, road_186, road_187, road_188, road_189, road_190, road_191, road_192, road_193, road_194, road_195, road_196, road_197, road_198];
@@ -1303,15 +1309,20 @@ export default class LevelOne extends Phaser.Scene {
 		this.physics.add.overlap(player, scores, this.onScore, undefined, this);
 
 		// timer (prefab fields)
-		timer.duration = 60;
-		timer.onComplete = this.onGameOver;
+		timer.duration = 5;
+		timer.onComplete = this.onGameOver.bind(this);
+
+		// gameOverPrefab (prefab fields)
+		gameOverPrefab.onRetry = this.retry.bind(this);
 
 		this.player = player;
+		this.gameOverPrefab = gameOverPrefab;
 
 		this.events.emit("scene-awake");
 	}
 
 	private player!: Hero;
+	private gameOverPrefab!: GameOverPrefab;
 
 	/* START-USER-CODE */
 
@@ -1327,6 +1338,8 @@ export default class LevelOne extends Phaser.Scene {
 
 		this.player.setInteractive();
 		this.input.setDraggable(this.player);
+
+		this.gameOverPrefab.alpha = 0;
 
 		this.input.on("dragstart", (pointer: any) => {
 			this.isDragging = true;
@@ -1395,8 +1408,19 @@ export default class LevelOne extends Phaser.Scene {
 		console.log("TG>>> player", this.playerScore);
 	}
 
+	private retry() {
+		this.scene.restart();
+	}
+
 	private onGameOver() {
-		alert("game over");
+		this.gameOverPrefab.setPosition(0, 0);
+		this.gameOverPrefab.show();
+		this.tweens.add({
+			targets: this.gameOverPrefab,
+			alpha: 1.0,
+			duration: 500,
+			ease: "Sine.easeInOut",
+		});
 	}
 
 	/* END-USER-CODE */

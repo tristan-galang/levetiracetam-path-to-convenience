@@ -24,6 +24,21 @@
                 "key": "footer"
             },
             {
+                "url": "assets/game_over.png",
+                "type": "image",
+                "key": "game_over"
+            },
+            {
+                "url": "assets/game_retry_button.png",
+                "type": "image",
+                "key": "game_retry_button"
+            },
+            {
+                "url": "assets/game_skip_button.png",
+                "type": "image",
+                "key": "game_skip_button"
+            },
+            {
                 "url": "assets/header.png",
                 "type": "image",
                 "key": "header"
