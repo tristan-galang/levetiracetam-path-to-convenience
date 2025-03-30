@@ -12,6 +12,13 @@
                 "key": "background_game"
             },
             {
+                "url": "assets/fonts/digitalFont.ttf",
+                "format": "truetype",
+                "descriptors": {},
+                "type": "font",
+                "key": "digitalFont"
+            },
+            {
                 "url": "assets/footer.png",
                 "type": "image",
                 "key": "footer"
@@ -60,6 +67,11 @@
                 "url": "assets/scratch_bg.png",
                 "type": "image",
                 "key": "scratch_bg"
+            },
+            {
+                "url": "assets/timer_container.png",
+                "type": "image",
+                "key": "timer_container"
             },
             {
                 "url": "assets/wall_level_1__0000.png",

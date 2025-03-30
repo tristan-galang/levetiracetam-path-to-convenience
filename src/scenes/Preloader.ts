@@ -2,7 +2,6 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -18,7 +17,7 @@ export default class Preloader extends Phaser.Scene {
 
 	editorCreate(): void {
 
-		// image_56ba42f5-7d7b-4134-a21e-85c51411440a
+		// background
 		this.add.image(512, 384, "background");
 
 		// progressBar

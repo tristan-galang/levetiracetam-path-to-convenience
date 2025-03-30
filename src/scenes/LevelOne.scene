@@ -3235,6 +3235,30 @@
             },
             "x": 512,
             "y": 682.5
+        },
+        {
+            "type": "Image",
+            "id": "841b6ea4-d0b9-457c-af51-c54d75c79b1f",
+            "label": "timer_container",
+            "texture": {
+                "key": "timer_container"
+            },
+            "x": 855,
+            "y": 106
+        },
+        {
+            "prefabId": "eaa69d6f-7001-49a9-8192-83c0fc68f1d0",
+            "id": "94886195-c56f-4801-9988-f81fa410ff31",
+            "unlock": [
+                "x",
+                "y",
+                "timerCallBack",
+                "duration"
+            ],
+            "label": "timer",
+            "duration": 60,
+            "x": 852,
+            "y": 98
         }
     ],
     "plainObjects": [

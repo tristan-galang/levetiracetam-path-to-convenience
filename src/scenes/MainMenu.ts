@@ -2,7 +2,6 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -28,7 +27,7 @@ export default class MainMenu extends Phaser.Scene {
 		const text = this.add.text(512, 460, "", {});
 		text.setOrigin(0.5, 0.5);
 		text.text = "Main Menu";
-		text.setStyle({ "align": "center", "color": "#ffffff", "fontFamily": "Arial Black", "fontSize": "38px", "stroke": "#000000", "strokeThickness":8});
+		text.setStyle({ "align": "center", "color": "#ffffff", "fontFamily": "Arial Black", "fontSize": "38px", "stroke": "#000000", "strokeThickness": 8 });
 
 		this.events.emit("scene-awake");
 	}
