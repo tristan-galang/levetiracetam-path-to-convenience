@@ -22,6 +22,10 @@
                     "type": "Image",
                     "id": "471b3778-93c7-4431-a5be-cb05d9eeb3ab",
                     "label": "buttonDark",
+                    "scope": "CLASS",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.width": 65,
+                    "hitArea.height": 60,
                     "texture": {
                         "key": "home_button_dark"
                     }

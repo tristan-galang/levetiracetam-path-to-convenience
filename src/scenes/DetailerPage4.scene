@@ -1,0 +1,83 @@
+{
+    "id": "05d88f42-e010-4cd5-bc32-97edb54f8b2b",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "DetailerPage4",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1024,
+        "borderHeight": 768
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "b03a6d9b-a26b-4f81-a240-4a2c777af699",
+            "label": "rectangle_1",
+            "x": 512,
+            "y": 384,
+            "isFilled": true,
+            "width": 1024,
+            "height": 768
+        },
+        {
+            "type": "Image",
+            "id": "c0cdf65d-86d7-4536-9ab6-8c76aa6ff016",
+            "label": "detailer_value",
+            "scope": "CLASS",
+            "texture": {
+                "key": "Asset 29"
+            },
+            "x": 511,
+            "y": 384
+        },
+        {
+            "prefabId": "cb46083b-7ba8-44df-af63-24a11023fc4a",
+            "id": "b15cd176-a30a-42bd-b797-80b10fbbd574",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "detailerHeader",
+            "x": 409,
+            "y": 47
+        },
+        {
+            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
+            "id": "88dcfc78-62df-4134-bc07-8844f8fb859a",
+            "unlock": [
+                "x",
+                "y",
+                "isDark"
+            ],
+            "label": "homeButton",
+            "scope": "CLASS",
+            "isDark": true,
+            "x": 69,
+            "y": 700
+        },
+        {
+            "type": "Image",
+            "id": "15072c77-498b-41d3-aa78-9cb2b5ed6983",
+            "label": "prevBtn",
+            "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 38,
+            "hitArea.height": 48,
+            "texture": {
+                "key": "detailer_previous_button"
+            },
+            "x": 914,
+            "y": 700
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": "c478aa05-e4df-495d-9d76-fdc610583d91",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "DetailerPage3",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1024,
+        "borderHeight": 768
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "8caa5218-eb0a-4fd1-bbe5-9332652d1cb4",
+            "label": "rectangle_1",
+            "x": 512,
+            "y": 384,
+            "isFilled": true,
+            "width": 1024,
+            "height": 768
+        },
+        {
+            "type": "Image",
+            "id": "3ac76c73-6d4d-47eb-a456-dd41b1821b12",
+            "label": "detailer_value",
+            "scope": "CLASS",
+            "texture": {
+                "key": "detailer_page_3"
+            },
+            "x": 509,
+            "y": 382
+        },
+        {
+            "prefabId": "cb46083b-7ba8-44df-af63-24a11023fc4a",
+            "id": "b01a0b7a-f8cd-4306-9c54-5b617860e827",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "detailerHeader",
+            "x": 407,
+            "y": 45
+        },
+        {
+            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
+            "id": "c13b9029-d797-489a-a398-cba06929a75c",
+            "unlock": [
+                "x",
+                "y",
+                "isDark"
+            ],
+            "label": "homeButton",
+            "scope": "CLASS",
+            "isDark": true,
+            "x": 67,
+            "y": 698
+        },
+        {
+            "type": "Image",
+            "id": "5339824d-4be7-4a47-a344-6ca819ceea59",
+            "label": "nextBtn",
+            "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 39,
+            "hitArea.height": 49,
+            "texture": {
+                "key": "detailer_next_button"
+            },
+            "x": 966,
+            "y": 700
+        },
+        {
+            "type": "Image",
+            "id": "73dc0869-5249-45da-a809-6e619d27f74d",
+            "label": "prevBtn",
+            "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 38,
+            "hitArea.height": 48,
+            "texture": {
+                "key": "detailer_previous_button"
+            },
+            "x": 914,
+            "y": 700
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

@@ -11,6 +11,10 @@ export default class HomeButton extends Phaser.GameObjects.Container {
 
 		// buttonDark
 		const buttonDark = scene.add.image(0, 0, "home_button_dark");
+		buttonDark.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 65, 60),
+			Phaser.Geom.Rectangle.Contains
+		);
 		this.add(buttonDark);
 
 		// buttonLight
@@ -21,6 +25,7 @@ export default class HomeButton extends Phaser.GameObjects.Container {
 		);
 		this.add(buttonLight);
 
+		this.buttonDark = buttonDark;
 		this.buttonLight = buttonLight;
 
 		/* START-USER-CTR-CODE */
@@ -30,20 +35,22 @@ export default class HomeButton extends Phaser.GameObjects.Container {
 		/* END-USER-CTR-CODE */
 	}
 
+	private buttonDark: Phaser.GameObjects.Image;
 	private buttonLight: Phaser.GameObjects.Image;
 	public isDark: boolean = false;
 
 	/* START-USER-CODE */
 	create() {
 		this.buttonLight.on("pointerdown", () => this.goHome());
-	}
-
-	update() {
-		console.log("TG>>> ", this.isDark);
+		this.buttonDark.on("pointerdown", () => this.goHome());
 	}
 
 	private goHome() {
 		this.scene.scene.start("MainMenu");
+	}
+
+	public makeDark() {
+		this.buttonLight.alpha = 0;
 	}
 
 	/* END-USER-CODE */

@@ -2,6 +2,16 @@
     "section1": {
         "files": [
             {
+                "url": "assets/Asset 10.png",
+                "type": "image",
+                "key": "Asset 10"
+            },
+            {
+                "url": "assets/Asset 29.svg",
+                "type": "image",
+                "key": "Asset 29"
+            },
+            {
                 "url": "assets/bg.png",
                 "type": "image",
                 "key": "background"
@@ -20,6 +30,36 @@
                 "url": "assets/background_level_selection.png",
                 "type": "image",
                 "key": "background_level_selection"
+            },
+            {
+                "url": "assets/detailer_next_button.png",
+                "type": "image",
+                "key": "detailer_next_button"
+            },
+            {
+                "url": "assets/detailer_page_1.png",
+                "type": "image",
+                "key": "detailer_page_1"
+            },
+            {
+                "url": "assets/detailer_page_1_title.png",
+                "type": "image",
+                "key": "detailer_page_1_title"
+            },
+            {
+                "url": "assets/detailer_page_2.png",
+                "type": "image",
+                "key": "detailer_page_2"
+            },
+            {
+                "url": "assets/detailer_page_3.png",
+                "type": "image",
+                "key": "detailer_page_3"
+            },
+            {
+                "url": "assets/detailer_previous_button.png",
+                "type": "image",
+                "key": "detailer_previous_button"
             },
             {
                 "url": "assets/fonts/digitalFont.ttf",
