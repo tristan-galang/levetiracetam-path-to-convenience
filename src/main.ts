@@ -5,6 +5,7 @@ import MainMenu from "./scenes/MainMenu";
 import Preloader from "./scenes/Preloader";
 import Levelone from "./scenes/LevelOne";
 import LevelTwo from "./scenes/LevelTwo";
+import LevelThree from "./scenes/LevelThree";
 
 import { Game, Types } from "phaser";
 
@@ -20,7 +21,16 @@ const config: Types.Core.GameConfig = {
 		mode: Phaser.Scale.FIT,
 		autoCenter: Phaser.Scale.CENTER_BOTH,
 	},
-	scene: [Boot, Preloader, Levelone, LevelTwo, MainMenu, MainGame, GameOver],
+	scene: [
+		Boot,
+		Preloader,
+		Levelone,
+		LevelTwo,
+		LevelThree,
+		MainMenu,
+		MainGame,
+		GameOver,
+	],
 	physics: {
 		default: "arcade",
 		arcade: {

@@ -1975,7 +1975,7 @@ export default class LevelOne extends Phaser.Scene {
 	}
 
 	private onNext() {
-		console.log("next scene");
+		this.scene.start("LevelTwo");
 	}
 
 	/* END-USER-CODE */

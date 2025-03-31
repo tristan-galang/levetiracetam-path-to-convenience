@@ -6826,8 +6826,8 @@
             "texture": {
                 "key": "score_a"
             },
-            "x": 495,
-            "y": 500,
+            "x": 343,
+            "y": 292,
             "immovable": true,
             "body.width": 21,
             "body.height": 40
@@ -6839,8 +6839,8 @@
             "texture": {
                 "key": "score_day"
             },
-            "x": 905,
-            "y": 498,
+            "x": 329,
+            "y": 377,
             "immovable": true,
             "body.width": 59,
             "body.height": 40
