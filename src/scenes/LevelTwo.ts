@@ -5,9 +5,9 @@
 import RoadPrefab from "./RoadPrefab";
 import Hero from "./Hero";
 import TimerPrefab from "./TimerPrefab";
-import GameOverPrefab from "./GameOverPrefab";
-import LevelClearPrefab from "./LevelClearPrefab";
 import HomeButton from "./HomeButton";
+import LevelClearPrefab from "./LevelClearPrefab";
+import GameOverPrefab from "./GameOverPrefab";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -2910,26 +2910,18 @@ export default class LevelTwo extends Phaser.Scene {
 		this.add.existing(timer);
 		timer.setStyle({  });
 
-		// gameOverPrefab
-		const gameOverPrefab = new GameOverPrefab(this, 0, 768);
-		this.add.existing(gameOverPrefab);
-
-		// levelClearPrefab
-		const levelClearPrefab = new LevelClearPrefab(this, 0, 768);
-		this.add.existing(levelClearPrefab);
-
 		// score_once
 		const score_once = this.physics.add.image(292, 239, "score_once");
 		score_once.body.immovable = true;
 		score_once.body.setSize(85, 39, false);
 
 		// score_a
-		const score_a = this.physics.add.image(343, 292, "score_a");
+		const score_a = this.physics.add.image(465, 502, "score_a");
 		score_a.body.immovable = true;
 		score_a.body.setSize(21, 40, false);
 
 		// score_day
-		const score_day = this.physics.add.image(329, 377, "score_day");
+		const score_day = this.physics.add.image(805, 239, "score_day");
 		score_day.body.immovable = true;
 		score_day.body.setSize(59, 40, false);
 
@@ -2939,6 +2931,17 @@ export default class LevelTwo extends Phaser.Scene {
 
 		// level_2_button
 		this.add.image(512, 680, "level_2_button");
+
+		// game_label
+		this.add.image(512, 93, "game_label");
+
+		// levelClearPrefab
+		const levelClearPrefab = new LevelClearPrefab(this, 0, 768);
+		this.add.existing(levelClearPrefab);
+
+		// gameOverPrefab
+		const gameOverPrefab = new GameOverPrefab(this, 0, 768);
+		this.add.existing(gameOverPrefab);
 
 		// lists
 		const walls = [walls_level_3_0045_Layer, walls_level_3_0054_Layer_3, walls_level_3_0083_Layer_1, walls_level_3_0083_Layer, walls_level_3_0054_Layer_2, walls_level_3_0054_Layer_1, walls_level_3_0086_Layer_88, walls_level_3_0084_Layer_86, walls_level_3_0083_Layer_85, walls_level_3_0081_Layer_83, walls_level_3_0080_Layer_82, walls_level_3_0079_Layer_81, walls_level_3_0078_Layer_80, walls_level_3_0077_Layer_79, walls_level_3_0076_Layer_78, walls_level_3_0075_Layer_77, walls_level_3_0074_Layer_76, walls_level_3_0073_Layer_75, walls_level_3_0072_Layer_74, walls_level_3_0069_Layer_71, walls_level_3_0068_Layer_70, walls_level_3_0067_Layer_69, walls_level_3_0066_Layer, walls_level_3_0066_Layer_68, walls_level_3_0065_Layer_67, walls_level_3_0064_Layer_66, walls_level_3_0063_Layer_65, walls_level_3_0062_Layer_64, walls_level_3_0061_Layer_63, walls_level_3_0058_Layer_60, walls_level_3_0056_Layer_58, walls_level_3_0055_Layer_57, walls_level_3_0054_Layer, walls_level_3_0054_Layer_56, walls_level_3_0053_Layer_55, walls_level_3_0052_Layer_54, walls_level_3_0051_Layer_53, walls_level_3_0050_Layer_52, walls_level_3_0049_Layer_51, walls_level_3_0048_Layer, walls_level_3_0048_Layer_50, walls_level_3_0047_Layer_49, walls_level_3_0046_Layer_48, walls_level_3_0045_Layer_47, walls_level_3_0044_Layer_46, walls_level_3_0043_Layer_45, walls_level_3_0042_Layer_44, walls_level_3_0041_Layer_43, walls_level_3_0040_Layer_42, walls_level_3_0039_Layer_41, walls_level_3_0038_Layer_40, walls_level_3_0037_Layer_39, walls_level_3_0036_Layer_38, walls_level_3_0034_Layer_36, walls_level_3_0033_Layer_34, walls_level_3_0031_Layer_32, walls_level_3_0030_Layer_31, walls_level_3_0029_Layer_30, walls_level_3_0028_Layer_29, walls_level_3_0027_Layer_28, walls_level_3_0026_Layer_27, walls_level_3_0025_Layer_26, walls_level_3_0024_Layer_25, walls_level_3_0023_Layer_24, walls_level_3_0022_Layer_23, walls_level_3_0019_Layer, walls_level_3_0020_Layer_21, walls_level_3_0019_Layer_20, walls_level_3_0018_Layer_19, walls_level_3_0017_Layer, walls_level_3_0009_Layer, walls_level_3_0017_Layer_18, walls_level_3_0016_Layer_17, walls_level_3_0015_Layer_16, walls_level_3_0014_Layer_15, walls_level_3_0013_Layer_14, walls_level_3_0012_Layer_13, walls_level_3_0011_Layer_12, walls_level_3_0010_Layer_11, walls_level_3_0009_Layer_10, walls_level_3_0008_Layer_9, walls_level_3_0007_Layer_8, walls_level_3_0006_Layer_7, walls_level_3_0005_Layer_6, walls_level_3_0004_Layer_5, walls_level_3_0002_Layer_3, walls_level_3_0000_Layer, walls_level_3_0001_Layer, walls_level_3_0001_Layer_2, walls_level_3_0000_Layer_1];
@@ -2955,29 +2958,29 @@ export default class LevelTwo extends Phaser.Scene {
 		this.physics.add.collider(player, roads, this.unlockRoad);
 
 		// timer (prefab fields)
-		timer.duration = 59;
+		timer.duration = 60;
 		timer.onComplete = this.onGameOver.bind(this);
-
-		// gameOverPrefab (prefab fields)
-		gameOverPrefab.onRetry = this.retry.bind(this);
-		gameOverPrefab.onSkip = this.onNext.bind(this);
 
 		// levelClearPrefab (prefab fields)
 		levelClearPrefab.onRetry = this.retry.bind(this);
 		levelClearPrefab.onNext = this.onNext.bind(this);
 
+		// gameOverPrefab (prefab fields)
+		gameOverPrefab.onRetry = this.retry.bind(this);
+		gameOverPrefab.onSkip = this.onNext.bind(this);
+
 		this.player = player;
 		this.timer = timer;
-		this.gameOverPrefab = gameOverPrefab;
 		this.levelClearPrefab = levelClearPrefab;
+		this.gameOverPrefab = gameOverPrefab;
 
 		this.events.emit("scene-awake");
 	}
 
 	private player!: Hero;
 	private timer!: TimerPrefab;
-	private gameOverPrefab!: GameOverPrefab;
 	private levelClearPrefab!: LevelClearPrefab;
+	private gameOverPrefab!: GameOverPrefab;
 
 	/* START-USER-CODE */
 	// Write your code here

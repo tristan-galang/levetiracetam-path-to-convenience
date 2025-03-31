@@ -6221,7 +6221,7 @@
             "id": "2de86c1e-0701-404d-b19a-be1206ccfae2",
             "label": "level_1",
             "texture": {
-                "key": "game_level_3_map"
+                "key": "Level 3"
             },
             "x": 511,
             "y": 384
@@ -6251,38 +6251,6 @@
             },
             "x": 885,
             "y": 112
-        },
-        {
-            "prefabId": "d28bc70e-188c-4998-a214-2373142933e0",
-            "id": "e58cbbb9-f926-4d32-9c71-a375259cfa02",
-            "unlock": [
-                "x",
-                "y",
-                "onRetry",
-                "onSkip"
-            ],
-            "label": "gameOverPrefab",
-            "scope": "CLASS",
-            "onRetry": "this.retry.bind(this)",
-            "onSkip": "this.onNext.bind(this)",
-            "x": -1,
-            "y": 768
-        },
-        {
-            "prefabId": "d9ac11a0-3ada-4729-949f-315faf32dd7a",
-            "id": "9a1751c9-1b3d-47af-8cea-16421961fd19",
-            "unlock": [
-                "x",
-                "y",
-                "onRetry",
-                "onNext"
-            ],
-            "label": "levelClearPrefab",
-            "scope": "CLASS",
-            "onRetry": "this.retry.bind(this)",
-            "onNext": "this.onNext.bind(this)",
-            "x": -1,
-            "y": 768
         },
         {
             "type": "Layer",
@@ -8354,8 +8322,8 @@
             "texture": {
                 "key": "score_once"
             },
-            "x": 236,
-            "y": 271,
+            "x": 331,
+            "y": 237,
             "immovable": true,
             "body.width": 85,
             "body.height": 39
@@ -8367,8 +8335,8 @@
             "texture": {
                 "key": "score_a"
             },
-            "x": 324,
-            "y": 281,
+            "x": 495,
+            "y": 473,
             "immovable": true,
             "body.width": 21,
             "body.height": 40
@@ -8380,8 +8348,8 @@
             "texture": {
                 "key": "score_day"
             },
-            "x": 312,
-            "y": 332,
+            "x": 902,
+            "y": 569,
             "immovable": true,
             "body.width": 59,
             "body.height": 40
@@ -8397,7 +8365,7 @@
             ],
             "label": "timer",
             "scope": "CLASS",
-            "duration": 59,
+            "duration": 60,
             "onComplete": "this.onGameOver.bind(this)",
             "x": 884,
             "y": 105
@@ -8422,6 +8390,48 @@
             },
             "x": 512,
             "y": 680
+        },
+        {
+            "type": "Image",
+            "id": "7daa966e-a86c-4ff2-b899-5375d09d508d",
+            "label": "game_label",
+            "texture": {
+                "key": "game_label"
+            },
+            "x": 512,
+            "y": 93
+        },
+        {
+            "prefabId": "d28bc70e-188c-4998-a214-2373142933e0",
+            "id": "e58cbbb9-f926-4d32-9c71-a375259cfa02",
+            "unlock": [
+                "x",
+                "y",
+                "onRetry",
+                "onSkip"
+            ],
+            "label": "gameOverPrefab",
+            "scope": "CLASS",
+            "onRetry": "this.retry.bind(this)",
+            "onSkip": "this.onNext.bind(this)",
+            "x": -1,
+            "y": 768
+        },
+        {
+            "prefabId": "d9ac11a0-3ada-4729-949f-315faf32dd7a",
+            "id": "9a1751c9-1b3d-47af-8cea-16421961fd19",
+            "unlock": [
+                "x",
+                "y",
+                "onRetry",
+                "onNext"
+            ],
+            "label": "levelClearPrefab",
+            "scope": "CLASS",
+            "onRetry": "this.retry.bind(this)",
+            "onNext": "this.onNext.bind(this)",
+            "x": -1,
+            "y": 768
         }
     ],
     "plainObjects": [

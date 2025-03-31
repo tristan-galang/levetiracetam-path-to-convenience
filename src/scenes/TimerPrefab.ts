@@ -6,16 +6,13 @@
 /* END-USER-IMPORTS */
 
 export default class TimerPrefab extends Phaser.GameObjects.Text {
+
 	constructor(scene: Phaser.Scene, x?: number, y?: number) {
 		super(scene, x ?? -3, y ?? -6, "", {});
 
 		this.setOrigin(0.5, 0.5);
-		this.text = "00";
-		this.setStyle({
-			align: "center",
-			fontFamily: "digitalFont",
-			fontSize: "71px",
-		});
+		this.text = "60";
+		this.setStyle({ "align": "center", "fontFamily": "digitalFont", "fontSize": "71px" });
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

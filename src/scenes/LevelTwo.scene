@@ -6769,42 +6769,10 @@
             ],
             "label": "timer",
             "scope": "CLASS",
-            "duration": 59,
+            "duration": 60,
             "onComplete": "this.onGameOver.bind(this)",
             "x": 887,
             "y": 106
-        },
-        {
-            "prefabId": "d28bc70e-188c-4998-a214-2373142933e0",
-            "id": "97806380-d942-4534-929d-1f11e32d846b",
-            "unlock": [
-                "x",
-                "y",
-                "onRetry",
-                "onSkip"
-            ],
-            "label": "gameOverPrefab",
-            "scope": "CLASS",
-            "onRetry": "this.retry.bind(this)",
-            "onSkip": "this.onNext.bind(this)",
-            "x": 0,
-            "y": 768
-        },
-        {
-            "prefabId": "d9ac11a0-3ada-4729-949f-315faf32dd7a",
-            "id": "a6084433-5a21-4cef-877b-a828fb772eb2",
-            "unlock": [
-                "x",
-                "y",
-                "onRetry",
-                "onNext"
-            ],
-            "label": "levelClearPrefab",
-            "scope": "CLASS",
-            "onRetry": "this.retry.bind(this)",
-            "onNext": "this.onNext.bind(this)",
-            "x": 0,
-            "y": 768
         },
         {
             "type": "ArcadeImage",
@@ -6826,8 +6794,8 @@
             "texture": {
                 "key": "score_a"
             },
-            "x": 343,
-            "y": 292,
+            "x": 465,
+            "y": 502,
             "immovable": true,
             "body.width": 21,
             "body.height": 40
@@ -6839,8 +6807,8 @@
             "texture": {
                 "key": "score_day"
             },
-            "x": 329,
-            "y": 377,
+            "x": 805,
+            "y": 239,
             "immovable": true,
             "body.width": 59,
             "body.height": 40
@@ -6865,6 +6833,48 @@
             },
             "x": 512,
             "y": 680
+        },
+        {
+            "type": "Image",
+            "id": "c67a6ef3-5499-4b28-9bba-912e25b433d3",
+            "label": "game_label",
+            "texture": {
+                "key": "game_label"
+            },
+            "x": 512,
+            "y": 93
+        },
+        {
+            "prefabId": "d9ac11a0-3ada-4729-949f-315faf32dd7a",
+            "id": "a6084433-5a21-4cef-877b-a828fb772eb2",
+            "unlock": [
+                "x",
+                "y",
+                "onRetry",
+                "onNext"
+            ],
+            "label": "levelClearPrefab",
+            "scope": "CLASS",
+            "onRetry": "this.retry.bind(this)",
+            "onNext": "this.onNext.bind(this)",
+            "x": 0,
+            "y": 768
+        },
+        {
+            "prefabId": "d28bc70e-188c-4998-a214-2373142933e0",
+            "id": "97806380-d942-4534-929d-1f11e32d846b",
+            "unlock": [
+                "x",
+                "y",
+                "onRetry",
+                "onSkip"
+            ],
+            "label": "gameOverPrefab",
+            "scope": "CLASS",
+            "onRetry": "this.retry.bind(this)",
+            "onSkip": "this.onNext.bind(this)",
+            "x": 0,
+            "y": 768
         }
     ],
     "plainObjects": [

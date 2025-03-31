@@ -74,6 +74,11 @@
                 "key": "footer"
             },
             {
+                "url": "assets/game_label.png",
+                "type": "image",
+                "key": "game_label"
+            },
+            {
                 "url": "assets/game_level_clear.png",
                 "type": "image",
                 "key": "game_level_clear"
@@ -127,6 +132,11 @@
                 "url": "assets/level 1.png",
                 "type": "image",
                 "key": "level 1"
+            },
+            {
+                "url": "assets/Level 3.png",
+                "type": "image",
+                "key": "Level 3"
             },
             {
                 "url": "assets/level_1_button.png",

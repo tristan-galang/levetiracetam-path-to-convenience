@@ -3259,10 +3259,31 @@
             ],
             "label": "timer",
             "scope": "CLASS",
-            "duration": 30,
+            "duration": 60,
             "onComplete": "this.onGameOver.bind(this)",
             "x": 852,
             "y": 98
+        },
+        {
+            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
+            "id": "80bc8005-17d5-4e99-b57c-d81e0716923c",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "homeButton",
+            "x": 70,
+            "y": 700
+        },
+        {
+            "type": "Image",
+            "id": "b0e3f7f7-bb61-418d-bb92-a356443e5313",
+            "label": "game_label",
+            "texture": {
+                "key": "game_label"
+            },
+            "x": 512,
+            "y": 93
         },
         {
             "prefabId": "d9ac11a0-3ada-4729-949f-315faf32dd7a",
@@ -3295,17 +3316,6 @@
             "onSkip": "this.onNext.bind(this)",
             "x": 0,
             "y": 768
-        },
-        {
-            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
-            "id": "80bc8005-17d5-4e99-b57c-d81e0716923c",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "homeButton",
-            "x": 70,
-            "y": 700
         }
     ],
     "plainObjects": [
