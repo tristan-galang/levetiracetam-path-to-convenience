@@ -7,6 +7,7 @@ import Hero from "./Hero";
 import GameOverPrefab from "./GameOverPrefab";
 import LevelClearPrefab from "./LevelClearPrefab";
 import TimerPrefab from "./TimerPrefab";
+import HomeButton from "./HomeButton";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -3607,6 +3608,13 @@ export default class LevelThree extends Phaser.Scene {
 		const timer = new TimerPrefab(this, 884, 105);
 		this.add.existing(timer);
 		timer.setStyle({  });
+
+		// homeButton
+		const homeButton = new HomeButton(this, 70, 700);
+		this.add.existing(homeButton);
+
+		// level_3_button
+		this.add.image(512, 680, "level_3_button");
 
 		// lists
 		const walls = [wall_level_3_0099_Layer, wall_level_3_0096_Layer, wall_level_3_0109_Layer_111, wall_level_3_0107_Layer, wall_level_3_0108_Layer_110, wall_level_3_0107_Layer_109, wall_level_3_0105_Layer_107, wall_level_3_0104_Layer_106, wall_level_3_0103_Layer_105, wall_level_3_0102_Layer_104, wall_level_3_0101_Layer_103, wall_level_3_0100_Layer_102, wall_level_3_0099_Layer_101, wall_level_3_0098_Layer, wall_level_3_0098_Layer_100, wall_level_3_0096_Layer_98, wall_level_3_0093_Layer_95, wall_level_3_0092_Layer_94, wall_level_3_0091_Layer, wall_level_3_0091_Layer_93, wall_level_3_0089_Layer_91, wall_level_3_0088_Layer_90, wall_level_3_0087_Layer_89, wall_level_3_0086_Layer_88, wall_level_3_0084_Layer_86, wall_level_3_0083_Layer_85, wall_level_3_0081_Layer_83, wall_level_3_0080_Layer_82, wall_level_3_0079_Layer_81, wall_level_3_0078_Layer_80, wall_level_3_0077_Layer_79, wall_level_3_0076_Layer_78, wall_level_3_0075_Layer_77, wall_level_3_0074_Layer_76, wall_level_3_0072_Layer_74, wall_level_3_0071_Layer_73, wall_level_3_0070_Layer_72, wall_level_3_0069_Layer_71, wall_level_3_0068_Layer_70, wall_level_3_0067_Layer_69, wall_level_3_0066_Layer_68, wall_level_3_0065_Layer_67, wall_level_3_0064_Layer_66, wall_level_3_0063_Layer_65, wall_level_3_0062_Layer_64, wall_level_3_0061_Layer_63, wall_level_3_0060_Layer_62, wall_level_3_0059_Layer_61, wall_level_3_0058_Layer_60, wall_level_3_0057_Layer_59, wall_level_3_0056_Layer_58, wall_level_3_0055_Layer_57, wall_level_3_0054_Layer_56, wall_level_3_0053_Layer, wall_level_3_0053_Layer_55, wall_level_3_0051_Layer_53, wall_level_3_0050_Layer_52, wall_level_3_0049_Layer_51, wall_level_3_0048_Layer_50, wall_level_3_0046_Layer, wall_level_3_0046_Layer_48, wall_level_3_0045_Layer_47, wall_level_3_0042_Layer_44, wall_level_3_0040_Layer_42, wall_level_3_0039_Layer_1, wall_level_3_0039_Layer, wall_level_3_0039_Layer_41, wall_level_3_0038_Layer_2, wall_level_3_0038_Layer_1, wall_level_3_0038_Layer, wall_level_3_0038_Layer_40, wall_level_3_0037_Layer_39, wall_level_3_0036_Layer_2, wall_level_3_0036_Layer_1, wall_level_3_0036_Layer, wall_level_3_0036_Layer_38, wall_level_3_0035_Layer_37, wall_level_3_0033_Layer_35, wall_level_3_0032_Layer_34, wall_level_3_0031_Layer, wall_level_3_0031_Layer_33, wall_level_3_0030_Layer_32, wall_level_3_0029_Layer_31, wall_level_3_0028_Layer_30, wall_level_3_0027_Layer_29, wall_level_3_0026_Layer_1, wall_level_3_0026_Layer, wall_level_3_0026_Layer_28, wall_level_3_0025_Layer_27, wall_level_3_0024_Layer_26, wall_level_3_0023_Layer_25, wall_level_3_0022_Layer_24, wall_level_3_0021_Layer_23, wall_level_3_0020_Layer_22, wall_level_3_0019_Layer_21, wall_level_3_0018_Layer_20, wall_level_3_0017_Layer_19, wall_level_3_0016_Layer_18, wall_level_3_0015_Layer_17, wall_level_3_0014_Layer_16, wall_level_3_0013_Layer_15, wall_level_3_0012_Layer_14, wall_level_3_0010_Layer_12, wall_level_3_0009_Layer_11, wall_level_3_0008_Layer, wall_level_3_0008_Layer_10, wall_level_3_0007_Layer_9, wall_level_3_0006_Layer_8, wall_level_3_0005_Layer_7, wall_level_3_0002_Layer_4, wall_level_3_0000_Layer, wall_level_3_0001_Layer, wall_level_3_0001_Layer_3, wall_level_3_0000_Layer_2];

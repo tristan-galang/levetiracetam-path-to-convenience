@@ -27,8 +27,12 @@
             "body.drag.y": 1000,
             "collideWorldBounds": true,
             "useDamping": true,
-            "body.width": 43,
-            "body.height": 43
+            "bodyGeometry": 0,
+            "radius": 19,
+            "body.width": 128,
+            "body.height": 128,
+            "body.offset.x": 2,
+            "body.offset.y": 2
         }
     ],
     "plainObjects": [],

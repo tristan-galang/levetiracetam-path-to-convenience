@@ -8401,6 +8401,27 @@
             "onComplete": "this.onGameOver.bind(this)",
             "x": 884,
             "y": 105
+        },
+        {
+            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
+            "id": "483d5109-18c7-4150-b735-eff703239cf3",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "homeButton",
+            "x": 70,
+            "y": 700
+        },
+        {
+            "type": "Image",
+            "id": "2cfbf2a7-c819-4e6a-a5d3-cc09f141e1a7",
+            "label": "level_3_button",
+            "texture": {
+                "key": "level_3_button"
+            },
+            "x": 512,
+            "y": 680
         }
     ],
     "plainObjects": [

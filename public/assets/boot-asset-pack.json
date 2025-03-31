@@ -12,6 +12,16 @@
                 "key": "background_game"
             },
             {
+                "url": "assets/background_home.png",
+                "type": "image",
+                "key": "background_home"
+            },
+            {
+                "url": "assets/background_level_selection.png",
+                "type": "image",
+                "key": "background_level_selection"
+            },
+            {
                 "url": "assets/fonts/digitalFont.ttf",
                 "format": "truetype",
                 "descriptors": {},
@@ -54,6 +64,21 @@
                 "key": "header"
             },
             {
+                "url": "assets/home_asset_1.png",
+                "type": "image",
+                "key": "home_asset_1"
+            },
+            {
+                "url": "assets/home_asset_2.png",
+                "type": "image",
+                "key": "home_asset_2"
+            },
+            {
+                "url": "assets/home_button_dark.png",
+                "type": "image",
+                "key": "home_button_dark"
+            },
+            {
                 "url": "assets/home_button_light.png",
                 "type": "image",
                 "key": "home_button_light"
@@ -67,6 +92,21 @@
                 "url": "assets/level_1_button.png",
                 "type": "image",
                 "key": "level_1_button"
+            },
+            {
+                "url": "assets/level_2_button.png",
+                "type": "image",
+                "key": "level_2_button"
+            },
+            {
+                "url": "assets/level_3_button.png",
+                "type": "image",
+                "key": "level_3_button"
+            },
+            {
+                "url": "assets/mechanics_container.png",
+                "type": "image",
+                "key": "mechanics_container"
             },
             {
                 "url": "assets/player.png",
@@ -92,6 +132,11 @@
                 "url": "assets/scratch_bg.png",
                 "type": "image",
                 "key": "scratch_bg"
+            },
+            {
+                "url": "assets/start_button.png",
+                "type": "image",
+                "key": "start_button"
             },
             {
                 "url": "assets/timer_container.png",

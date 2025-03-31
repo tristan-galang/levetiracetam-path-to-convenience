@@ -6,6 +6,7 @@ import Preloader from "./scenes/Preloader";
 import Levelone from "./scenes/LevelOne";
 import LevelTwo from "./scenes/LevelTwo";
 import LevelThree from "./scenes/LevelThree";
+import LevelSelection from "./scenes/LevelSelection";
 
 import { Game, Types } from "phaser";
 
@@ -29,12 +30,13 @@ const config: Types.Core.GameConfig = {
 		LevelThree,
 		MainMenu,
 		MainGame,
+		LevelSelection,
 		GameOver,
 	],
 	physics: {
 		default: "arcade",
 		arcade: {
-			debug: true,
+			debug: false,
 			gravity: {
 				x: 0,
 				y: 0,

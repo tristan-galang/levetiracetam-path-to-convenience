@@ -24,7 +24,8 @@ export default class Hero extends Phaser.Physics.Arcade.Image {
 		this.body.drag.y = 1000;
 		this.body.useDamping = true;
 		this.body.collideWorldBounds = true;
-		this.body.setSize(43, 43, false);
+		this.body.setOffset(2, 2);
+		this.body.setCircle(19);
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

@@ -14,10 +14,10 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "1cb7aa2a-0c09-4135-a34b-4da58adb90a2",
-            "label": "background",
+            "id": "90b7d1c8-37a0-4b1e-9261-d3a8914f28f7",
+            "label": "background_home",
             "texture": {
-                "key": "background"
+                "key": "background_home"
             },
             "x": 512,
             "y": 384
@@ -38,8 +38,8 @@
     ],
     "plainObjects": [],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 5
     }

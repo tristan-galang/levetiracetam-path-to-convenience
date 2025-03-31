@@ -3295,6 +3295,17 @@
             "onSkip": "this.onNext.bind(this)",
             "x": 0,
             "y": 768
+        },
+        {
+            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
+            "id": "80bc8005-17d5-4e99-b57c-d81e0716923c",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "homeButton",
+            "x": 70,
+            "y": 700
         }
     ],
     "plainObjects": [

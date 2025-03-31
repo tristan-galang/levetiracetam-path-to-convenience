@@ -14,45 +14,55 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "eddaf8e1-94d1-401d-a328-cdfb23d1fef5",
-            "label": "background",
+            "id": "2c427feb-071f-4962-918e-107cf99ec0e5",
+            "label": "background_home",
             "texture": {
-                "key": "background"
+                "key": "background_home"
             },
-            "x": 512,
-            "y": 384
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "e5babb96-c526-40f4-94d3-ce0955d9767d",
-            "label": "logo",
+            "id": "4585f9aa-1284-43c7-be5d-d63fb08aa314",
+            "label": "brand",
+            "scope": "CLASS",
             "texture": {
-                "key": "logo"
+                "key": "home_asset_1"
             },
             "x": 512,
-            "y": 384
+            "y": 221
         },
         {
-            "type": "Text",
-            "id": "849c46c6-b507-4dba-9e0b-1d60465186c2",
-            "label": "text",
+            "type": "Image",
+            "id": "a552f4d8-bf12-464a-9de0-c1e8937503dc",
+            "label": "title",
+            "scope": "CLASS",
+            "texture": {
+                "key": "home_asset_2"
+            },
             "x": 512,
-            "y": 460,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "Main Menu",
-            "align": "center",
-            "fontFamily": "Arial Black",
-            "fontSize": "38px",
-            "color": "#ffffff",
-            "stroke": "#000000",
-            "strokeThickness": 8
+            "y": 439
+        },
+        {
+            "type": "Image",
+            "id": "f8c38797-c247-418a-add9-04330e6a0eda",
+            "label": "startButton",
+            "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 204,
+            "hitArea.height": 75,
+            "texture": {
+                "key": "start_button"
+            },
+            "x": 512,
+            "y": 649
         }
     ],
     "plainObjects": [],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 5
     }

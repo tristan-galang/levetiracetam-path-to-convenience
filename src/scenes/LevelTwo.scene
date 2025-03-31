@@ -6844,6 +6844,27 @@
             "immovable": true,
             "body.width": 59,
             "body.height": 40
+        },
+        {
+            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
+            "id": "d1705f24-df4d-4a7e-900e-3be7032491cc",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "homeButton",
+            "x": 70,
+            "y": 700
+        },
+        {
+            "type": "Image",
+            "id": "e695f548-fe94-4a31-8ac9-f8936d9e53e7",
+            "label": "level_2_button",
+            "texture": {
+                "key": "level_2_button"
+            },
+            "x": 512,
+            "y": 680
         }
     ],
     "plainObjects": [

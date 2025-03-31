@@ -6,7 +6,6 @@
 /* END-USER-IMPORTS */
 
 export default class MainMenu extends Phaser.Scene {
-
 	constructor() {
 		super("MainMenu");
 
@@ -16,38 +15,76 @@ export default class MainMenu extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
+		// background_home
+		const background_home = this.add.image(0, 0, "background_home");
+		background_home.setOrigin(0, 0);
 
-		// background
-		this.add.image(512, 384, "background");
+		// brand
+		const brand = this.add.image(512, 221, "home_asset_1");
 
-		// logo
-		this.add.image(512, 384, "logo");
+		// title
+		const title = this.add.image(512, 439, "home_asset_2");
 
-		// text
-		const text = this.add.text(512, 460, "", {});
-		text.setOrigin(0.5, 0.5);
-		text.text = "Main Menu";
-		text.setStyle({ "align": "center", "color": "#ffffff", "fontFamily": "Arial Black", "fontSize": "38px", "stroke": "#000000", "strokeThickness": 8 });
+		// startButton
+		const startButton = this.add.image(512, 649, "start_button");
+		startButton.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 204, 75),
+			Phaser.Geom.Rectangle.Contains
+		);
+
+		this.brand = brand;
+		this.title = title;
+		this.startButton = startButton;
 
 		this.events.emit("scene-awake");
 	}
+
+	private brand!: Phaser.GameObjects.Image;
+	private title!: Phaser.GameObjects.Image;
+	private startButton!: Phaser.GameObjects.Image;
 
 	/* START-USER-CODE */
 
 	// Write your code here
 
-    create ()
-    {
+	create() {
+		this.editorCreate();
+		this.startButton.on("pointerdown", () =>
+			this.scene.start("LevelSelection")
+		);
 
-        this.input.once('pointerdown', () => {
+		this.brand.setPosition(512, -500);
+		this.startButton.setPosition(512, 800);
+		this.brand.alpha = 0;
+		this.title.setScale(0.4, 0.4);
+		this.title.alpha = 0;
 
-            this.scene.start('Game');
+		this.tweens.add({
+			targets: this.brand,
+			y: 211,
+			alpha: 1,
+			duration: 1000,
+			ease: "Sine.easeOut",
+		});
 
-        });
+		this.tweens.add({
+			targets: this.title,
+			scale: 1,
+			alpha: 1,
+			duration: 900,
+			ease: "Sine.easeOut",
+			delay: 300,
+		});
 
-        this.editorCreate();
-    }
-    /* END-USER-CODE */
+		this.tweens.add({
+			targets: this.startButton,
+			y: 649,
+			duration: 1000,
+			ease: "Sine.easeOut",
+			delay: 600,
+		});
+	}
+	/* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */

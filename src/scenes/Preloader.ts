@@ -6,6 +6,7 @@
 /* END-USER-IMPORTS */
 
 export default class Preloader extends Phaser.Scene {
+
 	constructor() {
 		super("Preloader");
 
@@ -15,8 +16,9 @@ export default class Preloader extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
-		// background
-		this.add.image(512, 384, "background");
+
+		// background_home
+		this.add.image(512, 384, "background_home");
 
 		// progressBar
 		const progressBar = this.add.rectangle(512, 384, 468, 32);
@@ -65,7 +67,7 @@ export default class Preloader extends Phaser.Scene {
 		//  For example, you can define global animations here, so we can use them in other scenes.
 
 		//  Move to the MainMenu. You could also swap this for a Scene Transition, such as a camera fade.
-		this.scene.start("LevelOne");
+		this.scene.start("MainMenu");
 	}
 	/* END-USER-CODE */
 }
