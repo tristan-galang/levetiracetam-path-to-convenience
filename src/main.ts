@@ -4,6 +4,7 @@ import GameOver from "./scenes/GameOver";
 import MainMenu from "./scenes/MainMenu";
 import Preloader from "./scenes/Preloader";
 import Levelone from "./scenes/LevelOne";
+import LevelTwo from "./scenes/LevelTwo";
 
 import { Game, Types } from "phaser";
 
@@ -19,11 +20,11 @@ const config: Types.Core.GameConfig = {
 		mode: Phaser.Scale.FIT,
 		autoCenter: Phaser.Scale.CENTER_BOTH,
 	},
-	scene: [Boot, Preloader, Levelone, MainMenu, MainGame, GameOver],
+	scene: [Boot, Preloader, Levelone, LevelTwo, MainMenu, MainGame, GameOver],
 	physics: {
 		default: "arcade",
 		arcade: {
-			debug: false,
+			debug: true,
 			gravity: {
 				x: 0,
 				y: 0,

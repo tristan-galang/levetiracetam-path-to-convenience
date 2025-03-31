@@ -11,7 +11,6 @@ import GameOverPrefab from "./GameOverPrefab";
 /* END-USER-IMPORTS */
 
 export default class LevelOne extends Phaser.Scene {
-
 	constructor() {
 		super("LevelOne");
 
@@ -21,7 +20,6 @@ export default class LevelOne extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
-
 		// background_game
 		this.add.image(512, 384, "background_game");
 
@@ -848,13 +846,21 @@ export default class LevelOne extends Phaser.Scene {
 		walls_layer.alpha = 0;
 
 		// wall_level_1__0027_Layer_20
-		const wall_level_1__0027_Layer_20 = this.physics.add.image(801, 550, "wall_level_1__0027_Layer-20");
+		const wall_level_1__0027_Layer_20 = this.physics.add.image(
+			801,
+			550,
+			"wall_level_1__0027_Layer-20"
+		);
 		wall_level_1__0027_Layer_20.body.immovable = true;
 		wall_level_1__0027_Layer_20.body.setSize(250, 7, false);
 		walls_layer.add(wall_level_1__0027_Layer_20);
 
 		// wall_level_1__0000
-		const wall_level_1__0000 = this.physics.add.image(516, 176, "wall_level_1__0000");
+		const wall_level_1__0000 = this.physics.add.image(
+			516,
+			176,
+			"wall_level_1__0000"
+		);
 		wall_level_1__0000.body.immovable = true;
 		wall_level_1__0000.body.setSize(839, 7, false);
 		walls_layer.add(wall_level_1__0000);
@@ -866,7 +872,11 @@ export default class LevelOne extends Phaser.Scene {
 		walls_layer.add(wall_level);
 
 		// wall_level_1__0001
-		const wall_level_1__0001 = this.physics.add.image(95, 383, "wall_level_1__0001");
+		const wall_level_1__0001 = this.physics.add.image(
+			95,
+			383,
+			"wall_level_1__0001"
+		);
 		wall_level_1__0001.body.immovable = true;
 		wall_level_1__0001.body.setSize(7, 410, false);
 		walls_layer.add(wall_level_1__0001);
@@ -878,7 +888,11 @@ export default class LevelOne extends Phaser.Scene {
 		walls_layer.add(wall_level_1);
 
 		// wall_level_1__0004
-		const wall_level_1__0004 = this.physics.add.image(136, 218, "wall_level_1__0004");
+		const wall_level_1__0004 = this.physics.add.image(
+			136,
+			218,
+			"wall_level_1__0004"
+		);
 		wall_level_1__0004.body.immovable = true;
 		wall_level_1__0004.body.setSize(6, 85, false);
 		walls_layer.add(wall_level_1__0004);
@@ -890,379 +904,631 @@ export default class LevelOne extends Phaser.Scene {
 		walls_layer.add(wall_level_2);
 
 		// wall_level_1__0006
-		const wall_level_1__0006 = this.physics.add.image(179, 234, "wall_level_1__0006");
+		const wall_level_1__0006 = this.physics.add.image(
+			179,
+			234,
+			"wall_level_1__0006"
+		);
 		wall_level_1__0006.body.immovable = true;
 		wall_level_1__0006.body.setSize(8, 41, false);
 		walls_layer.add(wall_level_1__0006);
 
 		// wall_level_1__0007
-		const wall_level_1__0007 = this.physics.add.image(264, 217, "wall_level_1__0007");
+		const wall_level_1__0007 = this.physics.add.image(
+			264,
+			217,
+			"wall_level_1__0007"
+		);
 		wall_level_1__0007.body.immovable = true;
 		wall_level_1__0007.body.setSize(162, 7, false);
 		walls_layer.add(wall_level_1__0007);
 
 		// wall_level_1__0008
-		const wall_level_1__0008 = this.physics.add.image(387, 198, "wall_level_1__0008");
+		const wall_level_1__0008 = this.physics.add.image(
+			387,
+			198,
+			"wall_level_1__0008"
+		);
 		wall_level_1__0008.body.immovable = true;
 		wall_level_1__0008.body.setSize(10, 43, false);
 		walls_layer.add(wall_level_1__0008);
 
 		// wall_level_1__0009
-		const wall_level_1__0009 = this.physics.add.image(427, 216, "wall_level_1__0009");
+		const wall_level_1__0009 = this.physics.add.image(
+			427,
+			216,
+			"wall_level_1__0009"
+		);
 		wall_level_1__0009.body.immovable = true;
 		wall_level_1__0009.body.setSize(79, 7, false);
 		walls_layer.add(wall_level_1__0009);
 
 		// wall_level_1__0010_Layer_3
-		const wall_level_1__0010_Layer_3 = this.physics.add.image(512, 327, "wall_level_1__0010_Layer-3");
+		const wall_level_1__0010_Layer_3 = this.physics.add.image(
+			512,
+			327,
+			"wall_level_1__0010_Layer-3"
+		);
 		wall_level_1__0010_Layer_3.body.immovable = true;
 		wall_level_1__0010_Layer_3.body.setSize(8, 293, false);
 		walls_layer.add(wall_level_1__0010_Layer_3);
 
 		// wall_level_1__0011_Layer_4
-		const wall_level_1__0011_Layer_4 = this.physics.add.image(534, 218, "wall_level_1__0011_Layer-4");
+		const wall_level_1__0011_Layer_4 = this.physics.add.image(
+			534,
+			218,
+			"wall_level_1__0011_Layer-4"
+		);
 		wall_level_1__0011_Layer_4.body.immovable = true;
 		wall_level_1__0011_Layer_4.body.setSize(38, 7, false);
 		walls_layer.add(wall_level_1__0011_Layer_4);
 
 		// wall_level_1__0012_Layer_5
-		const wall_level_1__0012_Layer_5 = this.physics.add.image(614, 217, "wall_level_1__0012_Layer-5");
+		const wall_level_1__0012_Layer_5 = this.physics.add.image(
+			614,
+			217,
+			"wall_level_1__0012_Layer-5"
+		);
 		wall_level_1__0012_Layer_5.body.immovable = true;
 		wall_level_1__0012_Layer_5.body.setSize(39, 7, false);
 		walls_layer.add(wall_level_1__0012_Layer_5);
 
 		// wall_level_1__0013_Layer_6
-		const wall_level_1__0013_Layer_6 = this.physics.add.image(635, 238, "wall_level_1__0013_Layer-6");
+		const wall_level_1__0013_Layer_6 = this.physics.add.image(
+			635,
+			238,
+			"wall_level_1__0013_Layer-6"
+		);
 		wall_level_1__0013_Layer_6.body.immovable = true;
 		wall_level_1__0013_Layer_6.body.setSize(7, 49, false);
 		walls_layer.add(wall_level_1__0013_Layer_6);
 
 		// wall_level_1__0014_Layer_7
-		const wall_level_1__0014_Layer_7 = this.physics.add.image(755, 259, "wall_level_1__0014_Layer-7");
+		const wall_level_1__0014_Layer_7 = this.physics.add.image(
+			755,
+			259,
+			"wall_level_1__0014_Layer-7"
+		);
 		wall_level_1__0014_Layer_7.body.immovable = true;
 		wall_level_1__0014_Layer_7.body.setSize(247, 7, false);
 		walls_layer.add(wall_level_1__0014_Layer_7);
 
 		// wall_level_1__0015_Layer_8
-		const wall_level_1__0015_Layer_8 = this.physics.add.image(803, 217, "wall_level_1__0015_Layer-8");
+		const wall_level_1__0015_Layer_8 = this.physics.add.image(
+			803,
+			217,
+			"wall_level_1__0015_Layer-8"
+		);
 		wall_level_1__0015_Layer_8.body.immovable = true;
 		wall_level_1__0015_Layer_8.body.setSize(250, 8, false);
 		walls_layer.add(wall_level_1__0015_Layer_8);
 
 		// wall_level_1__0016_Layer_9
-		const wall_level_1__0016_Layer_9 = this.physics.add.image(883, 275, "wall_level_1__0016_Layer-9");
+		const wall_level_1__0016_Layer_9 = this.physics.add.image(
+			883,
+			275,
+			"wall_level_1__0016_Layer-9"
+		);
 		wall_level_1__0016_Layer_9.body.immovable = true;
 		wall_level_1__0016_Layer_9.body.setSize(7, 40, false);
 		walls_layer.add(wall_level_1__0016_Layer_9);
 
 		// wall_level_1__0017_Layer_10
-		const wall_level_1__0017_Layer_10 = this.physics.add.image(803, 299, "wall_level_1__0017_Layer-10");
+		const wall_level_1__0017_Layer_10 = this.physics.add.image(
+			803,
+			299,
+			"wall_level_1__0017_Layer-10"
+		);
 		wall_level_1__0017_Layer_10.body.immovable = true;
 		wall_level_1__0017_Layer_10.body.setSize(167, 7, false);
 		walls_layer.add(wall_level_1__0017_Layer_10);
 
 		// wall_level_1__0018_Layer_11
-		const wall_level_1__0018_Layer_11 = this.physics.add.image(720, 380, "wall_level_1__0018_Layer-11");
+		const wall_level_1__0018_Layer_11 = this.physics.add.image(
+			720,
+			380,
+			"wall_level_1__0018_Layer-11"
+		);
 		wall_level_1__0018_Layer_11.body.immovable = true;
 		wall_level_1__0018_Layer_11.body.setSize(7, 167, false);
 		walls_layer.add(wall_level_1__0018_Layer_11);
 
 		// wall_level_1__0019_Layer_12
-		const wall_level_1__0019_Layer_12 = this.physics.add.image(824, 342, "wall_level_1__0019_Layer-12");
+		const wall_level_1__0019_Layer_12 = this.physics.add.image(
+			824,
+			342,
+			"wall_level_1__0019_Layer-12"
+		);
 		wall_level_1__0019_Layer_12.body.immovable = true;
 		wall_level_1__0019_Layer_12.body.setSize(201, 7, false);
 		walls_layer.add(wall_level_1__0019_Layer_12);
 
 		// wall_level_1__0020_Layer_13
-		const wall_level_1__0020_Layer_13 = this.physics.add.image(843, 384, "wall_level_1__0020_Layer-13");
+		const wall_level_1__0020_Layer_13 = this.physics.add.image(
+			843,
+			384,
+			"wall_level_1__0020_Layer-13"
+		);
 		wall_level_1__0020_Layer_13.body.immovable = true;
 		wall_level_1__0020_Layer_13.body.setSize(166, 8, false);
 		walls_layer.add(wall_level_1__0020_Layer_13);
 
 		// wall_level_1__0021_Layer_14
-		const wall_level_1__0021_Layer_14 = this.physics.add.image(763, 402, "wall_level_1__0021_Layer-14");
+		const wall_level_1__0021_Layer_14 = this.physics.add.image(
+			763,
+			402,
+			"wall_level_1__0021_Layer-14"
+		);
 		wall_level_1__0021_Layer_14.body.immovable = true;
 		wall_level_1__0021_Layer_14.body.setSize(7, 41, false);
 		walls_layer.add(wall_level_1__0021_Layer_14);
 
 		// wall_level_1__0022_Layer_15
-		const wall_level_1__0022_Layer_15 = this.physics.add.image(821, 424, "wall_level_1__0022_Layer-15");
+		const wall_level_1__0022_Layer_15 = this.physics.add.image(
+			821,
+			424,
+			"wall_level_1__0022_Layer-15"
+		);
 		wall_level_1__0022_Layer_15.body.immovable = true;
 		wall_level_1__0022_Layer_15.body.setSize(122, 8, false);
 		walls_layer.add(wall_level_1__0022_Layer_15);
 
 		// wall_level_1__0023_Layer_16
-		const wall_level_1__0023_Layer_16 = this.physics.add.image(757, 466, "wall_level_1__0023_Layer-16");
+		const wall_level_1__0023_Layer_16 = this.physics.add.image(
+			757,
+			466,
+			"wall_level_1__0023_Layer-16"
+		);
 		wall_level_1__0023_Layer_16.body.immovable = true;
 		wall_level_1__0023_Layer_16.body.setSize(80, 7, false);
 		walls_layer.add(wall_level_1__0023_Layer_16);
 
 		// wall_level_1__0024_Layer_17
-		const wall_level_1__0024_Layer_17 = this.physics.add.image(905, 466, "wall_level_1__0024_Layer-17");
+		const wall_level_1__0024_Layer_17 = this.physics.add.image(
+			905,
+			466,
+			"wall_level_1__0024_Layer-17"
+		);
 		wall_level_1__0024_Layer_17.body.immovable = true;
 		wall_level_1__0024_Layer_17.body.setSize(38, 7, false);
 		walls_layer.add(wall_level_1__0024_Layer_17);
 
 		// wall_level_1__0025_Layer_18
-		const wall_level_1__0025_Layer_18 = this.physics.add.image(804, 508, "wall_level_1__0025_Layer-18");
+		const wall_level_1__0025_Layer_18 = this.physics.add.image(
+			804,
+			508,
+			"wall_level_1__0025_Layer-18"
+		);
 		wall_level_1__0025_Layer_18.body.immovable = true;
 		wall_level_1__0025_Layer_18.body.setSize(168, 8, false);
 		walls_layer.add(wall_level_1__0025_Layer_18);
 
 		// wall_level_1__0026_Layer_19
-		const wall_level_1__0026_Layer_19 = this.physics.add.image(845, 466, "wall_level_1__0026_Layer-19");
+		const wall_level_1__0026_Layer_19 = this.physics.add.image(
+			845,
+			466,
+			"wall_level_1__0026_Layer-19"
+		);
 		wall_level_1__0026_Layer_19.body.immovable = true;
 		wall_level_1__0026_Layer_19.body.setSize(7, 74, false);
 		walls_layer.add(wall_level_1__0026_Layer_19);
 
 		// wall_level_1__0028_Layer_21
-		const wall_level_1__0028_Layer_21 = this.physics.add.image(680, 527, "wall_level_1__0028_Layer-21");
+		const wall_level_1__0028_Layer_21 = this.physics.add.image(
+			680,
+			527,
+			"wall_level_1__0028_Layer-21"
+		);
 		wall_level_1__0028_Layer_21.body.immovable = true;
 		wall_level_1__0028_Layer_21.body.setSize(7, 39, false);
 		walls_layer.add(wall_level_1__0028_Layer_21);
 
 		// wall_level_1__0029_Layer_22
-		const wall_level_1__0029_Layer_22 = this.physics.add.image(678, 382, "wall_level_1__0029_Layer-22");
+		const wall_level_1__0029_Layer_22 = this.physics.add.image(
+			678,
+			382,
+			"wall_level_1__0029_Layer-22"
+		);
 		wall_level_1__0029_Layer_22.body.immovable = true;
 		wall_level_1__0029_Layer_22.body.setSize(7, 171, false);
 		walls_layer.add(wall_level_1__0029_Layer_22);
 
 		// wall_level_1__0030_Layer_23
-		const wall_level_1__0030_Layer_23 = this.physics.add.image(638, 301, "wall_level_1__0030_Layer-23");
+		const wall_level_1__0030_Layer_23 = this.physics.add.image(
+			638,
+			301,
+			"wall_level_1__0030_Layer-23"
+		);
 		wall_level_1__0030_Layer_23.body.immovable = true;
 		wall_level_1__0030_Layer_23.body.setSize(83, 8, false);
 		walls_layer.add(wall_level_1__0030_Layer_23);
 
 		// wall_level_1__0031_Layer_24
-		const wall_level_1__0031_Layer_24 = this.physics.add.image(595, 285, "wall_level_1__0031_Layer-24");
+		const wall_level_1__0031_Layer_24 = this.physics.add.image(
+			595,
+			285,
+			"wall_level_1__0031_Layer-24"
+		);
 		wall_level_1__0031_Layer_24.body.immovable = true;
 		wall_level_1__0031_Layer_24.body.setSize(8, 40, false);
 		walls_layer.add(wall_level_1__0031_Layer_24);
 
 		// wall_level_1__0032_Layer_25
-		const wall_level_1__0032_Layer_25 = this.physics.add.image(574, 262, "wall_level_1__0032_Layer-25");
+		const wall_level_1__0032_Layer_25 = this.physics.add.image(
+			574,
+			262,
+			"wall_level_1__0032_Layer-25"
+		);
 		wall_level_1__0032_Layer_25.body.immovable = true;
 		wall_level_1__0032_Layer_25.body.setSize(34, 14, false);
 		walls_layer.add(wall_level_1__0032_Layer_25);
 
 		// wall_level_1__0033_Layer_26
-		const wall_level_1__0033_Layer_26 = this.physics.add.image(554, 342, "wall_level_1__0033_Layer-26");
+		const wall_level_1__0033_Layer_26 = this.physics.add.image(
+			554,
+			342,
+			"wall_level_1__0033_Layer-26"
+		);
 		wall_level_1__0033_Layer_26.body.immovable = true;
 		wall_level_1__0033_Layer_26.body.setSize(7, 173, false);
 		walls_layer.add(wall_level_1__0033_Layer_26);
 
 		// wall_level_1__0034_Layer_27
-		const wall_level_1__0034_Layer_27 = this.physics.add.image(595, 425, "wall_level_1__0034_Layer-27");
+		const wall_level_1__0034_Layer_27 = this.physics.add.image(
+			595,
+			425,
+			"wall_level_1__0034_Layer-27"
+		);
 		wall_level_1__0034_Layer_27.body.immovable = true;
 		wall_level_1__0034_Layer_27.body.setSize(76, 7, false);
 		walls_layer.add(wall_level_1__0034_Layer_27);
 
 		// wall_level_1__0035_Layer_28
-		const wall_level_1__0035_Layer_28 = this.physics.add.image(597, 361, "wall_level_1__0035_Layer-28");
+		const wall_level_1__0035_Layer_28 = this.physics.add.image(
+			597,
+			361,
+			"wall_level_1__0035_Layer-28"
+		);
 		wall_level_1__0035_Layer_28.body.immovable = true;
 		wall_level_1__0035_Layer_28.body.setSize(8, 45, false);
 		walls_layer.add(wall_level_1__0035_Layer_28);
 
 		// wall_level_1__0036_Layer_29
-		const wall_level_1__0036_Layer_29 = this.physics.add.image(616, 342, "wall_level_1__0036_Layer-29");
+		const wall_level_1__0036_Layer_29 = this.physics.add.image(
+			616,
+			342,
+			"wall_level_1__0036_Layer-29"
+		);
 		wall_level_1__0036_Layer_29.body.immovable = true;
 		wall_level_1__0036_Layer_29.body.setSize(34, 7, false);
 		walls_layer.add(wall_level_1__0036_Layer_29);
 
 		// wall_level_1__0037_Layer_30
-		const wall_level_1__0037_Layer_30 = this.physics.add.image(637, 445, "wall_level_1__0037_Layer-30");
+		const wall_level_1__0037_Layer_30 = this.physics.add.image(
+			637,
+			445,
+			"wall_level_1__0037_Layer-30"
+		);
 		wall_level_1__0037_Layer_30.body.immovable = true;
 		wall_level_1__0037_Layer_30.body.setSize(7, 212, false);
 		walls_layer.add(wall_level_1__0037_Layer_30);
 
 		// wall_level_1__0038_Layer_31
-		const wall_level_1__0038_Layer_31 = this.physics.add.image(557, 470, "wall_level_1__0038_Layer-31");
+		const wall_level_1__0038_Layer_31 = this.physics.add.image(
+			557,
+			470,
+			"wall_level_1__0038_Layer-31"
+		);
 		wall_level_1__0038_Layer_31.body.immovable = true;
 		wall_level_1__0038_Layer_31.body.setSize(82, 7, false);
 		walls_layer.add(wall_level_1__0038_Layer_31);
 
 		// wall_level_1__0039_Layer_32
-		const wall_level_1__0039_Layer_32 = this.physics.add.image(594, 515, "wall_level_1__0039_Layer-32");
+		const wall_level_1__0039_Layer_32 = this.physics.add.image(
+			594,
+			515,
+			"wall_level_1__0039_Layer-32"
+		);
 		wall_level_1__0039_Layer_32.body.immovable = true;
 		wall_level_1__0039_Layer_32.body.setSize(8, 83, false);
 		walls_layer.add(wall_level_1__0039_Layer_32);
 
 		// wall_level_1__0040_Layer_33
-		const wall_level_1__0040_Layer_33 = this.physics.add.image(532, 508, "wall_level_1__0040_Layer-33");
+		const wall_level_1__0040_Layer_33 = this.physics.add.image(
+			532,
+			508,
+			"wall_level_1__0040_Layer-33"
+		);
 		wall_level_1__0040_Layer_33.body.immovable = true;
 		wall_level_1__0040_Layer_33.body.setSize(46, 7, false);
 		walls_layer.add(wall_level_1__0040_Layer_33);
 
 		// wall_level_1__0041_Layer_34
-		const wall_level_1__0041_Layer_34 = this.physics.add.image(550, 553, "wall_level_1__0041_Layer-34");
+		const wall_level_1__0041_Layer_34 = this.physics.add.image(
+			550,
+			553,
+			"wall_level_1__0041_Layer-34"
+		);
 		wall_level_1__0041_Layer_34.body.immovable = true;
 		wall_level_1__0041_Layer_34.body.setSize(82, 7, false);
 		walls_layer.add(wall_level_1__0041_Layer_34);
 
 		// wall_level_1__0042_Layer_35
-		const wall_level_1__0042_Layer_35 = this.physics.add.image(513, 530, "wall_level_1__0042_Layer-35");
+		const wall_level_1__0042_Layer_35 = this.physics.add.image(
+			513,
+			530,
+			"wall_level_1__0042_Layer-35"
+		);
 		wall_level_1__0042_Layer_35.body.immovable = true;
 		wall_level_1__0042_Layer_35.body.setSize(7, 35, false);
 		walls_layer.add(wall_level_1__0042_Layer_35);
 
 		// wall_level_1__0043_Layer_36
-		const wall_level_1__0043_Layer_36 = this.physics.add.image(407, 550, "wall_level_1__0043_Layer-36");
+		const wall_level_1__0043_Layer_36 = this.physics.add.image(
+			407,
+			550,
+			"wall_level_1__0043_Layer-36"
+		);
 		wall_level_1__0043_Layer_36.body.immovable = true;
 		wall_level_1__0043_Layer_36.body.setSize(129, 8, false);
 		walls_layer.add(wall_level_1__0043_Layer_36);
 
 		// wall_level_1__0044_Layer_37
-		const wall_level_1__0044_Layer_37 = this.physics.add.image(346, 526, "wall_level_1__0044_Layer-37");
+		const wall_level_1__0044_Layer_37 = this.physics.add.image(
+			346,
+			526,
+			"wall_level_1__0044_Layer-37"
+		);
 		wall_level_1__0044_Layer_37.body.immovable = true;
 		wall_level_1__0044_Layer_37.body.setSize(7, 41, false);
 		walls_layer.add(wall_level_1__0044_Layer_37);
 
 		// wall_level_1__0045_Layer_38
-		const wall_level_1__0045_Layer_38 = this.physics.add.image(280, 510, "wall_level_1__0045_Layer-38");
+		const wall_level_1__0045_Layer_38 = this.physics.add.image(
+			280,
+			510,
+			"wall_level_1__0045_Layer-38"
+		);
 		wall_level_1__0045_Layer_38.body.immovable = true;
 		wall_level_1__0045_Layer_38.body.setSize(124, 7, false);
 		walls_layer.add(wall_level_1__0045_Layer_38);
 
 		// wall_level_1__0046_Layer_39
-		const wall_level_1__0046_Layer_39 = this.physics.add.image(303, 570, "wall_level_1__0046_Layer-39");
+		const wall_level_1__0046_Layer_39 = this.physics.add.image(
+			303,
+			570,
+			"wall_level_1__0046_Layer-39"
+		);
 		wall_level_1__0046_Layer_39.body.immovable = true;
 		wall_level_1__0046_Layer_39.body.setSize(9, 36, false);
 		walls_layer.add(wall_level_1__0046_Layer_39);
 
 		// wall_level_1__0047_Layer_40
-		const wall_level_1__0047_Layer_40 = this.physics.add.image(203, 549, "wall_level_1__0047_Layer-40");
+		const wall_level_1__0047_Layer_40 = this.physics.add.image(
+			203,
+			549,
+			"wall_level_1__0047_Layer-40"
+		);
 		wall_level_1__0047_Layer_40.body.immovable = true;
 		wall_level_1__0047_Layer_40.body.setSize(208, 8, false);
 		walls_layer.add(wall_level_1__0047_Layer_40);
 
 		// wall_level_1__0048_Layer_41
-		const wall_level_1__0048_Layer_41 = this.physics.add.image(137, 506, "wall_level_1__0048_Layer-41");
+		const wall_level_1__0048_Layer_41 = this.physics.add.image(
+			137,
+			506,
+			"wall_level_1__0048_Layer-41"
+		);
 		wall_level_1__0048_Layer_41.body.immovable = true;
 		wall_level_1__0048_Layer_41.body.setSize(7, 79, false);
 		walls_layer.add(wall_level_1__0048_Layer_41);
 
 		// wall_level_1__0049_Layer_42
-		const wall_level_1__0049_Layer_42 = this.physics.add.image(428, 383, "wall_level_1__0049_Layer-42");
+		const wall_level_1__0049_Layer_42 = this.physics.add.image(
+			428,
+			383,
+			"wall_level_1__0049_Layer-42"
+		);
 		wall_level_1__0049_Layer_42.body.immovable = true;
 		wall_level_1__0049_Layer_42.body.setSize(7, 170, false);
 		walls_layer.add(wall_level_1__0049_Layer_42);
 
 		// wall_level_1__0050_Layer_43
-		const wall_level_1__0050_Layer_43 = this.physics.add.image(426, 509, "wall_level_1__0050_Layer-43");
+		const wall_level_1__0050_Layer_43 = this.physics.add.image(
+			426,
+			509,
+			"wall_level_1__0050_Layer-43"
+		);
 		wall_level_1__0050_Layer_43.body.immovable = true;
 		wall_level_1__0050_Layer_43.body.setSize(83, 8, false);
 		walls_layer.add(wall_level_1__0050_Layer_43);
 
 		// wall_level_1__0051_Layer_44
-		const wall_level_1__0051_Layer_44 = this.physics.add.image(469, 427, "wall_level_1__0051_Layer-44");
+		const wall_level_1__0051_Layer_44 = this.physics.add.image(
+			469,
+			427,
+			"wall_level_1__0051_Layer-44"
+		);
 		wall_level_1__0051_Layer_44.body.immovable = true;
 		wall_level_1__0051_Layer_44.body.setSize(7, 171, false);
 		walls_layer.add(wall_level_1__0051_Layer_44);
 
 		// wall_level_1__0052_Layer_45
-		const wall_level_1__0052_Layer_45 = this.physics.add.image(451, 301, "wall_level_1__0052_Layer-45");
+		const wall_level_1__0052_Layer_45 = this.physics.add.image(
+			451,
+			301,
+			"wall_level_1__0052_Layer-45"
+		);
 		wall_level_1__0052_Layer_45.body.immovable = true;
 		wall_level_1__0052_Layer_45.body.setSize(38, 7, false);
 		walls_layer.add(wall_level_1__0052_Layer_45);
 
 		// wall_level_1__0053_Layer_46
-		const wall_level_1__0053_Layer_46 = this.physics.add.image(427, 260, "wall_level_1__0053_Layer-46");
+		const wall_level_1__0053_Layer_46 = this.physics.add.image(
+			427,
+			260,
+			"wall_level_1__0053_Layer-46"
+		);
 		wall_level_1__0053_Layer_46.body.immovable = true;
 		wall_level_1__0053_Layer_46.body.setSize(167, 8, false);
 		walls_layer.add(wall_level_1__0053_Layer_46);
 
 		// wall_level_1__0054_Layer_47
-		const wall_level_1__0054_Layer_47 = this.physics.add.image(388, 402, "wall_level_1__0054_Layer-47");
+		const wall_level_1__0054_Layer_47 = this.physics.add.image(
+			388,
+			402,
+			"wall_level_1__0054_Layer-47"
+		);
 		wall_level_1__0054_Layer_47.body.immovable = true;
 		wall_level_1__0054_Layer_47.body.setSize(8, 204, false);
 		walls_layer.add(wall_level_1__0054_Layer_47);
 
 		// wall_level_1__0055_Layer_48
-		const wall_level_1__0055_Layer_48 = this.physics.add.image(322, 466, "wall_level_1__0055_Layer-48");
+		const wall_level_1__0055_Layer_48 = this.physics.add.image(
+			322,
+			466,
+			"wall_level_1__0055_Layer-48"
+		);
 		wall_level_1__0055_Layer_48.body.immovable = true;
 		wall_level_1__0055_Layer_48.body.setSize(124, 8, false);
 		walls_layer.add(wall_level_1__0055_Layer_48);
 
 		// wall_level_1__0056_Layer_49
-		const wall_level_1__0056_Layer_49 = this.physics.add.image(265, 442, "wall_level_1__0056_Layer-49");
+		const wall_level_1__0056_Layer_49 = this.physics.add.image(
+			265,
+			442,
+			"wall_level_1__0056_Layer-49"
+		);
 		wall_level_1__0056_Layer_49.body.immovable = true;
 		wall_level_1__0056_Layer_49.body.setSize(8, 41, false);
 		walls_layer.add(wall_level_1__0056_Layer_49);
 
 		// wall_level_1__0057_Layer_50
-		const wall_level_1__0057_Layer_50 = this.physics.add.image(308, 427, "wall_level_1__0057_Layer-50");
+		const wall_level_1__0057_Layer_50 = this.physics.add.image(
+			308,
+			427,
+			"wall_level_1__0057_Layer-50"
+		);
 		wall_level_1__0057_Layer_50.body.immovable = true;
 		wall_level_1__0057_Layer_50.body.setSize(82, 8, false);
 		walls_layer.add(wall_level_1__0057_Layer_50);
 
 		// wall_level_1__0058_Layer_51
-		const wall_level_1__0058_Layer_51 = this.physics.add.image(347, 344, "wall_level_1__0058_Layer-51");
+		const wall_level_1__0058_Layer_51 = this.physics.add.image(
+			347,
+			344,
+			"wall_level_1__0058_Layer-51"
+		);
 		wall_level_1__0058_Layer_51.body.immovable = true;
 		wall_level_1__0058_Layer_51.body.setSize(7, 157, false);
 		walls_layer.add(wall_level_1__0058_Layer_51);
 
 		// wall_level_1__0059_Layer_52
-		const wall_level_1__0059_Layer_52 = this.physics.add.image(265, 260, "wall_level_1__0059_Layer-52");
+		const wall_level_1__0059_Layer_52 = this.physics.add.image(
+			265,
+			260,
+			"wall_level_1__0059_Layer-52"
+		);
 		wall_level_1__0059_Layer_52.body.immovable = true;
 		wall_level_1__0059_Layer_52.body.setSize(87, 8, false);
 		walls_layer.add(wall_level_1__0059_Layer_52);
 
 		// wall_level_1__0060_Layer_53
-		const wall_level_1__0060_Layer_53 = this.physics.add.image(303, 325, "wall_level_1__0060_Layer-53");
+		const wall_level_1__0060_Layer_53 = this.physics.add.image(
+			303,
+			325,
+			"wall_level_1__0060_Layer-53"
+		);
 		wall_level_1__0060_Layer_53.body.immovable = true;
 		wall_level_1__0060_Layer_53.body.setSize(8, 123, false);
 		walls_layer.add(wall_level_1__0060_Layer_53);
 
 		// wall_level_1__0061_Layer_54
-		const wall_level_1__0061_Layer_54 = this.physics.add.image(261, 383, "wall_level_1__0061_Layer-54");
+		const wall_level_1__0061_Layer_54 = this.physics.add.image(
+			261,
+			383,
+			"wall_level_1__0061_Layer-54"
+		);
 		wall_level_1__0061_Layer_54.body.immovable = true;
 		wall_level_1__0061_Layer_54.body.setSize(76, 7, false);
 		walls_layer.add(wall_level_1__0061_Layer_54);
 
 		// wall_level_1__0062_Layer_55
-		const wall_level_1__0062_Layer_55 = this.physics.add.image(183, 301, "wall_level_1__0062_Layer-55");
+		const wall_level_1__0062_Layer_55 = this.physics.add.image(
+			183,
+			301,
+			"wall_level_1__0062_Layer-55"
+		);
 		wall_level_1__0062_Layer_55.body.immovable = true;
 		wall_level_1__0062_Layer_55.body.setSize(166, 8, false);
 		walls_layer.add(wall_level_1__0062_Layer_55);
 
 		// wall_level_1__0063_Layer_56
-		const wall_level_1__0063_Layer_56 = this.physics.add.image(261, 325, "wall_level_1__0063_Layer-56");
+		const wall_level_1__0063_Layer_56 = this.physics.add.image(
+			261,
+			325,
+			"wall_level_1__0063_Layer-56"
+		);
 		wall_level_1__0063_Layer_56.body.immovable = true;
 		wall_level_1__0063_Layer_56.body.setSize(7, 38, false);
 		walls_layer.add(wall_level_1__0063_Layer_56);
 
 		// wall_level_1__0064_Layer_57
-		const wall_level_1__0064_Layer_57 = this.physics.add.image(179, 343, "wall_level_1__0064_Layer-57");
+		const wall_level_1__0064_Layer_57 = this.physics.add.image(
+			179,
+			343,
+			"wall_level_1__0064_Layer-57"
+		);
 		wall_level_1__0064_Layer_57.body.immovable = true;
 		wall_level_1__0064_Layer_57.body.setSize(91, 8, false);
 		walls_layer.add(wall_level_1__0064_Layer_57);
 
 		// wall_level_1__0065_Layer_58
-		const wall_level_1__0065_Layer_58 = this.physics.add.image(138, 367, "wall_level_1__0065_Layer-58");
+		const wall_level_1__0065_Layer_58 = this.physics.add.image(
+			138,
+			367,
+			"wall_level_1__0065_Layer-58"
+		);
 		wall_level_1__0065_Layer_58.body.immovable = true;
 		wall_level_1__0065_Layer_58.body.setSize(8, 40, false);
 		walls_layer.add(wall_level_1__0065_Layer_58);
 
 		// wall_level_1__0066_Layer_59
-		const wall_level_1__0066_Layer_59 = this.physics.add.image(161, 383, "wall_level_1__0066_Layer-59");
+		const wall_level_1__0066_Layer_59 = this.physics.add.image(
+			161,
+			383,
+			"wall_level_1__0066_Layer-59"
+		);
 		wall_level_1__0066_Layer_59.body.immovable = true;
 		wall_level_1__0066_Layer_59.body.setSize(38, 7, false);
 		walls_layer.add(wall_level_1__0066_Layer_59);
 
 		// wall_level_1__0067_Layer_60
-		const wall_level_1__0067_Layer_60 = this.physics.add.image(220, 427, "wall_level_1__0067_Layer-60");
+		const wall_level_1__0067_Layer_60 = this.physics.add.image(
+			220,
+			427,
+			"wall_level_1__0067_Layer-60"
+		);
 		wall_level_1__0067_Layer_60.body.immovable = true;
 		wall_level_1__0067_Layer_60.body.setSize(7, 158, false);
 		walls_layer.add(wall_level_1__0067_Layer_60);
 
 		// wall_level_1__0068_Layer_61
-		const wall_level_1__0068_Layer_61 = this.physics.add.image(159, 425, "wall_level_1__0068_Layer-61");
+		const wall_level_1__0068_Layer_61 = this.physics.add.image(
+			159,
+			425,
+			"wall_level_1__0068_Layer-61"
+		);
 		wall_level_1__0068_Layer_61.body.immovable = true;
 		wall_level_1__0068_Layer_61.body.setSize(118, 7, false);
 		walls_layer.add(wall_level_1__0068_Layer_61);
 
 		// wall_level_1__0069_Layer_62
-		const wall_level_1__0069_Layer_62 = this.physics.add.image(181, 468, "wall_level_1__0069_Layer-62");
+		const wall_level_1__0069_Layer_62 = this.physics.add.image(
+			181,
+			468,
+			"wall_level_1__0069_Layer-62"
+		);
 		wall_level_1__0069_Layer_62.body.immovable = true;
 		wall_level_1__0069_Layer_62.body.setSize(7, 80, false);
 		walls_layer.add(wall_level_1__0069_Layer_62);
@@ -1288,7 +1554,7 @@ export default class LevelOne extends Phaser.Scene {
 		// timer
 		const timer = new TimerPrefab(this, 852, 98);
 		this.add.existing(timer);
-		timer.setStyle({  });
+		timer.setStyle({});
 
 		// levelClearPrefab
 		const levelClearPrefab = new LevelClearPrefab(this, 0, 768);
@@ -1299,8 +1565,279 @@ export default class LevelOne extends Phaser.Scene {
 		this.add.existing(gameOverPrefab);
 
 		// lists
-		const walls = [wall_level_1__0000, wall_level, wall_level_1__0001, wall_level_1, wall_level_1__0004, wall_level_2, wall_level_1__0006, wall_level_1__0007, wall_level_1__0008, wall_level_1__0009, wall_level_1__0010_Layer_3, wall_level_1__0011_Layer_4, wall_level_1__0012_Layer_5, wall_level_1__0014_Layer_7, wall_level_1__0013_Layer_6, wall_level_1__0015_Layer_8, wall_level_1__0016_Layer_9, wall_level_1__0017_Layer_10, wall_level_1__0018_Layer_11, wall_level_1__0019_Layer_12, wall_level_1__0020_Layer_13, wall_level_1__0021_Layer_14, wall_level_1__0022_Layer_15, wall_level_1__0023_Layer_16, wall_level_1__0024_Layer_17, wall_level_1__0025_Layer_18, wall_level_1__0026_Layer_19, wall_level_1__0027_Layer_20, wall_level_1__0028_Layer_21, wall_level_1__0037_Layer_30, wall_level_1__0036_Layer_29, wall_level_1__0035_Layer_28, wall_level_1__0034_Layer_27, wall_level_1__0033_Layer_26, wall_level_1__0032_Layer_25, wall_level_1__0031_Layer_24, wall_level_1__0030_Layer_23, wall_level_1__0029_Layer_22, wall_level_1__0047_Layer_40, wall_level_1__0046_Layer_39, wall_level_1__0045_Layer_38, wall_level_1__0044_Layer_37, wall_level_1__0043_Layer_36, wall_level_1__0042_Layer_35, wall_level_1__0041_Layer_34, wall_level_1__0040_Layer_33, wall_level_1__0039_Layer_32, wall_level_1__0038_Layer_31, wall_level_1__0048_Layer_41, wall_level_1__0057_Layer_50, wall_level_1__0056_Layer_49, wall_level_1__0055_Layer_48, wall_level_1__0054_Layer_47, wall_level_1__0053_Layer_46, wall_level_1__0052_Layer_45, wall_level_1__0051_Layer_44, wall_level_1__0050_Layer_43, wall_level_1__0049_Layer_42, wall_level_1__0069_Layer_62, wall_level_1__0068_Layer_61, wall_level_1__0067_Layer_60, wall_level_1__0066_Layer_59, wall_level_1__0065_Layer_58, wall_level_1__0064_Layer_57, wall_level_1__0063_Layer_56, wall_level_1__0062_Layer_55, wall_level_1__0061_Layer_54, wall_level_1__0060_Layer_53, wall_level_1__0059_Layer_52, wall_level_1__0058_Layer_51];
-		const roads = [road_5, road_18, road_17, road_16, road_15, road_14, road_13, road_12, road_11, road_10, road_9, road_8, road_7, road_6, road_4, road_3, road_2, road_1, road, road_19, road_20, road_21, road_22, road_23, road_24, road_25, road_26, road_27, road_28, road_29, road_30, road_31, road_32, road_33, road_34, road_35, road_36, road_37, road_38, road_39, road_40, road_41, road_42, road_43, road_44, road_45, road_46, road_47, road_48, road_49, road_50, road_51, road_52, road_53, road_54, road_55, road_56, road_57, road_58, road_59, road_60, road_61, road_62, road_63, road_64, road_65, road_66, road_67, road_68, road_69, road_70, road_71, road_72, road_73, road_74, road_75, road_76, road_77, road_78, road_79, road_80, road_81, road_82, road_83, road_84, road_85, road_86, road_87, road_88, road_89, road_90, road_91, road_92, road_93, road_94, road_95, road_96, road_97, road_98, road_99, road_100, road_101, road_102, road_103, road_104, road_105, road_106, road_107, road_108, road_109, road_110, road_111, road_112, road_113, road_114, road_115, road_116, road_117, road_118, road_119, road_120, road_121, road_122, road_123, road_124, road_125, road_126, road_127, road_128, road_129, road_130, road_131, road_132, road_133, road_134, road_135, road_136, road_137, road_138, road_139, road_140, road_141, road_142, road_143, road_144, road_145, road_146, road_147, road_148, road_149, road_150, road_151, road_152, road_153, road_154, road_155, road_156, road_157, road_158, road_159, road_160, road_161, road_162, road_163, road_164, road_165, road_166, road_167, road_168, road_169, road_170, road_171, road_172, road_173, road_174, road_175, road_176, road_177, road_178, road_179, road_180, road_181, road_182, road_183, road_184, road_185, road_186, road_187, road_188, road_189, road_190, road_191, road_192, road_193, road_194, road_195, road_196, road_197, road_198];
+		const walls = [
+			wall_level_1__0000,
+			wall_level,
+			wall_level_1__0001,
+			wall_level_1,
+			wall_level_1__0004,
+			wall_level_2,
+			wall_level_1__0006,
+			wall_level_1__0007,
+			wall_level_1__0008,
+			wall_level_1__0009,
+			wall_level_1__0010_Layer_3,
+			wall_level_1__0011_Layer_4,
+			wall_level_1__0012_Layer_5,
+			wall_level_1__0014_Layer_7,
+			wall_level_1__0013_Layer_6,
+			wall_level_1__0015_Layer_8,
+			wall_level_1__0016_Layer_9,
+			wall_level_1__0017_Layer_10,
+			wall_level_1__0018_Layer_11,
+			wall_level_1__0019_Layer_12,
+			wall_level_1__0020_Layer_13,
+			wall_level_1__0021_Layer_14,
+			wall_level_1__0022_Layer_15,
+			wall_level_1__0023_Layer_16,
+			wall_level_1__0024_Layer_17,
+			wall_level_1__0025_Layer_18,
+			wall_level_1__0026_Layer_19,
+			wall_level_1__0027_Layer_20,
+			wall_level_1__0028_Layer_21,
+			wall_level_1__0037_Layer_30,
+			wall_level_1__0036_Layer_29,
+			wall_level_1__0035_Layer_28,
+			wall_level_1__0034_Layer_27,
+			wall_level_1__0033_Layer_26,
+			wall_level_1__0032_Layer_25,
+			wall_level_1__0031_Layer_24,
+			wall_level_1__0030_Layer_23,
+			wall_level_1__0029_Layer_22,
+			wall_level_1__0047_Layer_40,
+			wall_level_1__0046_Layer_39,
+			wall_level_1__0045_Layer_38,
+			wall_level_1__0044_Layer_37,
+			wall_level_1__0043_Layer_36,
+			wall_level_1__0042_Layer_35,
+			wall_level_1__0041_Layer_34,
+			wall_level_1__0040_Layer_33,
+			wall_level_1__0039_Layer_32,
+			wall_level_1__0038_Layer_31,
+			wall_level_1__0048_Layer_41,
+			wall_level_1__0057_Layer_50,
+			wall_level_1__0056_Layer_49,
+			wall_level_1__0055_Layer_48,
+			wall_level_1__0054_Layer_47,
+			wall_level_1__0053_Layer_46,
+			wall_level_1__0052_Layer_45,
+			wall_level_1__0051_Layer_44,
+			wall_level_1__0050_Layer_43,
+			wall_level_1__0049_Layer_42,
+			wall_level_1__0069_Layer_62,
+			wall_level_1__0068_Layer_61,
+			wall_level_1__0067_Layer_60,
+			wall_level_1__0066_Layer_59,
+			wall_level_1__0065_Layer_58,
+			wall_level_1__0064_Layer_57,
+			wall_level_1__0063_Layer_56,
+			wall_level_1__0062_Layer_55,
+			wall_level_1__0061_Layer_54,
+			wall_level_1__0060_Layer_53,
+			wall_level_1__0059_Layer_52,
+			wall_level_1__0058_Layer_51,
+		];
+		const roads = [
+			road_5,
+			road_18,
+			road_17,
+			road_16,
+			road_15,
+			road_14,
+			road_13,
+			road_12,
+			road_11,
+			road_10,
+			road_9,
+			road_8,
+			road_7,
+			road_6,
+			road_4,
+			road_3,
+			road_2,
+			road_1,
+			road,
+			road_19,
+			road_20,
+			road_21,
+			road_22,
+			road_23,
+			road_24,
+			road_25,
+			road_26,
+			road_27,
+			road_28,
+			road_29,
+			road_30,
+			road_31,
+			road_32,
+			road_33,
+			road_34,
+			road_35,
+			road_36,
+			road_37,
+			road_38,
+			road_39,
+			road_40,
+			road_41,
+			road_42,
+			road_43,
+			road_44,
+			road_45,
+			road_46,
+			road_47,
+			road_48,
+			road_49,
+			road_50,
+			road_51,
+			road_52,
+			road_53,
+			road_54,
+			road_55,
+			road_56,
+			road_57,
+			road_58,
+			road_59,
+			road_60,
+			road_61,
+			road_62,
+			road_63,
+			road_64,
+			road_65,
+			road_66,
+			road_67,
+			road_68,
+			road_69,
+			road_70,
+			road_71,
+			road_72,
+			road_73,
+			road_74,
+			road_75,
+			road_76,
+			road_77,
+			road_78,
+			road_79,
+			road_80,
+			road_81,
+			road_82,
+			road_83,
+			road_84,
+			road_85,
+			road_86,
+			road_87,
+			road_88,
+			road_89,
+			road_90,
+			road_91,
+			road_92,
+			road_93,
+			road_94,
+			road_95,
+			road_96,
+			road_97,
+			road_98,
+			road_99,
+			road_100,
+			road_101,
+			road_102,
+			road_103,
+			road_104,
+			road_105,
+			road_106,
+			road_107,
+			road_108,
+			road_109,
+			road_110,
+			road_111,
+			road_112,
+			road_113,
+			road_114,
+			road_115,
+			road_116,
+			road_117,
+			road_118,
+			road_119,
+			road_120,
+			road_121,
+			road_122,
+			road_123,
+			road_124,
+			road_125,
+			road_126,
+			road_127,
+			road_128,
+			road_129,
+			road_130,
+			road_131,
+			road_132,
+			road_133,
+			road_134,
+			road_135,
+			road_136,
+			road_137,
+			road_138,
+			road_139,
+			road_140,
+			road_141,
+			road_142,
+			road_143,
+			road_144,
+			road_145,
+			road_146,
+			road_147,
+			road_148,
+			road_149,
+			road_150,
+			road_151,
+			road_152,
+			road_153,
+			road_154,
+			road_155,
+			road_156,
+			road_157,
+			road_158,
+			road_159,
+			road_160,
+			road_161,
+			road_162,
+			road_163,
+			road_164,
+			road_165,
+			road_166,
+			road_167,
+			road_168,
+			road_169,
+			road_170,
+			road_171,
+			road_172,
+			road_173,
+			road_174,
+			road_175,
+			road_176,
+			road_177,
+			road_178,
+			road_179,
+			road_180,
+			road_181,
+			road_182,
+			road_183,
+			road_184,
+			road_185,
+			road_186,
+			road_187,
+			road_188,
+			road_189,
+			road_190,
+			road_191,
+			road_192,
+			road_193,
+			road_194,
+			road_195,
+			road_196,
+			road_197,
+			road_198,
+		];
 		const scores = [score_once, score_a, score_day];
 
 		// collider
@@ -1397,7 +1934,6 @@ export default class LevelOne extends Phaser.Scene {
 		}
 	}
 
-	// Check if the pointer is inside the fufuSuperDino's bounding box
 	private isPointerInside(pointer: Phaser.Input.Pointer): boolean {
 		const bounds = this.player.getBounds();
 		return bounds.contains(pointer.x, pointer.y);
