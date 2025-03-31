@@ -7,6 +7,7 @@ import Phaser from "phaser";
 /* END-USER-IMPORTS */
 
 export default class GameOverPrefab extends Phaser.GameObjects.Container {
+
 	constructor(scene: Phaser.Scene, x?: number, y?: number) {
 		super(scene, x ?? 102, y ?? 109);
 
@@ -24,18 +25,12 @@ export default class GameOverPrefab extends Phaser.GameObjects.Container {
 
 		// game_retry_button
 		const game_retry_button = scene.add.image(354, 502, "game_retry_button");
-		game_retry_button.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 203, 75),
-			Phaser.Geom.Rectangle.Contains
-		);
+		game_retry_button.setInteractive(new Phaser.Geom.Rectangle(0, 0, 203, 75), Phaser.Geom.Rectangle.Contains);
 		this.add(game_retry_button);
 
 		// game_skip_button
 		const game_skip_button = scene.add.image(660, 502, "game_skip_button");
-		game_skip_button.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 204, 75),
-			Phaser.Geom.Rectangle.Contains
-		);
+		game_skip_button.setInteractive(new Phaser.Geom.Rectangle(0, 0, 204, 75), Phaser.Geom.Rectangle.Contains);
 		this.add(game_skip_button);
 
 		this.background = background;

@@ -7,6 +7,7 @@ import Phaser from "phaser";
 /* END-USER-IMPORTS */
 
 export default class DetailerHeader extends Phaser.GameObjects.Container {
+
 	constructor(scene: Phaser.Scene, x?: number, y?: number) {
 		super(scene, x ?? -102, y ?? 0);
 

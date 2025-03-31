@@ -8,6 +8,7 @@ import HomeButton from "./HomeButton";
 /* END-USER-IMPORTS */
 
 export default class DetailerPage3 extends Phaser.Scene {
+
 	constructor() {
 		super("DetailerPage3");
 
@@ -17,6 +18,7 @@ export default class DetailerPage3 extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
+
 		// rectangle_1
 		const rectangle_1 = this.add.rectangle(512, 384, 1024, 768);
 		rectangle_1.isFilled = true;
@@ -34,17 +36,11 @@ export default class DetailerPage3 extends Phaser.Scene {
 
 		// nextBtn
 		const nextBtn = this.add.image(966, 700, "detailer_next_button");
-		nextBtn.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 39, 49),
-			Phaser.Geom.Rectangle.Contains
-		);
+		nextBtn.setInteractive(new Phaser.Geom.Rectangle(0, 0, 39, 49), Phaser.Geom.Rectangle.Contains);
 
 		// prevBtn
 		const prevBtn = this.add.image(914, 700, "detailer_previous_button");
-		prevBtn.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 38, 48),
-			Phaser.Geom.Rectangle.Contains
-		);
+		prevBtn.setInteractive(new Phaser.Geom.Rectangle(0, 0, 38, 48), Phaser.Geom.Rectangle.Contains);
 
 		// homeButton (prefab fields)
 		homeButton.isDark = true;

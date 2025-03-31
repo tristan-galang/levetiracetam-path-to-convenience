@@ -6,6 +6,7 @@
 /* END-USER-IMPORTS */
 
 export default class LevelClearPrefab extends Phaser.GameObjects.Container {
+
 	constructor(scene: Phaser.Scene, x?: number, y?: number) {
 		super(scene, x ?? 0, y ?? 0);
 
@@ -23,18 +24,12 @@ export default class LevelClearPrefab extends Phaser.GameObjects.Container {
 
 		// nextButton
 		const nextButton = scene.add.image(660, 502, "game_next_button");
-		nextButton.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 204, 75),
-			Phaser.Geom.Rectangle.Contains
-		);
+		nextButton.setInteractive(new Phaser.Geom.Rectangle(0, 0, 204, 75), Phaser.Geom.Rectangle.Contains);
 		this.add(nextButton);
 
 		// retryButton
 		const retryButton = scene.add.image(354, 502, "game_retry_button");
-		retryButton.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 203, 75),
-			Phaser.Geom.Rectangle.Contains
-		);
+		retryButton.setInteractive(new Phaser.Geom.Rectangle(0, 0, 203, 75), Phaser.Geom.Rectangle.Contains);
 		this.add(retryButton);
 
 		this.background = background;

@@ -6,6 +6,7 @@
 /* END-USER-IMPORTS */
 
 export default class Preloader extends Phaser.Scene {
+
 	constructor() {
 		super("Preloader");
 
@@ -15,6 +16,7 @@ export default class Preloader extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
+
 		// background_home
 		this.add.image(512, 384, "background_home");
 

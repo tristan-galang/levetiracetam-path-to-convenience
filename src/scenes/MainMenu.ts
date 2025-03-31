@@ -6,6 +6,7 @@
 /* END-USER-IMPORTS */
 
 export default class MainMenu extends Phaser.Scene {
+
 	constructor() {
 		super("MainMenu");
 
@@ -15,6 +16,7 @@ export default class MainMenu extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
+
 		// background_home
 		const background_home = this.add.image(0, 0, "background_home");
 		background_home.setOrigin(0, 0);
@@ -27,10 +29,7 @@ export default class MainMenu extends Phaser.Scene {
 
 		// startButton
 		const startButton = this.add.image(512, 649, "start_button");
-		startButton.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 204, 75),
-			Phaser.Geom.Rectangle.Contains
-		);
+		startButton.setInteractive(new Phaser.Geom.Rectangle(0, 0, 204, 75), Phaser.Geom.Rectangle.Contains);
 
 		this.brand = brand;
 		this.title = title;

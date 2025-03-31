@@ -6,23 +6,18 @@
 /* END-USER-IMPORTS */
 
 export default class HomeButton extends Phaser.GameObjects.Container {
+
 	constructor(scene: Phaser.Scene, x?: number, y?: number) {
 		super(scene, x ?? 0, y ?? -13);
 
 		// buttonDark
 		const buttonDark = scene.add.image(0, 0, "home_button_dark");
-		buttonDark.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 65, 60),
-			Phaser.Geom.Rectangle.Contains
-		);
+		buttonDark.setInteractive(new Phaser.Geom.Rectangle(0, 0, 65, 60), Phaser.Geom.Rectangle.Contains);
 		this.add(buttonDark);
 
 		// buttonLight
 		const buttonLight = scene.add.image(0, 0, "home_button_light");
-		buttonLight.setInteractive(
-			new Phaser.Geom.Rectangle(0, 0, 66, 61),
-			Phaser.Geom.Rectangle.Contains
-		);
+		buttonLight.setInteractive(new Phaser.Geom.Rectangle(0, 0, 66, 61), Phaser.Geom.Rectangle.Contains);
 		this.add(buttonLight);
 
 		this.buttonDark = buttonDark;
