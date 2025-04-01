@@ -7,7 +7,6 @@ import HomeButton from "./HomeButton";
 /* END-USER-IMPORTS */
 
 export default class LevelSelection extends Phaser.Scene {
-
 	constructor() {
 		super("LevelSelection");
 
@@ -17,7 +16,6 @@ export default class LevelSelection extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
-
 		// background_level_selection
 		this.add.image(512, 384, "background_level_selection");
 
@@ -36,15 +34,24 @@ export default class LevelSelection extends Phaser.Scene {
 
 		// level1Button
 		const level1Button = this.add.image(261, 630, "level_1_button");
-		level1Button.setInteractive(new Phaser.Geom.Rectangle(0, 0, 204, 75), Phaser.Geom.Rectangle.Contains);
+		level1Button.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 204, 75),
+			Phaser.Geom.Rectangle.Contains
+		);
 
 		// level2Button
 		const level2Button = this.add.image(508, 630, "level_2_button");
-		level2Button.setInteractive(new Phaser.Geom.Rectangle(0, 0, 204, 75), Phaser.Geom.Rectangle.Contains);
+		level2Button.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 204, 75),
+			Phaser.Geom.Rectangle.Contains
+		);
 
 		// level3Button
 		const level3Button = this.add.image(748, 630, "level_3_button");
-		level3Button.setInteractive(new Phaser.Geom.Rectangle(0, 0, 204, 75), Phaser.Geom.Rectangle.Contains);
+		level3Button.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 204, 75),
+			Phaser.Geom.Rectangle.Contains
+		);
 
 		// homeButton (prefab fields)
 		homeButton.isDark = true;
@@ -63,15 +70,31 @@ export default class LevelSelection extends Phaser.Scene {
 	private level3Button!: Phaser.GameObjects.Image;
 
 	/* START-USER-CODE */
+	private levelOneSound!: Phaser.Sound.BaseSound;
+	private levelTwoSound!: Phaser.Sound.BaseSound;
+	private levelThreeSound!: Phaser.Sound.BaseSound;
 
 	// Write your code here
 
 	create() {
 		this.editorCreate();
 
-		this.level1Button.on("pointerdown", () => this.scene.start("LevelOne"));
-		this.level2Button.on("pointerdown", () => this.scene.start("LevelTwo"));
-		this.level3Button.on("pointerdown", () => this.scene.start("LevelThree"));
+		this.levelOneSound = this.sound.add("sfx-level-1", { volume: 0.8 });
+		this.levelTwoSound = this.sound.add("sfx-level-2", { volume: 0.8 });
+		this.levelThreeSound = this.sound.add("sfx-level-3", { volume: 0.8 });
+
+		this.level1Button.on("pointerdown", () => {
+			this.levelOneSound.play();
+			this.scene.start("LevelOne");
+		});
+		this.level2Button.on("pointerdown", () => {
+			this.levelTwoSound.play();
+			this.scene.start("LevelTwo");
+		});
+		this.level3Button.on("pointerdown", () => {
+			this.levelThreeSound.play();
+			this.scene.start("LevelThree");
+		});
 
 		this.mechanics.setScale(0.4, 0.4);
 		this.mechanics.alpha = 0;

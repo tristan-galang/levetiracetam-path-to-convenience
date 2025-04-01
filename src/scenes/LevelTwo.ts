@@ -12,7 +12,6 @@ import GameOverPrefab from "./GameOverPrefab";
 /* END-USER-IMPORTS */
 
 export default class LevelTwo extends Phaser.Scene {
-
 	constructor() {
 		super("LevelTwo");
 
@@ -22,7 +21,6 @@ export default class LevelTwo extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
-
 		// background_game
 		this.add.image(513, 384, "background_game");
 
@@ -1901,7 +1899,11 @@ export default class LevelTwo extends Phaser.Scene {
 		const walls_layer = this.add.layer();
 
 		// walls_level_3_0000_Layer_1
-		const walls_level_3_0000_Layer_1 = this.physics.add.image(513, 179, "walls_level_3_0000_Layer-1");
+		const walls_level_3_0000_Layer_1 = this.physics.add.image(
+			513,
+			179,
+			"walls_level_3_0000_Layer-1"
+		);
 		walls_level_3_0000_Layer_1.alpha = 0;
 		walls_level_3_0000_Layer_1.alphaTopLeft = 0;
 		walls_level_3_0000_Layer_1.alphaTopRight = 0;
@@ -1912,7 +1914,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0000_Layer_1);
 
 		// walls_level_3_0001_Layer_2
-		const walls_level_3_0001_Layer_2 = this.physics.add.image(63, 383, "walls_level_3_0001_Layer-2");
+		const walls_level_3_0001_Layer_2 = this.physics.add.image(
+			63,
+			383,
+			"walls_level_3_0001_Layer-2"
+		);
 		walls_level_3_0001_Layer_2.alpha = 0;
 		walls_level_3_0001_Layer_2.alphaTopLeft = 0;
 		walls_level_3_0001_Layer_2.alphaTopRight = 0;
@@ -1923,7 +1929,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0001_Layer_2);
 
 		// walls_level_3_0001_Layer
-		const walls_level_3_0001_Layer = this.physics.add.image(962, 383, "walls_level_3_0001_Layer-2");
+		const walls_level_3_0001_Layer = this.physics.add.image(
+			962,
+			383,
+			"walls_level_3_0001_Layer-2"
+		);
 		walls_level_3_0001_Layer.alpha = 0;
 		walls_level_3_0001_Layer.alphaTopLeft = 0;
 		walls_level_3_0001_Layer.alphaTopRight = 0;
@@ -1934,7 +1944,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0001_Layer);
 
 		// walls_level_3_0000_Layer
-		const walls_level_3_0000_Layer = this.physics.add.image(516, 590, "walls_level_3_0000_Layer-1");
+		const walls_level_3_0000_Layer = this.physics.add.image(
+			516,
+			590,
+			"walls_level_3_0000_Layer-1"
+		);
 		walls_level_3_0000_Layer.alpha = 0;
 		walls_level_3_0000_Layer.alphaTopLeft = 0;
 		walls_level_3_0000_Layer.alphaTopRight = 0;
@@ -1945,7 +1959,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0000_Layer);
 
 		// walls_level_3_0002_Layer_3
-		const walls_level_3_0002_Layer_3 = this.physics.add.image(102, 236, "walls_level_3_0002_Layer-3");
+		const walls_level_3_0002_Layer_3 = this.physics.add.image(
+			102,
+			236,
+			"walls_level_3_0002_Layer-3"
+		);
 		walls_level_3_0002_Layer_3.alpha = 0;
 		walls_level_3_0002_Layer_3.alphaTopLeft = 0;
 		walls_level_3_0002_Layer_3.alphaTopRight = 0;
@@ -1956,7 +1974,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0002_Layer_3);
 
 		// walls_level_3_0004_Layer_5
-		const walls_level_3_0004_Layer_5 = this.physics.add.image(177, 217, "walls_level_3_0004_Layer-5");
+		const walls_level_3_0004_Layer_5 = this.physics.add.image(
+			177,
+			217,
+			"walls_level_3_0004_Layer-5"
+		);
 		walls_level_3_0004_Layer_5.alpha = 0;
 		walls_level_3_0004_Layer_5.alphaTopLeft = 0;
 		walls_level_3_0004_Layer_5.alphaTopRight = 0;
@@ -1967,7 +1989,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0004_Layer_5);
 
 		// walls_level_3_0005_Layer_6
-		const walls_level_3_0005_Layer_6 = this.physics.add.image(194, 253, "walls_level_3_0005_Layer-6");
+		const walls_level_3_0005_Layer_6 = this.physics.add.image(
+			194,
+			253,
+			"walls_level_3_0005_Layer-6"
+		);
 		walls_level_3_0005_Layer_6.alpha = 0;
 		walls_level_3_0005_Layer_6.alphaTopLeft = 0;
 		walls_level_3_0005_Layer_6.alphaTopRight = 0;
@@ -1978,7 +2004,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0005_Layer_6);
 
 		// walls_level_3_0006_Layer_7
-		const walls_level_3_0006_Layer_7 = this.physics.add.image(102, 493, "walls_level_3_0006_Layer-7");
+		const walls_level_3_0006_Layer_7 = this.physics.add.image(
+			102,
+			493,
+			"walls_level_3_0006_Layer-7"
+		);
 		walls_level_3_0006_Layer_7.alpha = 0;
 		walls_level_3_0006_Layer_7.alphaTopLeft = 0;
 		walls_level_3_0006_Layer_7.alphaTopRight = 0;
@@ -1989,7 +2019,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0006_Layer_7);
 
 		// walls_level_3_0007_Layer_8
-		const walls_level_3_0007_Layer_8 = this.physics.add.image(139, 401, "walls_level_3_0007_Layer-8");
+		const walls_level_3_0007_Layer_8 = this.physics.add.image(
+			139,
+			401,
+			"walls_level_3_0007_Layer-8"
+		);
 		walls_level_3_0007_Layer_8.alpha = 0;
 		walls_level_3_0007_Layer_8.alphaTopLeft = 0;
 		walls_level_3_0007_Layer_8.alphaTopRight = 0;
@@ -2000,7 +2034,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0007_Layer_8);
 
 		// walls_level_3_0008_Layer_9
-		const walls_level_3_0008_Layer_9 = this.physics.add.image(284, 217, "walls_level_3_0008_Layer-9");
+		const walls_level_3_0008_Layer_9 = this.physics.add.image(
+			284,
+			217,
+			"walls_level_3_0008_Layer-9"
+		);
 		walls_level_3_0008_Layer_9.alpha = 0;
 		walls_level_3_0008_Layer_9.alphaTopLeft = 0;
 		walls_level_3_0008_Layer_9.alphaTopRight = 0;
@@ -2011,7 +2049,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0008_Layer_9);
 
 		// walls_level_3_0009_Layer_10
-		const walls_level_3_0009_Layer_10 = this.physics.add.image(212, 239, "walls_level_3_0009_Layer-10");
+		const walls_level_3_0009_Layer_10 = this.physics.add.image(
+			212,
+			239,
+			"walls_level_3_0009_Layer-10"
+		);
 		walls_level_3_0009_Layer_10.alpha = 0;
 		walls_level_3_0009_Layer_10.alphaTopLeft = 0;
 		walls_level_3_0009_Layer_10.alphaTopRight = 0;
@@ -2022,7 +2064,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0009_Layer_10);
 
 		// walls_level_3_0010_Layer_11
-		const walls_level_3_0010_Layer_11 = this.physics.add.image(101, 325, "walls_level_3_0010_Layer-11");
+		const walls_level_3_0010_Layer_11 = this.physics.add.image(
+			101,
+			325,
+			"walls_level_3_0010_Layer-11"
+		);
 		walls_level_3_0010_Layer_11.alpha = 0;
 		walls_level_3_0010_Layer_11.alphaTopLeft = 0;
 		walls_level_3_0010_Layer_11.alphaTopRight = 0;
@@ -2033,7 +2079,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0010_Layer_11);
 
 		// walls_level_3_0011_Layer_12
-		const walls_level_3_0011_Layer_12 = this.physics.add.image(120, 292, "walls_level_3_0011_Layer-12");
+		const walls_level_3_0011_Layer_12 = this.physics.add.image(
+			120,
+			292,
+			"walls_level_3_0011_Layer-12"
+		);
 		walls_level_3_0011_Layer_12.alpha = 0;
 		walls_level_3_0011_Layer_12.alphaTopLeft = 0;
 		walls_level_3_0011_Layer_12.alphaTopRight = 0;
@@ -2044,7 +2094,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0011_Layer_12);
 
 		// walls_level_3_0012_Layer_13
-		const walls_level_3_0012_Layer_13 = this.physics.add.image(176, 343, "walls_level_3_0012_Layer-13");
+		const walls_level_3_0012_Layer_13 = this.physics.add.image(
+			176,
+			343,
+			"walls_level_3_0012_Layer-13"
+		);
 		walls_level_3_0012_Layer_13.alpha = 0;
 		walls_level_3_0012_Layer_13.alphaTopLeft = 0;
 		walls_level_3_0012_Layer_13.alphaTopRight = 0;
@@ -2055,7 +2109,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0012_Layer_13);
 
 		// walls_level_3_0013_Layer_14
-		const walls_level_3_0013_Layer_14 = this.physics.add.image(217, 291, "walls_level_3_0013_Layer-14");
+		const walls_level_3_0013_Layer_14 = this.physics.add.image(
+			217,
+			291,
+			"walls_level_3_0013_Layer-14"
+		);
 		walls_level_3_0013_Layer_14.alpha = 0;
 		walls_level_3_0013_Layer_14.alphaTopLeft = 0;
 		walls_level_3_0013_Layer_14.alphaTopRight = 0;
@@ -2066,7 +2124,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0013_Layer_14);
 
 		// walls_level_3_0014_Layer_15
-		const walls_level_3_0014_Layer_15 = this.physics.add.image(249, 361, "walls_level_3_0014_Layer-15");
+		const walls_level_3_0014_Layer_15 = this.physics.add.image(
+			249,
+			361,
+			"walls_level_3_0014_Layer-15"
+		);
 		walls_level_3_0014_Layer_15.alpha = 0;
 		walls_level_3_0014_Layer_15.alphaTopLeft = 0;
 		walls_level_3_0014_Layer_15.alphaTopRight = 0;
@@ -2077,7 +2139,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0014_Layer_15);
 
 		// walls_level_3_0015_Layer_16
-		const walls_level_3_0015_Layer_16 = this.physics.add.image(233, 515, "walls_level_3_0015_Layer-16");
+		const walls_level_3_0015_Layer_16 = this.physics.add.image(
+			233,
+			515,
+			"walls_level_3_0015_Layer-16"
+		);
 		walls_level_3_0015_Layer_16.alpha = 0;
 		walls_level_3_0015_Layer_16.alphaTopLeft = 0;
 		walls_level_3_0015_Layer_16.alphaTopRight = 0;
@@ -2088,7 +2154,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0015_Layer_16);
 
 		// walls_level_3_0016_Layer_17
-		const walls_level_3_0016_Layer_17 = this.physics.add.image(287, 309, "walls_level_3_0016_Layer-17");
+		const walls_level_3_0016_Layer_17 = this.physics.add.image(
+			287,
+			309,
+			"walls_level_3_0016_Layer-17"
+		);
 		walls_level_3_0016_Layer_17.alpha = 0;
 		walls_level_3_0016_Layer_17.alphaTopLeft = 0;
 		walls_level_3_0016_Layer_17.alphaTopRight = 0;
@@ -2099,7 +2169,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0016_Layer_17);
 
 		// walls_level_3_0017_Layer_18
-		const walls_level_3_0017_Layer_18 = this.physics.add.image(439, 216, "walls_level_3_0017_Layer-18");
+		const walls_level_3_0017_Layer_18 = this.physics.add.image(
+			439,
+			216,
+			"walls_level_3_0017_Layer-18"
+		);
 		walls_level_3_0017_Layer_18.alpha = 0;
 		walls_level_3_0017_Layer_18.alphaTopLeft = 0;
 		walls_level_3_0017_Layer_18.alphaTopRight = 0;
@@ -2110,7 +2184,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0017_Layer_18);
 
 		// walls_level_3_0009_Layer
-		const walls_level_3_0009_Layer = this.physics.add.image(399, 202, "walls_level_3_0009_Layer-10");
+		const walls_level_3_0009_Layer = this.physics.add.image(
+			399,
+			202,
+			"walls_level_3_0009_Layer-10"
+		);
 		walls_level_3_0009_Layer.alpha = 0;
 		walls_level_3_0009_Layer.alphaTopLeft = 0;
 		walls_level_3_0009_Layer.alphaTopRight = 0;
@@ -2121,7 +2199,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0009_Layer);
 
 		// walls_level_3_0017_Layer
-		const walls_level_3_0017_Layer = this.physics.add.image(284, 253, "walls_level_3_0017_Layer-18");
+		const walls_level_3_0017_Layer = this.physics.add.image(
+			284,
+			253,
+			"walls_level_3_0017_Layer-18"
+		);
 		walls_level_3_0017_Layer.alpha = 0;
 		walls_level_3_0017_Layer.alphaTopLeft = 0;
 		walls_level_3_0017_Layer.alphaTopRight = 0;
@@ -2132,7 +2214,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0017_Layer);
 
 		// walls_level_3_0018_Layer_19
-		const walls_level_3_0018_Layer_19 = this.physics.add.image(323, 309, "walls_level_3_0018_Layer-19");
+		const walls_level_3_0018_Layer_19 = this.physics.add.image(
+			323,
+			309,
+			"walls_level_3_0018_Layer-19"
+		);
 		walls_level_3_0018_Layer_19.alpha = 0;
 		walls_level_3_0018_Layer_19.alphaTopLeft = 0;
 		walls_level_3_0018_Layer_19.alphaTopRight = 0;
@@ -2143,7 +2229,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0018_Layer_19);
 
 		// walls_level_3_0019_Layer_20
-		const walls_level_3_0019_Layer_20 = this.physics.add.image(287, 365, "walls_level_3_0019_Layer-20");
+		const walls_level_3_0019_Layer_20 = this.physics.add.image(
+			287,
+			365,
+			"walls_level_3_0019_Layer-20"
+		);
 		walls_level_3_0019_Layer_20.alpha = 0;
 		walls_level_3_0019_Layer_20.alphaTopLeft = 0;
 		walls_level_3_0019_Layer_20.alphaTopRight = 0;
@@ -2154,7 +2244,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0019_Layer_20);
 
 		// walls_level_3_0020_Layer_21
-		const walls_level_3_0020_Layer_21 = this.physics.add.image(193, 364, "walls_level_3_0020_Layer-21");
+		const walls_level_3_0020_Layer_21 = this.physics.add.image(
+			193,
+			364,
+			"walls_level_3_0020_Layer-21"
+		);
 		walls_level_3_0020_Layer_21.alpha = 0;
 		walls_level_3_0020_Layer_21.alphaTopLeft = 0;
 		walls_level_3_0020_Layer_21.alphaTopRight = 0;
@@ -2165,7 +2259,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0020_Layer_21);
 
 		// walls_level_3_0019_Layer
-		const walls_level_3_0019_Layer = this.physics.add.image(212, 328, "walls_level_3_0019_Layer-20");
+		const walls_level_3_0019_Layer = this.physics.add.image(
+			212,
+			328,
+			"walls_level_3_0019_Layer-20"
+		);
 		walls_level_3_0019_Layer.alpha = 0;
 		walls_level_3_0019_Layer.alphaTopLeft = 0;
 		walls_level_3_0019_Layer.alphaTopRight = 0;
@@ -2176,7 +2274,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0019_Layer);
 
 		// walls_level_3_0022_Layer_23
-		const walls_level_3_0022_Layer_23 = this.physics.add.image(548, 514, "walls_level_3_0022_Layer-23");
+		const walls_level_3_0022_Layer_23 = this.physics.add.image(
+			548,
+			514,
+			"walls_level_3_0022_Layer-23"
+		);
 		walls_level_3_0022_Layer_23.alpha = 0;
 		walls_level_3_0022_Layer_23.alphaTopLeft = 0;
 		walls_level_3_0022_Layer_23.alphaTopRight = 0;
@@ -2187,7 +2289,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0022_Layer_23);
 
 		// walls_level_3_0023_Layer_24
-		const walls_level_3_0023_Layer_24 = this.physics.add.image(175, 477, "walls_level_3_0023_Layer-24");
+		const walls_level_3_0023_Layer_24 = this.physics.add.image(
+			175,
+			477,
+			"walls_level_3_0023_Layer-24"
+		);
 		walls_level_3_0023_Layer_24.alpha = 0;
 		walls_level_3_0023_Layer_24.alphaTopLeft = 0;
 		walls_level_3_0023_Layer_24.alphaTopRight = 0;
@@ -2198,7 +2304,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0023_Layer_24);
 
 		// walls_level_3_0024_Layer_25
-		const walls_level_3_0024_Layer_25 = this.physics.add.image(196, 402, "walls_level_3_0024_Layer-25");
+		const walls_level_3_0024_Layer_25 = this.physics.add.image(
+			196,
+			402,
+			"walls_level_3_0024_Layer-25"
+		);
 		walls_level_3_0024_Layer_25.alpha = 0;
 		walls_level_3_0024_Layer_25.alphaTopLeft = 0;
 		walls_level_3_0024_Layer_25.alphaTopRight = 0;
@@ -2209,7 +2319,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0024_Layer_25);
 
 		// walls_level_3_0025_Layer_26
-		const walls_level_3_0025_Layer_26 = this.physics.add.image(363, 327, "walls_level_3_0025_Layer-26");
+		const walls_level_3_0025_Layer_26 = this.physics.add.image(
+			363,
+			327,
+			"walls_level_3_0025_Layer-26"
+		);
 		walls_level_3_0025_Layer_26.alpha = 0;
 		walls_level_3_0025_Layer_26.alphaTopLeft = 0;
 		walls_level_3_0025_Layer_26.alphaTopRight = 0;
@@ -2220,7 +2334,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0025_Layer_26);
 
 		// walls_level_3_0026_Layer_27
-		const walls_level_3_0026_Layer_27 = this.physics.add.image(341, 440, "walls_level_3_0026_Layer-27");
+		const walls_level_3_0026_Layer_27 = this.physics.add.image(
+			341,
+			440,
+			"walls_level_3_0026_Layer-27"
+		);
 		walls_level_3_0026_Layer_27.alpha = 0;
 		walls_level_3_0026_Layer_27.alphaTopLeft = 0;
 		walls_level_3_0026_Layer_27.alphaTopRight = 0;
@@ -2231,7 +2349,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0026_Layer_27);
 
 		// walls_level_3_0027_Layer_28
-		const walls_level_3_0027_Layer_28 = this.physics.add.image(308, 477, "walls_level_3_0027_Layer-28");
+		const walls_level_3_0027_Layer_28 = this.physics.add.image(
+			308,
+			477,
+			"walls_level_3_0027_Layer-28"
+		);
 		walls_level_3_0027_Layer_28.alpha = 0;
 		walls_level_3_0027_Layer_28.alphaTopLeft = 0;
 		walls_level_3_0027_Layer_28.alphaTopRight = 0;
@@ -2242,7 +2364,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0027_Layer_28);
 
 		// walls_level_3_0028_Layer_29
-		const walls_level_3_0028_Layer_29 = this.physics.add.image(362, 494, "walls_level_3_0028_Layer-29");
+		const walls_level_3_0028_Layer_29 = this.physics.add.image(
+			362,
+			494,
+			"walls_level_3_0028_Layer-29"
+		);
 		walls_level_3_0028_Layer_29.alpha = 0;
 		walls_level_3_0028_Layer_29.alphaTopLeft = 0;
 		walls_level_3_0028_Layer_29.alphaTopRight = 0;
@@ -2253,7 +2379,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0028_Layer_29);
 
 		// walls_level_3_0029_Layer_30
-		const walls_level_3_0029_Layer_30 = this.physics.add.image(289, 421, "walls_level_3_0029_Layer-30");
+		const walls_level_3_0029_Layer_30 = this.physics.add.image(
+			289,
+			421,
+			"walls_level_3_0029_Layer-30"
+		);
 		walls_level_3_0029_Layer_30.alpha = 0;
 		walls_level_3_0029_Layer_30.alphaTopLeft = 0;
 		walls_level_3_0029_Layer_30.alphaTopRight = 0;
@@ -2264,7 +2394,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0029_Layer_30);
 
 		// walls_level_3_0030_Layer_31
-		const walls_level_3_0030_Layer_31 = this.physics.add.image(325, 403, "walls_level_3_0030_Layer-31");
+		const walls_level_3_0030_Layer_31 = this.physics.add.image(
+			325,
+			403,
+			"walls_level_3_0030_Layer-31"
+		);
 		walls_level_3_0030_Layer_31.alpha = 0;
 		walls_level_3_0030_Layer_31.alphaTopLeft = 0;
 		walls_level_3_0030_Layer_31.alphaTopRight = 0;
@@ -2275,7 +2409,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0030_Layer_31);
 
 		// walls_level_3_0031_Layer_32
-		const walls_level_3_0031_Layer_32 = this.physics.add.image(324, 533, "walls_level_3_0031_Layer-32");
+		const walls_level_3_0031_Layer_32 = this.physics.add.image(
+			324,
+			533,
+			"walls_level_3_0031_Layer-32"
+		);
 		walls_level_3_0031_Layer_32.alpha = 0;
 		walls_level_3_0031_Layer_32.alphaTopLeft = 0;
 		walls_level_3_0031_Layer_32.alphaTopRight = 0;
@@ -2286,7 +2424,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0031_Layer_32);
 
 		// walls_level_3_0033_Layer_34
-		const walls_level_3_0033_Layer_34 = this.physics.add.image(268, 552, "walls_level_3_0033_Layer-34");
+		const walls_level_3_0033_Layer_34 = this.physics.add.image(
+			268,
+			552,
+			"walls_level_3_0033_Layer-34"
+		);
 		walls_level_3_0033_Layer_34.alpha = 0;
 		walls_level_3_0033_Layer_34.alphaTopLeft = 0;
 		walls_level_3_0033_Layer_34.alphaTopRight = 0;
@@ -2297,7 +2439,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0033_Layer_34);
 
 		// walls_level_3_0034_Layer_36
-		const walls_level_3_0034_Layer_36 = this.physics.add.image(175, 570, "walls_level_3_0034_Layer-36");
+		const walls_level_3_0034_Layer_36 = this.physics.add.image(
+			175,
+			570,
+			"walls_level_3_0034_Layer-36"
+		);
 		walls_level_3_0034_Layer_36.alpha = 0;
 		walls_level_3_0034_Layer_36.alphaTopLeft = 0;
 		walls_level_3_0034_Layer_36.alphaTopRight = 0;
@@ -2308,7 +2454,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0034_Layer_36);
 
 		// walls_level_3_0036_Layer_38
-		const walls_level_3_0036_Layer_38 = this.physics.add.image(417, 513, "walls_level_3_0036_Layer-38");
+		const walls_level_3_0036_Layer_38 = this.physics.add.image(
+			417,
+			513,
+			"walls_level_3_0036_Layer-38"
+		);
 		walls_level_3_0036_Layer_38.alpha = 0;
 		walls_level_3_0036_Layer_38.alphaTopLeft = 0;
 		walls_level_3_0036_Layer_38.alphaTopRight = 0;
@@ -2319,7 +2469,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0036_Layer_38);
 
 		// walls_level_3_0037_Layer_39
-		const walls_level_3_0037_Layer_39 = this.physics.add.image(425, 552, "walls_level_3_0037_Layer-39");
+		const walls_level_3_0037_Layer_39 = this.physics.add.image(
+			425,
+			552,
+			"walls_level_3_0037_Layer-39"
+		);
 		walls_level_3_0037_Layer_39.alpha = 0;
 		walls_level_3_0037_Layer_39.alphaTopLeft = 0;
 		walls_level_3_0037_Layer_39.alphaTopRight = 0;
@@ -2330,7 +2484,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0037_Layer_39);
 
 		// walls_level_3_0038_Layer_40
-		const walls_level_3_0038_Layer_40 = this.physics.add.image(586, 514, "walls_level_3_0038_Layer-40");
+		const walls_level_3_0038_Layer_40 = this.physics.add.image(
+			586,
+			514,
+			"walls_level_3_0038_Layer-40"
+		);
 		walls_level_3_0038_Layer_40.alpha = 0;
 		walls_level_3_0038_Layer_40.alphaTopLeft = 0;
 		walls_level_3_0038_Layer_40.alphaTopRight = 0;
@@ -2341,7 +2499,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0038_Layer_40);
 
 		// walls_level_3_0039_Layer_41
-		const walls_level_3_0039_Layer_41 = this.physics.add.image(437, 252, "walls_level_3_0039_Layer-41");
+		const walls_level_3_0039_Layer_41 = this.physics.add.image(
+			437,
+			252,
+			"walls_level_3_0039_Layer-41"
+		);
 		walls_level_3_0039_Layer_41.alpha = 0;
 		walls_level_3_0039_Layer_41.alphaTopLeft = 0;
 		walls_level_3_0039_Layer_41.alphaTopRight = 0;
@@ -2352,7 +2514,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0039_Layer_41);
 
 		// walls_level_3_0040_Layer_42
-		const walls_level_3_0040_Layer_42 = this.physics.add.image(400, 385, "walls_level_3_0040_Layer-42");
+		const walls_level_3_0040_Layer_42 = this.physics.add.image(
+			400,
+			385,
+			"walls_level_3_0040_Layer-42"
+		);
 		walls_level_3_0040_Layer_42.alpha = 0;
 		walls_level_3_0040_Layer_42.alphaTopLeft = 0;
 		walls_level_3_0040_Layer_42.alphaTopRight = 0;
@@ -2363,7 +2529,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0040_Layer_42);
 
 		// walls_level_3_0041_Layer_43
-		const walls_level_3_0041_Layer_43 = this.physics.add.image(440, 477, "walls_level_3_0041_Layer-43");
+		const walls_level_3_0041_Layer_43 = this.physics.add.image(
+			440,
+			477,
+			"walls_level_3_0041_Layer-43"
+		);
 		walls_level_3_0041_Layer_43.alpha = 0;
 		walls_level_3_0041_Layer_43.alphaTopLeft = 0;
 		walls_level_3_0041_Layer_43.alphaTopRight = 0;
@@ -2374,7 +2544,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0041_Layer_43);
 
 		// walls_level_3_0042_Layer_44
-		const walls_level_3_0042_Layer_44 = this.physics.add.image(474, 404, "walls_level_3_0042_Layer-44");
+		const walls_level_3_0042_Layer_44 = this.physics.add.image(
+			474,
+			404,
+			"walls_level_3_0042_Layer-44"
+		);
 		walls_level_3_0042_Layer_44.alpha = 0;
 		walls_level_3_0042_Layer_44.alphaTopLeft = 0;
 		walls_level_3_0042_Layer_44.alphaTopRight = 0;
@@ -2385,7 +2559,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0042_Layer_44);
 
 		// walls_level_3_0043_Layer_45
-		const walls_level_3_0043_Layer_45 = this.physics.add.image(546, 440, "walls_level_3_0043_Layer-45");
+		const walls_level_3_0043_Layer_45 = this.physics.add.image(
+			546,
+			440,
+			"walls_level_3_0043_Layer-45"
+		);
 		walls_level_3_0043_Layer_45.alpha = 0;
 		walls_level_3_0043_Layer_45.alphaTopLeft = 0;
 		walls_level_3_0043_Layer_45.alphaTopRight = 0;
@@ -2396,7 +2574,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0043_Layer_45);
 
 		// walls_level_3_0044_Layer_46
-		const walls_level_3_0044_Layer_46 = this.physics.add.image(438, 360, "walls_level_3_0044_Layer-46");
+		const walls_level_3_0044_Layer_46 = this.physics.add.image(
+			438,
+			360,
+			"walls_level_3_0044_Layer-46"
+		);
 		walls_level_3_0044_Layer_46.alpha = 0;
 		walls_level_3_0044_Layer_46.alphaTopLeft = 0;
 		walls_level_3_0044_Layer_46.alphaTopRight = 0;
@@ -2407,7 +2589,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0044_Layer_46);
 
 		// walls_level_3_0045_Layer_47
-		const walls_level_3_0045_Layer_47 = this.physics.add.image(512, 387, "walls_level_3_0045_Layer-47");
+		const walls_level_3_0045_Layer_47 = this.physics.add.image(
+			512,
+			387,
+			"walls_level_3_0045_Layer-47"
+		);
 		walls_level_3_0045_Layer_47.alpha = 0;
 		walls_level_3_0045_Layer_47.alphaTopLeft = 0;
 		walls_level_3_0045_Layer_47.alphaTopRight = 0;
@@ -2418,7 +2604,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0045_Layer_47);
 
 		// walls_level_3_0046_Layer_48
-		const walls_level_3_0046_Layer_48 = this.physics.add.image(512, 235, "walls_level_3_0046_Layer-48");
+		const walls_level_3_0046_Layer_48 = this.physics.add.image(
+			512,
+			235,
+			"walls_level_3_0046_Layer-48"
+		);
 		walls_level_3_0046_Layer_48.alpha = 0;
 		walls_level_3_0046_Layer_48.alphaTopLeft = 0;
 		walls_level_3_0046_Layer_48.alphaTopRight = 0;
@@ -2429,7 +2619,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0046_Layer_48);
 
 		// walls_level_3_0047_Layer_49
-		const walls_level_3_0047_Layer_49 = this.physics.add.image(475, 290, "walls_level_3_0047_Layer-49");
+		const walls_level_3_0047_Layer_49 = this.physics.add.image(
+			475,
+			290,
+			"walls_level_3_0047_Layer-49"
+		);
 		walls_level_3_0047_Layer_49.alpha = 0;
 		walls_level_3_0047_Layer_49.alphaTopLeft = 0;
 		walls_level_3_0047_Layer_49.alphaTopRight = 0;
@@ -2440,7 +2634,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0047_Layer_49);
 
 		// walls_level_3_0048_Layer_50
-		const walls_level_3_0048_Layer_50 = this.physics.add.image(570, 253, "walls_level_3_0048_Layer-50");
+		const walls_level_3_0048_Layer_50 = this.physics.add.image(
+			570,
+			253,
+			"walls_level_3_0048_Layer-50"
+		);
 		walls_level_3_0048_Layer_50.alpha = 0;
 		walls_level_3_0048_Layer_50.alphaTopLeft = 0;
 		walls_level_3_0048_Layer_50.alphaTopRight = 0;
@@ -2451,7 +2649,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0048_Layer_50);
 
 		// walls_level_3_0048_Layer
-		const walls_level_3_0048_Layer = this.physics.add.image(529, 478, "walls_level_3_0048_Layer-50");
+		const walls_level_3_0048_Layer = this.physics.add.image(
+			529,
+			478,
+			"walls_level_3_0048_Layer-50"
+		);
 		walls_level_3_0048_Layer.alpha = 0;
 		walls_level_3_0048_Layer.alphaTopLeft = 0;
 		walls_level_3_0048_Layer.alphaTopRight = 0;
@@ -2462,7 +2664,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0048_Layer);
 
 		// walls_level_3_0049_Layer_51
-		const walls_level_3_0049_Layer_51 = this.physics.add.image(512, 500, "walls_level_3_0049_Layer-51");
+		const walls_level_3_0049_Layer_51 = this.physics.add.image(
+			512,
+			500,
+			"walls_level_3_0049_Layer-51"
+		);
 		walls_level_3_0049_Layer_51.alpha = 0;
 		walls_level_3_0049_Layer_51.alphaTopLeft = 0;
 		walls_level_3_0049_Layer_51.alphaTopRight = 0;
@@ -2473,7 +2679,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0049_Layer_51);
 
 		// walls_level_3_0050_Layer_52
-		const walls_level_3_0050_Layer_52 = this.physics.add.image(529, 552, "walls_level_3_0050_Layer-52");
+		const walls_level_3_0050_Layer_52 = this.physics.add.image(
+			529,
+			552,
+			"walls_level_3_0050_Layer-52"
+		);
 		walls_level_3_0050_Layer_52.alpha = 0;
 		walls_level_3_0050_Layer_52.alphaTopLeft = 0;
 		walls_level_3_0050_Layer_52.alphaTopRight = 0;
@@ -2484,7 +2694,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0050_Layer_52);
 
 		// walls_level_3_0051_Layer_53
-		const walls_level_3_0051_Layer_53 = this.physics.add.image(571, 216, "walls_level_3_0051_Layer-53");
+		const walls_level_3_0051_Layer_53 = this.physics.add.image(
+			571,
+			216,
+			"walls_level_3_0051_Layer-53"
+		);
 		walls_level_3_0051_Layer_53.alpha = 0;
 		walls_level_3_0051_Layer_53.alphaTopLeft = 0;
 		walls_level_3_0051_Layer_53.alphaTopRight = 0;
@@ -2495,7 +2709,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0051_Layer_53);
 
 		// walls_level_3_0052_Layer_54
-		const walls_level_3_0052_Layer_54 = this.physics.add.image(550, 328, "walls_level_3_0052_Layer-54");
+		const walls_level_3_0052_Layer_54 = this.physics.add.image(
+			550,
+			328,
+			"walls_level_3_0052_Layer-54"
+		);
 		walls_level_3_0052_Layer_54.alpha = 0;
 		walls_level_3_0052_Layer_54.alphaTopLeft = 0;
 		walls_level_3_0052_Layer_54.alphaTopRight = 0;
@@ -2506,7 +2724,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0052_Layer_54);
 
 		// walls_level_3_0053_Layer_55
-		const walls_level_3_0053_Layer_55 = this.physics.add.image(605, 328, "walls_level_3_0053_Layer-55");
+		const walls_level_3_0053_Layer_55 = this.physics.add.image(
+			605,
+			328,
+			"walls_level_3_0053_Layer-55"
+		);
 		walls_level_3_0053_Layer_55.alpha = 0;
 		walls_level_3_0053_Layer_55.alphaTopLeft = 0;
 		walls_level_3_0053_Layer_55.alphaTopRight = 0;
@@ -2517,7 +2739,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0053_Layer_55);
 
 		// walls_level_3_0054_Layer_56
-		const walls_level_3_0054_Layer_56 = this.physics.add.image(588, 343, "walls_level_3_0054_Layer-56");
+		const walls_level_3_0054_Layer_56 = this.physics.add.image(
+			588,
+			343,
+			"walls_level_3_0054_Layer-56"
+		);
 		walls_level_3_0054_Layer_56.alpha = 0;
 		walls_level_3_0054_Layer_56.alphaTopLeft = 0;
 		walls_level_3_0054_Layer_56.alphaTopRight = 0;
@@ -2528,7 +2754,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0054_Layer_56);
 
 		// walls_level_3_0054_Layer
-		const walls_level_3_0054_Layer = this.physics.add.image(549, 567, "walls_level_3_0054_Layer-56");
+		const walls_level_3_0054_Layer = this.physics.add.image(
+			549,
+			567,
+			"walls_level_3_0054_Layer-56"
+		);
 		walls_level_3_0054_Layer.alpha = 0;
 		walls_level_3_0054_Layer.alphaTopLeft = 0;
 		walls_level_3_0054_Layer.alphaTopRight = 0;
@@ -2539,7 +2769,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0054_Layer);
 
 		// walls_level_3_0055_Layer_57
-		const walls_level_3_0055_Layer_57 = this.physics.add.image(587, 402, "walls_level_3_0055_Layer-57");
+		const walls_level_3_0055_Layer_57 = this.physics.add.image(
+			587,
+			402,
+			"walls_level_3_0055_Layer-57"
+		);
 		walls_level_3_0055_Layer_57.alpha = 0;
 		walls_level_3_0055_Layer_57.alphaTopLeft = 0;
 		walls_level_3_0055_Layer_57.alphaTopRight = 0;
@@ -2550,7 +2784,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0055_Layer_57);
 
 		// walls_level_3_0056_Layer_58
-		const walls_level_3_0056_Layer_58 = this.physics.add.image(474, 531, "walls_level_3_0056_Layer-58");
+		const walls_level_3_0056_Layer_58 = this.physics.add.image(
+			474,
+			531,
+			"walls_level_3_0056_Layer-58"
+		);
 		walls_level_3_0056_Layer_58.alpha = 0;
 		walls_level_3_0056_Layer_58.alphaTopLeft = 0;
 		walls_level_3_0056_Layer_58.alphaTopRight = 0;
@@ -2561,7 +2799,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0056_Layer_58);
 
 		// walls_level_3_0058_Layer_60
-		const walls_level_3_0058_Layer_60 = this.physics.add.image(624, 290, "walls_level_3_0058_Layer-60");
+		const walls_level_3_0058_Layer_60 = this.physics.add.image(
+			624,
+			290,
+			"walls_level_3_0058_Layer-60"
+		);
 		walls_level_3_0058_Layer_60.alpha = 0;
 		walls_level_3_0058_Layer_60.alphaTopLeft = 0;
 		walls_level_3_0058_Layer_60.alphaTopRight = 0;
@@ -2572,7 +2814,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0058_Layer_60);
 
 		// walls_level_3_0061_Layer_63
-		const walls_level_3_0061_Layer_63 = this.physics.add.image(632, 455, "walls_level_3_0061_Layer-63");
+		const walls_level_3_0061_Layer_63 = this.physics.add.image(
+			632,
+			455,
+			"walls_level_3_0061_Layer-63"
+		);
 		walls_level_3_0061_Layer_63.alpha = 0;
 		walls_level_3_0061_Layer_63.alphaTopLeft = 0;
 		walls_level_3_0061_Layer_63.alphaTopRight = 0;
@@ -2584,7 +2830,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0061_Layer_63);
 
 		// walls_level_3_0062_Layer_64
-		const walls_level_3_0062_Layer_64 = this.physics.add.image(732, 440, "walls_level_3_0062_Layer-64");
+		const walls_level_3_0062_Layer_64 = this.physics.add.image(
+			732,
+			440,
+			"walls_level_3_0062_Layer-64"
+		);
 		walls_level_3_0062_Layer_64.alpha = 0;
 		walls_level_3_0062_Layer_64.alphaTopLeft = 0;
 		walls_level_3_0062_Layer_64.alphaTopRight = 0;
@@ -2595,7 +2845,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0062_Layer_64);
 
 		// walls_level_3_0063_Layer_65
-		const walls_level_3_0063_Layer_65 = this.physics.add.image(700, 364, "walls_level_3_0063_Layer-65");
+		const walls_level_3_0063_Layer_65 = this.physics.add.image(
+			700,
+			364,
+			"walls_level_3_0063_Layer-65"
+		);
 		walls_level_3_0063_Layer_65.alpha = 0;
 		walls_level_3_0063_Layer_65.alphaTopLeft = 0;
 		walls_level_3_0063_Layer_65.alphaTopRight = 0;
@@ -2606,7 +2860,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0063_Layer_65);
 
 		// walls_level_3_0064_Layer_66
-		const walls_level_3_0064_Layer_66 = this.physics.add.image(587, 273, "walls_level_3_0064_Layer-66");
+		const walls_level_3_0064_Layer_66 = this.physics.add.image(
+			587,
+			273,
+			"walls_level_3_0064_Layer-66"
+		);
 		walls_level_3_0064_Layer_66.alpha = 0;
 		walls_level_3_0064_Layer_66.alphaTopLeft = 0;
 		walls_level_3_0064_Layer_66.alphaTopRight = 0;
@@ -2617,7 +2875,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0064_Layer_66);
 
 		// walls_level_3_0065_Layer_67
-		const walls_level_3_0065_Layer_67 = this.physics.add.image(829, 365, "walls_level_3_0065_Layer-67");
+		const walls_level_3_0065_Layer_67 = this.physics.add.image(
+			829,
+			365,
+			"walls_level_3_0065_Layer-67"
+		);
 		walls_level_3_0065_Layer_67.alpha = 0;
 		walls_level_3_0065_Layer_67.alphaTopLeft = 0;
 		walls_level_3_0065_Layer_67.alphaTopRight = 0;
@@ -2628,7 +2890,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0065_Layer_67);
 
 		// walls_level_3_0066_Layer_68
-		const walls_level_3_0066_Layer_68 = this.physics.add.image(738, 386, "walls_level_3_0066_Layer-68");
+		const walls_level_3_0066_Layer_68 = this.physics.add.image(
+			738,
+			386,
+			"walls_level_3_0066_Layer-68"
+		);
 		walls_level_3_0066_Layer_68.alpha = 0;
 		walls_level_3_0066_Layer_68.alphaTopLeft = 0;
 		walls_level_3_0066_Layer_68.alphaTopRight = 0;
@@ -2639,7 +2905,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0066_Layer_68);
 
 		// walls_level_3_0066_Layer
-		const walls_level_3_0066_Layer = this.physics.add.image(924, 571, "walls_level_3_0066_Layer-68");
+		const walls_level_3_0066_Layer = this.physics.add.image(
+			924,
+			571,
+			"walls_level_3_0066_Layer-68"
+		);
 		walls_level_3_0066_Layer.alpha = 0;
 		walls_level_3_0066_Layer.alphaTopLeft = 0;
 		walls_level_3_0066_Layer.alphaTopRight = 0;
@@ -2650,7 +2920,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0066_Layer);
 
 		// walls_level_3_0067_Layer_69
-		const walls_level_3_0067_Layer_69 = this.physics.add.image(733, 253, "walls_level_3_0067_Layer-69");
+		const walls_level_3_0067_Layer_69 = this.physics.add.image(
+			733,
+			253,
+			"walls_level_3_0067_Layer-69"
+		);
 		walls_level_3_0067_Layer_69.alpha = 0;
 		walls_level_3_0067_Layer_69.alphaTopLeft = 0;
 		walls_level_3_0067_Layer_69.alphaTopRight = 0;
@@ -2661,7 +2935,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0067_Layer_69);
 
 		// walls_level_3_0068_Layer_70
-		const walls_level_3_0068_Layer_70 = this.physics.add.image(774, 219, "walls_level_3_0068_Layer-70");
+		const walls_level_3_0068_Layer_70 = this.physics.add.image(
+			774,
+			219,
+			"walls_level_3_0068_Layer-70"
+		);
 		walls_level_3_0068_Layer_70.alpha = 0;
 		walls_level_3_0068_Layer_70.alphaTopLeft = 0;
 		walls_level_3_0068_Layer_70.alphaTopRight = 0;
@@ -2672,7 +2950,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0068_Layer_70);
 
 		// walls_level_3_0069_Layer_71
-		const walls_level_3_0069_Layer_71 = this.physics.add.image(924, 347, "walls_level_3_0069_Layer-71");
+		const walls_level_3_0069_Layer_71 = this.physics.add.image(
+			924,
+			347,
+			"walls_level_3_0069_Layer-71"
+		);
 		walls_level_3_0069_Layer_71.alpha = 0;
 		walls_level_3_0069_Layer_71.alphaTopLeft = 0;
 		walls_level_3_0069_Layer_71.alphaTopRight = 0;
@@ -2683,7 +2965,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0069_Layer_71);
 
 		// walls_level_3_0072_Layer_74
-		const walls_level_3_0072_Layer_74 = this.physics.add.image(887, 272, "walls_level_3_0072_Layer-74");
+		const walls_level_3_0072_Layer_74 = this.physics.add.image(
+			887,
+			272,
+			"walls_level_3_0072_Layer-74"
+		);
 		walls_level_3_0072_Layer_74.alpha = 0;
 		walls_level_3_0072_Layer_74.alphaTopLeft = 0;
 		walls_level_3_0072_Layer_74.alphaTopRight = 0;
@@ -2694,7 +2980,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0072_Layer_74);
 
 		// walls_level_3_0073_Layer_75
-		const walls_level_3_0073_Layer_75 = this.physics.add.image(811, 327, "walls_level_3_0073_Layer-75");
+		const walls_level_3_0073_Layer_75 = this.physics.add.image(
+			811,
+			327,
+			"walls_level_3_0073_Layer-75"
+		);
 		walls_level_3_0073_Layer_75.alpha = 0;
 		walls_level_3_0073_Layer_75.alphaTopLeft = 0;
 		walls_level_3_0073_Layer_75.alphaTopRight = 0;
@@ -2705,7 +2995,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0073_Layer_75);
 
 		// walls_level_3_0074_Layer_76
-		const walls_level_3_0074_Layer_76 = this.physics.add.image(849, 269, "walls_level_3_0074_Layer-76");
+		const walls_level_3_0074_Layer_76 = this.physics.add.image(
+			849,
+			269,
+			"walls_level_3_0074_Layer-76"
+		);
 		walls_level_3_0074_Layer_76.alpha = 0;
 		walls_level_3_0074_Layer_76.alphaTopLeft = 0;
 		walls_level_3_0074_Layer_76.alphaTopRight = 0;
@@ -2716,7 +3010,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0074_Layer_76);
 
 		// walls_level_3_0075_Layer_77
-		const walls_level_3_0075_Layer_77 = this.physics.add.image(777, 290, "walls_level_3_0075_Layer-77");
+		const walls_level_3_0075_Layer_77 = this.physics.add.image(
+			777,
+			290,
+			"walls_level_3_0075_Layer-77"
+		);
 		walls_level_3_0075_Layer_77.alpha = 0;
 		walls_level_3_0075_Layer_77.alphaTopLeft = 0;
 		walls_level_3_0075_Layer_77.alphaTopRight = 0;
@@ -2727,7 +3025,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0075_Layer_77);
 
 		// walls_level_3_0076_Layer_78
-		const walls_level_3_0076_Layer_78 = this.physics.add.image(662, 362, "walls_level_3_0076_Layer-78");
+		const walls_level_3_0076_Layer_78 = this.physics.add.image(
+			662,
+			362,
+			"walls_level_3_0076_Layer-78"
+		);
 		walls_level_3_0076_Layer_78.alpha = 0;
 		walls_level_3_0076_Layer_78.alphaTopLeft = 0;
 		walls_level_3_0076_Layer_78.alphaTopRight = 0;
@@ -2738,7 +3040,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0076_Layer_78);
 
 		// walls_level_3_0077_Layer_79
-		const walls_level_3_0077_Layer_79 = this.physics.add.image(886, 439, "walls_level_3_0077_Layer-79");
+		const walls_level_3_0077_Layer_79 = this.physics.add.image(
+			886,
+			439,
+			"walls_level_3_0077_Layer-79"
+		);
 		walls_level_3_0077_Layer_79.alpha = 0;
 		walls_level_3_0077_Layer_79.alphaTopLeft = 0;
 		walls_level_3_0077_Layer_79.alphaTopRight = 0;
@@ -2749,7 +3055,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0077_Layer_79);
 
 		// walls_level_3_0078_Layer_80
-		const walls_level_3_0078_Layer_80 = this.physics.add.image(758, 553, "walls_level_3_0078_Layer-80");
+		const walls_level_3_0078_Layer_80 = this.physics.add.image(
+			758,
+			553,
+			"walls_level_3_0078_Layer-80"
+		);
 		walls_level_3_0078_Layer_80.alpha = 0;
 		walls_level_3_0078_Layer_80.alphaTopLeft = 0;
 		walls_level_3_0078_Layer_80.alphaTopRight = 0;
@@ -2760,7 +3070,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0078_Layer_80);
 
 		// walls_level_3_0079_Layer_81
-		const walls_level_3_0079_Layer_81 = this.physics.add.image(848, 569, "walls_level_3_0079_Layer-81");
+		const walls_level_3_0079_Layer_81 = this.physics.add.image(
+			848,
+			569,
+			"walls_level_3_0079_Layer-81"
+		);
 		walls_level_3_0079_Layer_81.alpha = 0;
 		walls_level_3_0079_Layer_81.alphaTopLeft = 0;
 		walls_level_3_0079_Layer_81.alphaTopRight = 0;
@@ -2771,7 +3085,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0079_Layer_81);
 
 		// walls_level_3_0080_Layer_82
-		const walls_level_3_0080_Layer_82 = this.physics.add.image(790, 403, "walls_level_3_0080_Layer-82");
+		const walls_level_3_0080_Layer_82 = this.physics.add.image(
+			790,
+			403,
+			"walls_level_3_0080_Layer-82"
+		);
 		walls_level_3_0080_Layer_82.alpha = 0;
 		walls_level_3_0080_Layer_82.alphaTopLeft = 0;
 		walls_level_3_0080_Layer_82.alphaTopRight = 0;
@@ -2782,7 +3100,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0080_Layer_82);
 
 		// walls_level_3_0081_Layer_83
-		const walls_level_3_0081_Layer_83 = this.physics.add.image(213, 443, "walls_level_3_0081_Layer-83");
+		const walls_level_3_0081_Layer_83 = this.physics.add.image(
+			213,
+			443,
+			"walls_level_3_0081_Layer-83"
+		);
 		walls_level_3_0081_Layer_83.alpha = 0;
 		walls_level_3_0081_Layer_83.alphaTopLeft = 0;
 		walls_level_3_0081_Layer_83.alphaTopRight = 0;
@@ -2793,7 +3115,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0081_Layer_83);
 
 		// walls_level_3_0083_Layer_85
-		const walls_level_3_0083_Layer_85 = this.physics.add.image(885, 440, "walls_level_3_0083_Layer-85");
+		const walls_level_3_0083_Layer_85 = this.physics.add.image(
+			885,
+			440,
+			"walls_level_3_0083_Layer-85"
+		);
 		walls_level_3_0083_Layer_85.alpha = 0;
 		walls_level_3_0083_Layer_85.alphaTopLeft = 0;
 		walls_level_3_0083_Layer_85.alphaTopRight = 0;
@@ -2804,7 +3130,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0083_Layer_85);
 
 		// walls_level_3_0084_Layer_86
-		const walls_level_3_0084_Layer_86 = this.physics.add.image(778, 479, "walls_level_3_0084_Layer-86");
+		const walls_level_3_0084_Layer_86 = this.physics.add.image(
+			778,
+			479,
+			"walls_level_3_0084_Layer-86"
+		);
 		walls_level_3_0084_Layer_86.alpha = 0;
 		walls_level_3_0084_Layer_86.alphaTopLeft = 0;
 		walls_level_3_0084_Layer_86.alphaTopRight = 0;
@@ -2815,7 +3145,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0084_Layer_86);
 
 		// walls_level_3_0086_Layer_88
-		const walls_level_3_0086_Layer_88 = this.physics.add.image(793, 515, "walls_level_3_0086_Layer-88");
+		const walls_level_3_0086_Layer_88 = this.physics.add.image(
+			793,
+			515,
+			"walls_level_3_0086_Layer-88"
+		);
 		walls_level_3_0086_Layer_88.alpha = 0;
 		walls_level_3_0086_Layer_88.alphaTopLeft = 0;
 		walls_level_3_0086_Layer_88.alphaTopRight = 0;
@@ -2826,7 +3160,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0086_Layer_88);
 
 		// walls_level_3_0054_Layer_1
-		const walls_level_3_0054_Layer_1 = this.physics.add.image(663, 500, "walls_level_3_0054_Layer-56");
+		const walls_level_3_0054_Layer_1 = this.physics.add.image(
+			663,
+			500,
+			"walls_level_3_0054_Layer-56"
+		);
 		walls_level_3_0054_Layer_1.alpha = 0;
 		walls_level_3_0054_Layer_1.alphaTopLeft = 0;
 		walls_level_3_0054_Layer_1.alphaTopRight = 0;
@@ -2837,7 +3175,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0054_Layer_1);
 
 		// walls_level_3_0054_Layer_2
-		const walls_level_3_0054_Layer_2 = this.physics.add.image(850, 493, "walls_level_3_0054_Layer-56");
+		const walls_level_3_0054_Layer_2 = this.physics.add.image(
+			850,
+			493,
+			"walls_level_3_0054_Layer-56"
+		);
 		walls_level_3_0054_Layer_2.alpha = 0;
 		walls_level_3_0054_Layer_2.alphaTopLeft = 0;
 		walls_level_3_0054_Layer_2.alphaTopRight = 0;
@@ -2848,7 +3190,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0054_Layer_2);
 
 		// walls_level_3_0083_Layer
-		const walls_level_3_0083_Layer = this.physics.add.image(811, 441, "walls_level_3_0083_Layer-85");
+		const walls_level_3_0083_Layer = this.physics.add.image(
+			811,
+			441,
+			"walls_level_3_0083_Layer-85"
+		);
 		walls_level_3_0083_Layer.alpha = 0;
 		walls_level_3_0083_Layer.alphaTopLeft = 0;
 		walls_level_3_0083_Layer.alphaTopRight = 0;
@@ -2859,7 +3205,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0083_Layer);
 
 		// walls_level_3_0083_Layer_1
-		const walls_level_3_0083_Layer_1 = this.physics.add.image(887, 551, "walls_level_3_0083_Layer-85");
+		const walls_level_3_0083_Layer_1 = this.physics.add.image(
+			887,
+			551,
+			"walls_level_3_0083_Layer-85"
+		);
 		walls_level_3_0083_Layer_1.alpha = 0;
 		walls_level_3_0083_Layer_1.alphaTopLeft = 0;
 		walls_level_3_0083_Layer_1.alphaTopRight = 0;
@@ -2870,7 +3220,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0083_Layer_1);
 
 		// walls_level_3_0054_Layer_3
-		const walls_level_3_0054_Layer_3 = this.physics.add.image(624, 238, "walls_level_3_0054_Layer-56");
+		const walls_level_3_0054_Layer_3 = this.physics.add.image(
+			624,
+			238,
+			"walls_level_3_0054_Layer-56"
+		);
 		walls_level_3_0054_Layer_3.alpha = 0;
 		walls_level_3_0054_Layer_3.alphaTopLeft = 0;
 		walls_level_3_0054_Layer_3.alphaTopRight = 0;
@@ -2881,7 +3235,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0054_Layer_3);
 
 		// walls_level_3_0045_Layer
-		const walls_level_3_0045_Layer = this.physics.add.image(250, 423, "walls_level_3_0045_Layer-47");
+		const walls_level_3_0045_Layer = this.physics.add.image(
+			250,
+			423,
+			"walls_level_3_0045_Layer-47"
+		);
 		walls_level_3_0045_Layer.alpha = 0;
 		walls_level_3_0045_Layer.alphaTopLeft = 0;
 		walls_level_3_0045_Layer.alphaTopRight = 0;
@@ -2892,7 +3250,11 @@ export default class LevelTwo extends Phaser.Scene {
 		walls_layer.add(walls_level_3_0045_Layer);
 
 		// walls_level_3_0005_Layer
-		const walls_level_3_0005_Layer = this.physics.add.image(82, 253, "walls_level_3_0005_Layer-6");
+		const walls_level_3_0005_Layer = this.physics.add.image(
+			82,
+			253,
+			"walls_level_3_0005_Layer-6"
+		);
 		walls_level_3_0005_Layer.alpha = 0;
 		walls_level_3_0005_Layer.alphaTopLeft = 0;
 		walls_level_3_0005_Layer.alphaTopRight = 0;
@@ -2908,7 +3270,7 @@ export default class LevelTwo extends Phaser.Scene {
 		// timer
 		const timer = new TimerPrefab(this, 887, 106);
 		this.add.existing(timer);
-		timer.setStyle({  });
+		timer.setStyle({});
 
 		// score_once
 		const score_once = this.physics.add.image(292, 239, "score_once");
@@ -2944,9 +3306,365 @@ export default class LevelTwo extends Phaser.Scene {
 		this.add.existing(gameOverPrefab);
 
 		// lists
-		const walls = [walls_level_3_0045_Layer, walls_level_3_0054_Layer_3, walls_level_3_0083_Layer_1, walls_level_3_0083_Layer, walls_level_3_0054_Layer_2, walls_level_3_0054_Layer_1, walls_level_3_0086_Layer_88, walls_level_3_0084_Layer_86, walls_level_3_0083_Layer_85, walls_level_3_0081_Layer_83, walls_level_3_0080_Layer_82, walls_level_3_0079_Layer_81, walls_level_3_0078_Layer_80, walls_level_3_0077_Layer_79, walls_level_3_0076_Layer_78, walls_level_3_0075_Layer_77, walls_level_3_0074_Layer_76, walls_level_3_0073_Layer_75, walls_level_3_0072_Layer_74, walls_level_3_0069_Layer_71, walls_level_3_0068_Layer_70, walls_level_3_0067_Layer_69, walls_level_3_0066_Layer, walls_level_3_0066_Layer_68, walls_level_3_0065_Layer_67, walls_level_3_0064_Layer_66, walls_level_3_0063_Layer_65, walls_level_3_0062_Layer_64, walls_level_3_0061_Layer_63, walls_level_3_0058_Layer_60, walls_level_3_0056_Layer_58, walls_level_3_0055_Layer_57, walls_level_3_0054_Layer, walls_level_3_0054_Layer_56, walls_level_3_0053_Layer_55, walls_level_3_0052_Layer_54, walls_level_3_0051_Layer_53, walls_level_3_0050_Layer_52, walls_level_3_0049_Layer_51, walls_level_3_0048_Layer, walls_level_3_0048_Layer_50, walls_level_3_0047_Layer_49, walls_level_3_0046_Layer_48, walls_level_3_0045_Layer_47, walls_level_3_0044_Layer_46, walls_level_3_0043_Layer_45, walls_level_3_0042_Layer_44, walls_level_3_0041_Layer_43, walls_level_3_0040_Layer_42, walls_level_3_0039_Layer_41, walls_level_3_0038_Layer_40, walls_level_3_0037_Layer_39, walls_level_3_0036_Layer_38, walls_level_3_0034_Layer_36, walls_level_3_0033_Layer_34, walls_level_3_0031_Layer_32, walls_level_3_0030_Layer_31, walls_level_3_0029_Layer_30, walls_level_3_0028_Layer_29, walls_level_3_0027_Layer_28, walls_level_3_0026_Layer_27, walls_level_3_0025_Layer_26, walls_level_3_0024_Layer_25, walls_level_3_0023_Layer_24, walls_level_3_0022_Layer_23, walls_level_3_0019_Layer, walls_level_3_0020_Layer_21, walls_level_3_0019_Layer_20, walls_level_3_0018_Layer_19, walls_level_3_0017_Layer, walls_level_3_0009_Layer, walls_level_3_0017_Layer_18, walls_level_3_0016_Layer_17, walls_level_3_0015_Layer_16, walls_level_3_0014_Layer_15, walls_level_3_0013_Layer_14, walls_level_3_0012_Layer_13, walls_level_3_0011_Layer_12, walls_level_3_0010_Layer_11, walls_level_3_0009_Layer_10, walls_level_3_0008_Layer_9, walls_level_3_0007_Layer_8, walls_level_3_0006_Layer_7, walls_level_3_0005_Layer_6, walls_level_3_0004_Layer_5, walls_level_3_0002_Layer_3, walls_level_3_0000_Layer, walls_level_3_0001_Layer, walls_level_3_0001_Layer_2, walls_level_3_0000_Layer_1];
+		const walls = [
+			walls_level_3_0045_Layer,
+			walls_level_3_0054_Layer_3,
+			walls_level_3_0083_Layer_1,
+			walls_level_3_0083_Layer,
+			walls_level_3_0054_Layer_2,
+			walls_level_3_0054_Layer_1,
+			walls_level_3_0086_Layer_88,
+			walls_level_3_0084_Layer_86,
+			walls_level_3_0083_Layer_85,
+			walls_level_3_0081_Layer_83,
+			walls_level_3_0080_Layer_82,
+			walls_level_3_0079_Layer_81,
+			walls_level_3_0078_Layer_80,
+			walls_level_3_0077_Layer_79,
+			walls_level_3_0076_Layer_78,
+			walls_level_3_0075_Layer_77,
+			walls_level_3_0074_Layer_76,
+			walls_level_3_0073_Layer_75,
+			walls_level_3_0072_Layer_74,
+			walls_level_3_0069_Layer_71,
+			walls_level_3_0068_Layer_70,
+			walls_level_3_0067_Layer_69,
+			walls_level_3_0066_Layer,
+			walls_level_3_0066_Layer_68,
+			walls_level_3_0065_Layer_67,
+			walls_level_3_0064_Layer_66,
+			walls_level_3_0063_Layer_65,
+			walls_level_3_0062_Layer_64,
+			walls_level_3_0061_Layer_63,
+			walls_level_3_0058_Layer_60,
+			walls_level_3_0056_Layer_58,
+			walls_level_3_0055_Layer_57,
+			walls_level_3_0054_Layer,
+			walls_level_3_0054_Layer_56,
+			walls_level_3_0053_Layer_55,
+			walls_level_3_0052_Layer_54,
+			walls_level_3_0051_Layer_53,
+			walls_level_3_0050_Layer_52,
+			walls_level_3_0049_Layer_51,
+			walls_level_3_0048_Layer,
+			walls_level_3_0048_Layer_50,
+			walls_level_3_0047_Layer_49,
+			walls_level_3_0046_Layer_48,
+			walls_level_3_0045_Layer_47,
+			walls_level_3_0044_Layer_46,
+			walls_level_3_0043_Layer_45,
+			walls_level_3_0042_Layer_44,
+			walls_level_3_0041_Layer_43,
+			walls_level_3_0040_Layer_42,
+			walls_level_3_0039_Layer_41,
+			walls_level_3_0038_Layer_40,
+			walls_level_3_0037_Layer_39,
+			walls_level_3_0036_Layer_38,
+			walls_level_3_0034_Layer_36,
+			walls_level_3_0033_Layer_34,
+			walls_level_3_0031_Layer_32,
+			walls_level_3_0030_Layer_31,
+			walls_level_3_0029_Layer_30,
+			walls_level_3_0028_Layer_29,
+			walls_level_3_0027_Layer_28,
+			walls_level_3_0026_Layer_27,
+			walls_level_3_0025_Layer_26,
+			walls_level_3_0024_Layer_25,
+			walls_level_3_0023_Layer_24,
+			walls_level_3_0022_Layer_23,
+			walls_level_3_0019_Layer,
+			walls_level_3_0020_Layer_21,
+			walls_level_3_0019_Layer_20,
+			walls_level_3_0018_Layer_19,
+			walls_level_3_0017_Layer,
+			walls_level_3_0009_Layer,
+			walls_level_3_0017_Layer_18,
+			walls_level_3_0016_Layer_17,
+			walls_level_3_0015_Layer_16,
+			walls_level_3_0014_Layer_15,
+			walls_level_3_0013_Layer_14,
+			walls_level_3_0012_Layer_13,
+			walls_level_3_0011_Layer_12,
+			walls_level_3_0010_Layer_11,
+			walls_level_3_0009_Layer_10,
+			walls_level_3_0008_Layer_9,
+			walls_level_3_0007_Layer_8,
+			walls_level_3_0006_Layer_7,
+			walls_level_3_0005_Layer_6,
+			walls_level_3_0004_Layer_5,
+			walls_level_3_0002_Layer_3,
+			walls_level_3_0000_Layer,
+			walls_level_3_0001_Layer,
+			walls_level_3_0001_Layer_2,
+			walls_level_3_0000_Layer_1,
+		];
 		const scores = [score_day, score_a, score_once];
-		const roads = [road_198, road_263, road_262, road_261, road_260, road_259, road_258, road_257, road_256, road_255, road_254, road_253, road_252, road_251, road_250, road_249, road_248, road_247, road_246, road_245, road_244, road_243, road_242, road_241, road_240, road_239, road_238, road_237, road_236, road_235, road_234, road_233, road_232, road_231, road_230, road_229, road_228, road_227, road_226, road_225, road_224, road_223, road_222, road_221, road_220, road_219, road_218, road_217, road_216, road_215, road_214, road_213, road_212, road_211, road_210, road_209, road_208, road_207, road_206, road_205, road_204, road_203, road_202, road_201, road_200, road_199, road_197, road_196, road_195, road_194, road_193, road_192, road_191, road_190, road_189, road_188, road_187, road_186, road_185, road_184, road_183, road_182, road_181, road_180, road_179, road_178, road_177, road_176, road_175, road_174, road_173, road_172, road_171, road_170, road_169, road_168, road_167, road_166, road_165, road_164, road_163, road_162, road_161, road_160, road_159, road_158, road_157, road_156, road_155, road_154, road_153, road_152, road_151, road_150, road_149, road_148, road_147, road_146, road_145, road_144, road_143, road_142, road_141, road_140, road_139, road_138, road_137, road_136, road_135, road_134, road_133, road_132, road_131, road_130, road_129, road_128, road_127, road_126, road_125, road_124, road_123, road_122, road_121, road_120, road_119, road_118, road_117, road_116, road_115, road_114, road_113, road_112, road_111, road_110, road_109, road_108, road_107, road_106, road_105, road_104, road_103, road_102, road_101, road_100, road_99, road_98, road_97, road_96, road_95, road_94, road_93, road_92, road_91, road_90, road_89, road_88, road_87, road_86, road_85, road_84, road_83, road_82, road_81, road_80, road_79, road_78, road_77, road_76, road_75, road_74, road_73, road_72, road_71, road_70, road_69, road_68, road_67, road_66, road_65, road_64, road_63, road_62, road_61, road_60, road_59, road_58, road_57, road_56, road_55, road_54, road_53, road_52, road_51, road_50, road_49, road_48, road_47, road_46, road_45, road_44, road_43, road_42, road_41, road_40, road_39, road_38, road_37, road_36, road_35, road_34, road_33, road_32, road_31, road_30, road_29, road_28, road_27, road_26, road_25, road_24, road_23, road_22, road_21, road_20, road_19, road_18, road_17, road_16, road_15, road_14, road_13, road_12, road_11, road_10, road_9, road_8, road_7, road_6, road_5, road_4, road_3, road_2, road_1, road];
+		const roads = [
+			road_198,
+			road_263,
+			road_262,
+			road_261,
+			road_260,
+			road_259,
+			road_258,
+			road_257,
+			road_256,
+			road_255,
+			road_254,
+			road_253,
+			road_252,
+			road_251,
+			road_250,
+			road_249,
+			road_248,
+			road_247,
+			road_246,
+			road_245,
+			road_244,
+			road_243,
+			road_242,
+			road_241,
+			road_240,
+			road_239,
+			road_238,
+			road_237,
+			road_236,
+			road_235,
+			road_234,
+			road_233,
+			road_232,
+			road_231,
+			road_230,
+			road_229,
+			road_228,
+			road_227,
+			road_226,
+			road_225,
+			road_224,
+			road_223,
+			road_222,
+			road_221,
+			road_220,
+			road_219,
+			road_218,
+			road_217,
+			road_216,
+			road_215,
+			road_214,
+			road_213,
+			road_212,
+			road_211,
+			road_210,
+			road_209,
+			road_208,
+			road_207,
+			road_206,
+			road_205,
+			road_204,
+			road_203,
+			road_202,
+			road_201,
+			road_200,
+			road_199,
+			road_197,
+			road_196,
+			road_195,
+			road_194,
+			road_193,
+			road_192,
+			road_191,
+			road_190,
+			road_189,
+			road_188,
+			road_187,
+			road_186,
+			road_185,
+			road_184,
+			road_183,
+			road_182,
+			road_181,
+			road_180,
+			road_179,
+			road_178,
+			road_177,
+			road_176,
+			road_175,
+			road_174,
+			road_173,
+			road_172,
+			road_171,
+			road_170,
+			road_169,
+			road_168,
+			road_167,
+			road_166,
+			road_165,
+			road_164,
+			road_163,
+			road_162,
+			road_161,
+			road_160,
+			road_159,
+			road_158,
+			road_157,
+			road_156,
+			road_155,
+			road_154,
+			road_153,
+			road_152,
+			road_151,
+			road_150,
+			road_149,
+			road_148,
+			road_147,
+			road_146,
+			road_145,
+			road_144,
+			road_143,
+			road_142,
+			road_141,
+			road_140,
+			road_139,
+			road_138,
+			road_137,
+			road_136,
+			road_135,
+			road_134,
+			road_133,
+			road_132,
+			road_131,
+			road_130,
+			road_129,
+			road_128,
+			road_127,
+			road_126,
+			road_125,
+			road_124,
+			road_123,
+			road_122,
+			road_121,
+			road_120,
+			road_119,
+			road_118,
+			road_117,
+			road_116,
+			road_115,
+			road_114,
+			road_113,
+			road_112,
+			road_111,
+			road_110,
+			road_109,
+			road_108,
+			road_107,
+			road_106,
+			road_105,
+			road_104,
+			road_103,
+			road_102,
+			road_101,
+			road_100,
+			road_99,
+			road_98,
+			road_97,
+			road_96,
+			road_95,
+			road_94,
+			road_93,
+			road_92,
+			road_91,
+			road_90,
+			road_89,
+			road_88,
+			road_87,
+			road_86,
+			road_85,
+			road_84,
+			road_83,
+			road_82,
+			road_81,
+			road_80,
+			road_79,
+			road_78,
+			road_77,
+			road_76,
+			road_75,
+			road_74,
+			road_73,
+			road_72,
+			road_71,
+			road_70,
+			road_69,
+			road_68,
+			road_67,
+			road_66,
+			road_65,
+			road_64,
+			road_63,
+			road_62,
+			road_61,
+			road_60,
+			road_59,
+			road_58,
+			road_57,
+			road_56,
+			road_55,
+			road_54,
+			road_53,
+			road_52,
+			road_51,
+			road_50,
+			road_49,
+			road_48,
+			road_47,
+			road_46,
+			road_45,
+			road_44,
+			road_43,
+			road_42,
+			road_41,
+			road_40,
+			road_39,
+			road_38,
+			road_37,
+			road_36,
+			road_35,
+			road_34,
+			road_33,
+			road_32,
+			road_31,
+			road_30,
+			road_29,
+			road_28,
+			road_27,
+			road_26,
+			road_25,
+			road_24,
+			road_23,
+			road_22,
+			road_21,
+			road_20,
+			road_19,
+			road_18,
+			road_17,
+			road_16,
+			road_15,
+			road_14,
+			road_13,
+			road_12,
+			road_11,
+			road_10,
+			road_9,
+			road_8,
+			road_7,
+			road_6,
+			road_5,
+			road_4,
+			road_3,
+			road_2,
+			road_1,
+			road,
+		];
 
 		// collider
 		this.physics.add.collider(player, walls, this.colliderCallBack);
@@ -2989,9 +3707,14 @@ export default class LevelTwo extends Phaser.Scene {
 	private isDragging: boolean = false;
 	private isBlocked: boolean = false; // Track if blocked
 	private playerScore: number = 0;
+	private correctSound!: Phaser.Sound.BaseSound;
+	private completeSound!: Phaser.Sound.BaseSound;
 
 	create() {
 		this.editorCreate();
+
+		this.correctSound = this.sound.add("sfx-correct", { volume: 0.8 });
+		this.completeSound = this.sound.add("sfx-complete", { volume: 0.8 });
 
 		this.player.setInteractive();
 		this.input.setDraggable(this.player);
@@ -3062,6 +3785,9 @@ export default class LevelTwo extends Phaser.Scene {
 
 		if (this.playerScore >= 3) {
 			this.showLevelClear();
+			this.completeSound.play();
+		} else {
+			this.correctSound.play();
 		}
 	}
 
@@ -3087,7 +3813,7 @@ export default class LevelTwo extends Phaser.Scene {
 	}
 
 	private onNext() {
-		this.scene.start("LevelThree");
+		this.scene.start("DetailerPage1");
 	}
 
 	/* END-USER-CODE */

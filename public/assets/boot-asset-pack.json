@@ -32,6 +32,13 @@
                 "key": "background_level_selection"
             },
             {
+                "url": [
+                    "assets/bgm-levi.m4a"
+                ],
+                "type": "audio",
+                "key": "bgm-levi"
+            },
+            {
                 "url": "assets/detailer_next_button.png",
                 "type": "image",
                 "key": "detailer_next_button"
@@ -182,6 +189,55 @@
                 "url": "assets/scratch_bg.png",
                 "type": "image",
                 "key": "scratch_bg"
+            },
+            {
+                "url": [
+                    "assets/sfx-btn-start.m4a"
+                ],
+                "type": "audio",
+                "key": "sfx-btn-start"
+            },
+            {
+                "url": [
+                    "assets/sfx-complete.m4a"
+                ],
+                "type": "audio",
+                "key": "sfx-complete"
+            },
+            {
+                "url": [
+                    "assets/sfx-correct.m4a"
+                ],
+                "type": "audio",
+                "key": "sfx-correct"
+            },
+            {
+                "url": [
+                    "assets/sfx-game-over.m4a"
+                ],
+                "type": "audio",
+                "key": "sfx-game-over"
+            },
+            {
+                "url": [
+                    "assets/sfx-level-1.m4a"
+                ],
+                "type": "audio",
+                "key": "sfx-level-1"
+            },
+            {
+                "url": [
+                    "assets/sfx-level-2.m4a"
+                ],
+                "type": "audio",
+                "key": "sfx-level-2"
+            },
+            {
+                "url": [
+                    "assets/sfx-level-3.m4a"
+                ],
+                "type": "audio",
+                "key": "sfx-level-3"
             },
             {
                 "url": "assets/start_button.png",

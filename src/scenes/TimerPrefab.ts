@@ -6,17 +6,21 @@
 /* END-USER-IMPORTS */
 
 export default class TimerPrefab extends Phaser.GameObjects.Text {
-
 	constructor(scene: Phaser.Scene, x?: number, y?: number) {
 		super(scene, x ?? -3, y ?? -6, "", {});
 
 		this.setOrigin(0.5, 0.5);
 		this.text = "60";
-		this.setStyle({ "align": "center", "fontFamily": "digitalFont", "fontSize": "71px" });
+		this.setStyle({
+			align: "center",
+			fontFamily: "digitalFont",
+			fontSize: "71px",
+		});
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		this.startTimer();
+		this.gameoverSFX = this.scene.sound.add("sfx-game-over", { volume: 0.8 });
 
 		/* END-USER-CTR-CODE */
 	}
@@ -27,6 +31,7 @@ export default class TimerPrefab extends Phaser.GameObjects.Text {
 	/* START-USER-CODE */
 	// Write your code here.
 	private timerEvent?: Phaser.Time.TimerEvent;
+	private gameoverSFX!: Phaser.Sound.BaseSound;
 
 	private startTimer() {
 		this.timerEvent = this.scene.time.addEvent({
@@ -42,6 +47,7 @@ export default class TimerPrefab extends Phaser.GameObjects.Text {
 		this.setText(this.formatTime(this.duration));
 
 		if (this.duration <= 0) {
+			this.gameoverSFX.play();
 			this.timerEvent?.remove(); // Stop the timer
 			if (this.onComplete) this.onComplete(); // Trigger callback if provided
 		}
