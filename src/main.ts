@@ -22,8 +22,11 @@ const config: Types.Core.GameConfig = {
 	height: 768,
 	parent: "game-container",
 	backgroundColor: "#028af8",
+	pixelArt: true,
+	// @ts-expect-error: 'resolution' exists at runtime but not in typings
+	resolution: window.devicePixelRatio, // <- this is valid at runtime, but TS doesn't know it
 	scale: {
-		mode: Phaser.Scale.FIT,
+		mode: Phaser.AUTO,
 		autoCenter: Phaser.Scale.CENTER_BOTH,
 	},
 	scene: [
