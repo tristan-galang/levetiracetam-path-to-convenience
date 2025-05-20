@@ -24,25 +24,14 @@
         },
         {
             "type": "Image",
-            "id": "4585f9aa-1284-43c7-be5d-d63fb08aa314",
-            "label": "brand",
-            "scope": "CLASS",
-            "texture": {
-                "key": "home_asset_1"
-            },
-            "x": 512,
-            "y": 221
-        },
-        {
-            "type": "Image",
             "id": "a552f4d8-bf12-464a-9de0-c1e8937503dc",
             "label": "title",
             "scope": "CLASS",
             "texture": {
-                "key": "home_asset_2"
+                "key": "label_title"
             },
             "x": 512,
-            "y": 439
+            "y": 362
         },
         {
             "type": "Image",
@@ -53,7 +42,7 @@
             "hitArea.width": 204,
             "hitArea.height": 75,
             "texture": {
-                "key": "start_button"
+                "key": "menu_start"
             },
             "x": 512,
             "y": 649

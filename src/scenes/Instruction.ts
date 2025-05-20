@@ -1,0 +1,94 @@
+// You can write more code here
+
+/* START OF COMPILED CODE */
+
+import TimerPrefab from "./TimerPrefab";
+/* START-USER-IMPORTS */
+/* END-USER-IMPORTS */
+
+export default class Instruction extends Phaser.Scene {
+
+	constructor() {
+		super("Instruction");
+
+		/* START-USER-CTR-CODE */
+		// Write your code here.
+		/* END-USER-CTR-CODE */
+	}
+
+	editorCreate(): void {
+
+		// background_menu
+		this.add.image(512, 384, "background_menu");
+
+		// mechanicsContainer
+		const mechanicsContainer = this.add.image(512, 384, "container_mechanics");
+		mechanicsContainer.alpha = 0.5;
+		mechanicsContainer.alphaTopLeft = 0.5;
+		mechanicsContainer.alphaTopRight = 0.5;
+		mechanicsContainer.alphaBottomLeft = 0.5;
+		mechanicsContainer.alphaBottomRight = 0.5;
+
+		// mechanicsLabel
+		const mechanicsLabel = this.add.image(512, 384, "label_mechanics");
+
+		// playBtn
+		const playBtn = this.add.image(512, 662, "menu_play");
+
+		// timerPrefab
+		const timerPrefab = new TimerPrefab(this, 103, 203);
+		this.add.existing(timerPrefab);
+		timerPrefab.setStyle({  });
+
+		this.mechanicsContainer = mechanicsContainer;
+		this.mechanicsLabel = mechanicsLabel;
+		this.playBtn = playBtn;
+
+		this.events.emit("scene-awake");
+	}
+
+	private mechanicsContainer!: Phaser.GameObjects.Image;
+	private mechanicsLabel!: Phaser.GameObjects.Image;
+	private playBtn!: Phaser.GameObjects.Image;
+
+	/* START-USER-CODE */
+
+	// Write your code here
+
+	create() {
+		this.editorCreate();
+
+		this.playBtn.setPosition(512, 800);
+		this.mechanicsContainer.setScale(0.4, 0.4);
+		this.mechanicsLabel.setAlpha(0);
+
+		this.tweens.add({
+			targets: this.mechanicsContainer,
+			scale: 1,
+			duration: 900,
+			ease: "Back.easeOut",
+		});
+
+		this.tweens.add({
+			targets: this.mechanicsLabel,
+			alpha: 1,
+			duration: 1500,
+			ease: "Sine.easeOut",
+			delay: 300,
+		});
+
+		this.tweens.add({
+			targets: this.playBtn,
+			y: 649,
+			duration: 1000,
+			ease: "Sine.easeOut",
+			delay: 600,
+		});
+	}
+
+	/* END-USER-CODE */
+}
+
+/* END OF COMPILED CODE */
+
+// You can write more code here

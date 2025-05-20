@@ -2,11 +2,8 @@ import Boot from "./scenes/Boot";
 import MainGame from "./scenes/Game";
 import GameOver from "./scenes/GameOver";
 import MainMenu from "./scenes/MainMenu";
+import Instruction from "./scenes/Instruction";
 import Preloader from "./scenes/Preloader";
-import Levelone from "./scenes/LevelOne";
-import LevelTwo from "./scenes/LevelTwo";
-import LevelThree from "./scenes/LevelThree";
-import LevelSelection from "./scenes/LevelSelection";
 import DetailerPage1 from "./scenes/DetailerPage1";
 import DetailerPage2 from "./scenes/DetailerPage2";
 import DetailerPage3 from "./scenes/DetailerPage3";
@@ -32,13 +29,10 @@ const config: Types.Core.GameConfig = {
 	scene: [
 		Boot,
 		Preloader,
-		Levelone,
-		LevelTwo,
-		LevelThree,
 		MainMenu,
 		MainGame,
-		LevelSelection,
 		GameOver,
+		Instruction,
 		DetailerPage1,
 		DetailerPage2,
 		DetailerPage3,

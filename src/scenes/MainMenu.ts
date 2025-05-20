@@ -19,27 +19,22 @@ export default class MainMenu extends Phaser.Scene {
 		const background_home = this.add.image(0, 0, "background_home");
 		background_home.setOrigin(0, 0);
 
-		// brand
-		const brand = this.add.image(512, 221, "home_asset_1");
-
 		// title
-		const title = this.add.image(512, 439, "home_asset_2");
+		const title = this.add.image(512, 362, "label_title");
 
 		// startButton
-		const startButton = this.add.image(512, 649, "start_button");
+		const startButton = this.add.image(512, 649, "menu_start");
 		startButton.setInteractive(
 			new Phaser.Geom.Rectangle(0, 0, 204, 75),
 			Phaser.Geom.Rectangle.Contains
 		);
 
-		this.brand = brand;
 		this.title = title;
 		this.startButton = startButton;
 
 		this.events.emit("scene-awake");
 	}
 
-	private brand!: Phaser.GameObjects.Image;
 	private title!: Phaser.GameObjects.Image;
 	private startButton!: Phaser.GameObjects.Image;
 
@@ -59,22 +54,12 @@ export default class MainMenu extends Phaser.Scene {
 
 		this.startButton.on("pointerdown", () => {
 			this.startSound.play();
-			this.scene.start("LevelSelection");
+			this.scene.start("Instruction");
 		});
 
-		this.brand.setPosition(512, -500);
 		this.startButton.setPosition(512, 800);
-		this.brand.alpha = 0;
 		this.title.setScale(0.4, 0.4);
 		this.title.alpha = 0;
-
-		this.tweens.add({
-			targets: this.brand,
-			y: 211,
-			alpha: 1,
-			duration: 1000,
-			ease: "Sine.easeOut",
-		});
 
 		this.tweens.add({
 			targets: this.title,

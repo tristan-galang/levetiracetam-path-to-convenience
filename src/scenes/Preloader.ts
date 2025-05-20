@@ -17,7 +17,7 @@ export default class Preloader extends Phaser.Scene {
 
 	editorCreate(): void {
 
-		// background_home
+		// background_home_1
 		this.add.image(512, 384, "background_home");
 
 		// progressBar
