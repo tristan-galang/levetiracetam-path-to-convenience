@@ -18,17 +18,15 @@
             "label": "container_1",
             "list": [
                 {
-                    "type": "Rectangle",
-                    "id": "0b7d283b-348e-4bc5-a942-18b0eeca06cc",
+                    "type": "Image",
+                    "id": "d364d510-1a21-40f6-862b-390e800f839e",
                     "label": "background",
                     "scope": "CLASS",
-                    "originX": 0,
-                    "originY": 0,
-                    "isFilled": true,
-                    "fillColor": "#000000",
-                    "fillAlpha": 0.8,
-                    "width": 1024,
-                    "height": 768
+                    "texture": {
+                        "key": "background_menu"
+                    },
+                    "x": 512,
+                    "y": 384
                 },
                 {
                     "type": "Image",
@@ -36,7 +34,7 @@
                     "label": "title",
                     "scope": "CLASS",
                     "texture": {
-                        "key": "game_level_clear"
+                        "key": "label_thank_you"
                     },
                     "x": 512,
                     "y": 344
@@ -50,24 +48,10 @@
                     "hitArea.width": 204,
                     "hitArea.height": 75,
                     "texture": {
-                        "key": "game_next_button"
+                        "key": "button_next"
                     },
-                    "x": 660,
-                    "y": 502
-                },
-                {
-                    "type": "Image",
-                    "id": "7ca1cf90-a37d-4300-b54b-8de7b52d69f8",
-                    "label": "retryButton",
-                    "scope": "CLASS",
-                    "hitArea.shape": "RECTANGLE",
-                    "hitArea.width": 203,
-                    "hitArea.height": 75,
-                    "texture": {
-                        "key": "game_retry_button"
-                    },
-                    "x": 354,
-                    "y": 502
+                    "x": 911,
+                    "y": 690
                 }
             ]
         }
@@ -80,17 +64,6 @@
         "version": 5
     },
     "prefabProperties": [
-        {
-            "name": "onRetry",
-            "label": "On retry",
-            "tooltip": "",
-            "defValue": "",
-            "customDefinition": false,
-            "type": {
-                "id": "expression",
-                "expressionType": "() => void"
-            }
-        },
         {
             "name": "onNext",
             "label": "On next",

@@ -2,12 +2,10 @@
 
 /* START OF COMPILED CODE */
 
-import TimerPrefab from "./TimerPrefab";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
 export default class Instruction extends Phaser.Scene {
-
 	constructor() {
 		super("Instruction");
 
@@ -17,7 +15,6 @@ export default class Instruction extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
-
 		// background_menu
 		this.add.image(512, 384, "background_menu");
 
@@ -34,11 +31,10 @@ export default class Instruction extends Phaser.Scene {
 
 		// playBtn
 		const playBtn = this.add.image(512, 662, "menu_play");
-
-		// timerPrefab
-		const timerPrefab = new TimerPrefab(this, 103, 203);
-		this.add.existing(timerPrefab);
-		timerPrefab.setStyle({  });
+		playBtn.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 260, 101),
+			Phaser.Geom.Rectangle.Contains
+		);
 
 		this.mechanicsContainer = mechanicsContainer;
 		this.mechanicsLabel = mechanicsLabel;
@@ -61,6 +57,14 @@ export default class Instruction extends Phaser.Scene {
 		this.playBtn.setPosition(512, 800);
 		this.mechanicsContainer.setScale(0.4, 0.4);
 		this.mechanicsLabel.setAlpha(0);
+
+		this.playBtn.on("pointerdown", () => {
+			this.scene.start("MainGame", {
+				wordToGuess: "CONVENIENCE",
+				allLetters: "CONVENIENCEGDR",
+				nextScene: "DetailerPage1",
+			});
+		});
 
 		this.tweens.add({
 			targets: this.mechanicsContainer,

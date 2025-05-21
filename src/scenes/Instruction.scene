@@ -54,22 +54,14 @@
             "id": "0ec030bd-f4a9-4c02-81e1-e1cc0306ba37",
             "label": "playBtn",
             "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 260,
+            "hitArea.height": 101,
             "texture": {
                 "key": "menu_play"
             },
             "x": 512,
             "y": 662
-        },
-        {
-            "prefabId": "eaa69d6f-7001-49a9-8192-83c0fc68f1d0",
-            "id": "07bf31b7-7184-429c-8b28-b82d99f46bff",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "timerPrefab",
-            "x": 103,
-            "y": 203
         }
     ],
     "plainObjects": [],

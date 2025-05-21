@@ -24,67 +24,52 @@
         },
         {
             "type": "Image",
-            "id": "3ac76c73-6d4d-47eb-a456-dd41b1821b12",
-            "label": "detailer_value",
+            "id": "2ce7be39-ad93-43d5-9abb-ae717d89ba44",
+            "label": "detailerImage2",
             "scope": "CLASS",
             "texture": {
-                "key": "detailer_page_3"
+                "key": "detailer_3_asset_1"
             },
-            "x": 509,
-            "y": 382
-        },
-        {
-            "prefabId": "cb46083b-7ba8-44df-af63-24a11023fc4a",
-            "id": "b01a0b7a-f8cd-4306-9c54-5b617860e827",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "detailerHeader",
-            "x": 407,
-            "y": 45
-        },
-        {
-            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
-            "id": "c13b9029-d797-489a-a398-cba06929a75c",
-            "unlock": [
-                "x",
-                "y",
-                "isDark"
-            ],
-            "label": "homeButton",
-            "scope": "CLASS",
-            "isDark": true,
-            "x": 67,
-            "y": 698
+            "x": 680,
+            "y": 179
         },
         {
             "type": "Image",
-            "id": "5339824d-4be7-4a47-a344-6ca819ceea59",
+            "id": "ce75b2df-3510-4a8a-b9bb-66fe6b5df7a2",
+            "label": "detailerImage3",
+            "scope": "CLASS",
+            "texture": {
+                "key": "detailer_3_asset_2"
+            },
+            "x": 512,
+            "y": 467
+        },
+        {
+            "type": "Image",
+            "id": "d82eaee1-8c24-4aef-8672-50678efe99f4",
+            "label": "detailerImage1",
+            "scope": "CLASS",
+            "texture": {
+                "key": "detailer_1_asset_2"
+            },
+            "x": 247,
+            "y": 162,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "97a1e497-f50c-44b0-93fc-649c920eec91",
             "label": "nextBtn",
             "scope": "CLASS",
             "hitArea.shape": "RECTANGLE",
-            "hitArea.width": 39,
-            "hitArea.height": 49,
+            "hitArea.width": 138,
+            "hitArea.height": 100,
             "texture": {
-                "key": "detailer_next_button"
+                "key": "button_next"
             },
-            "x": 966,
-            "y": 700
-        },
-        {
-            "type": "Image",
-            "id": "73dc0869-5249-45da-a809-6e619d27f74d",
-            "label": "prevBtn",
-            "scope": "CLASS",
-            "hitArea.shape": "RECTANGLE",
-            "hitArea.width": 38,
-            "hitArea.height": 48,
-            "texture": {
-                "key": "detailer_previous_button"
-            },
-            "x": 914,
-            "y": 700
+            "x": 913,
+            "y": 690
         }
     ],
     "plainObjects": [],

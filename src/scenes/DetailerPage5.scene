@@ -1,12 +1,12 @@
 {
-    "id": "1a17ca63-4a58-4c69-92ad-8d6b6fce2f08",
+    "id": "0e3e2822-a4c7-4d01-8441-2ec5b05aa4c2",
     "sceneType": "SCENE",
     "settings": {
         "exportClass": true,
         "autoImport": true,
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
-        "sceneKey": "DetailerPage1",
+        "sceneKey": "DetailerPage5",
         "compilerOutputLanguage": "TYPE_SCRIPT",
         "borderWidth": 1024,
         "borderHeight": 768
@@ -14,7 +14,7 @@
     "displayList": [
         {
             "type": "Rectangle",
-            "id": "c974d426-5591-49f0-84a1-88d94db3deed",
+            "id": "e7361853-4278-4c94-9254-23e59e72e862",
             "label": "rectangle_1",
             "x": 512,
             "y": 384,
@@ -24,29 +24,18 @@
         },
         {
             "type": "Image",
-            "id": "ac784497-7fef-4d1d-b6e7-3c2d7576d4c3",
-            "label": "detailer_value",
+            "id": "f3fadf96-a11a-4f25-a122-1a51914093d1",
+            "label": "detailerImage2",
             "scope": "CLASS",
             "texture": {
-                "key": "detailer_1_asset_1"
+                "key": "detailer_5_asset_1"
             },
-            "x": 512,
-            "y": 472
+            "x": 762,
+            "y": 355
         },
         {
             "type": "Image",
-            "id": "2a8aeb2c-503b-4fc1-b641-747b51f42bb9",
-            "label": "detailerHeader",
-            "scope": "CLASS",
-            "texture": {
-                "key": "detailer_1_asset_2"
-            },
-            "x": 512,
-            "y": 148
-        },
-        {
-            "type": "Image",
-            "id": "9b48c2e2-5472-407b-a8da-e45ffbcb63fd",
+            "id": "e850e8b3-3a12-40e5-b98f-e6badadebbec",
             "label": "nextBtn",
             "scope": "CLASS",
             "hitArea.shape": "RECTANGLE",
@@ -57,6 +46,17 @@
             },
             "x": 913,
             "y": 690
+        },
+        {
+            "type": "Image",
+            "id": "c8bcfacd-c4c5-4932-b824-b94d1246ce12",
+            "label": "detailerImage1",
+            "scope": "CLASS",
+            "texture": {
+                "key": "detailer_1_asset_2"
+            },
+            "x": 285,
+            "y": 355
         }
     ],
     "plainObjects": [],

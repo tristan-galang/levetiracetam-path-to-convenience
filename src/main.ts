@@ -1,5 +1,4 @@
 import Boot from "./scenes/Boot";
-import MainGame from "./scenes/Game";
 import GameOver from "./scenes/GameOver";
 import MainMenu from "./scenes/MainMenu";
 import Instruction from "./scenes/Instruction";
@@ -8,6 +7,9 @@ import DetailerPage1 from "./scenes/DetailerPage1";
 import DetailerPage2 from "./scenes/DetailerPage2";
 import DetailerPage3 from "./scenes/DetailerPage3";
 import DetailerPage4 from "./scenes/DetailerPage4";
+import DetailerPage5 from "./scenes/DetailerPage5";
+import DetailerPage6 from "./scenes/DetailerPage6";
+import MainGame from "./scenes/MainGame";
 
 import { Game, Types } from "phaser";
 
@@ -37,6 +39,8 @@ const config: Types.Core.GameConfig = {
 		DetailerPage2,
 		DetailerPage3,
 		DetailerPage4,
+		DetailerPage5,
+		DetailerPage6,
 	],
 	physics: {
 		default: "arcade",

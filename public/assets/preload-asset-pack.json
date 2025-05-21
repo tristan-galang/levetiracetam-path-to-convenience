@@ -17,14 +17,106 @@
                 "key": "background_menu"
             },
             {
+                "url": "assets/version2/button_container_text.png",
+                "type": "image",
+                "key": "button_container_text"
+            },
+            {
+                "url": "assets/version2/button_home.png",
+                "type": "image",
+                "key": "button_home"
+            },
+            {
+                "url": "assets/version2/button_next.png",
+                "type": "image",
+                "key": "button_next"
+            },
+            {
+                "url": "assets/version2/container_game_input.png",
+                "type": "image",
+                "key": "container_game_input"
+            },
+            {
                 "url": "assets/version2/container_mechanics.png",
                 "type": "image",
                 "key": "container_mechanics"
             },
             {
+                "url": "assets/version2/container_timer.png",
+                "type": "image",
+                "key": "container_timer"
+            },
+            {
+                "url": "assets/version2/detailer_1_asset_1.png",
+                "type": "image",
+                "key": "detailer_1_asset_1"
+            },
+            {
+                "url": "assets/version2/detailer_1_asset_2.png",
+                "type": "image",
+                "key": "detailer_1_asset_2"
+            },
+            {
+                "url": "assets/version2/detailer_2_asset_1.png",
+                "type": "image",
+                "key": "detailer_2_asset_1"
+            },
+            {
+                "url": "assets/version2/detailer_2_asset_2.png",
+                "type": "image",
+                "key": "detailer_2_asset_2"
+            },
+            {
+                "url": "assets/version2/detailer_3_asset_1.png",
+                "type": "image",
+                "key": "detailer_3_asset_1"
+            },
+            {
+                "url": "assets/version2/detailer_3_asset_2.png",
+                "type": "image",
+                "key": "detailer_3_asset_2"
+            },
+            {
+                "url": "assets/version2/detailer_4_asset_1.png",
+                "type": "image",
+                "key": "detailer_4_asset_1"
+            },
+            {
+                "url": "assets/version2/detailer_4_asset_2.png",
+                "type": "image",
+                "key": "detailer_4_asset_2"
+            },
+            {
+                "url": "assets/version2/detailer_4_asset_3.png",
+                "type": "image",
+                "key": "detailer_4_asset_3"
+            },
+            {
+                "url": "assets/version2/detailer_5_asset_1.png",
+                "type": "image",
+                "key": "detailer_5_asset_1"
+            },
+            {
+                "url": "assets/version2/detailer_6_asset_1.png",
+                "type": "image",
+                "key": "detailer_6_asset_1"
+            },
+            {
+                "url": "assets/fonts/funny.otf",
+                "format": "opentype",
+                "descriptors": {},
+                "type": "font",
+                "key": "funny"
+            },
+            {
                 "url": "assets/version2/label_mechanics.png",
                 "type": "image",
                 "key": "label_mechanics"
+            },
+            {
+                "url": "assets/version2/label_thank_you.png",
+                "type": "image",
+                "key": "label_thank_you"
             },
             {
                 "url": "assets/version2/label_title.png",

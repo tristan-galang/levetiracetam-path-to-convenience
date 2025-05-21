@@ -2,8 +2,6 @@
 
 /* START OF COMPILED CODE */
 
-import DetailerHeader from "../../public/assets/DetailerHeader";
-import HomeButton from "./HomeButton";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -23,34 +21,31 @@ export default class DetailerPage4 extends Phaser.Scene {
 		const rectangle_1 = this.add.rectangle(512, 384, 1024, 768);
 		rectangle_1.isFilled = true;
 
-		// detailer_value
-		const detailer_value = this.add.image(511, 384, "Asset 29");
+		// nextBtn
+		const nextBtn = this.add.image(913, 690, "button_next");
+		nextBtn.setInteractive(new Phaser.Geom.Rectangle(0, 0, 138, 100), Phaser.Geom.Rectangle.Contains);
 
-		// detailerHeader
-		const detailerHeader = new DetailerHeader(this, 409, 47);
-		this.add.existing(detailerHeader);
+		// detailerImage1
+		const detailerImage1 = this.add.image(512, 55, "detailer_4_asset_1");
 
-		// homeButton
-		const homeButton = new HomeButton(this, 69, 700);
-		this.add.existing(homeButton);
+		// detailerImage2
+		const detailerImage2 = this.add.image(285, 384, "detailer_4_asset_2");
 
-		// prevBtn
-		const prevBtn = this.add.image(914, 700, "detailer_previous_button");
-		prevBtn.setInteractive(new Phaser.Geom.Rectangle(0, 0, 38, 48), Phaser.Geom.Rectangle.Contains);
+		// detailerImage3
+		const detailerImage3 = this.add.image(734, 384, "detailer_4_asset_3");
 
-		// homeButton (prefab fields)
-		homeButton.isDark = true;
-
-		this.detailer_value = detailer_value;
-		this.homeButton = homeButton;
-		this.prevBtn = prevBtn;
+		this.nextBtn = nextBtn;
+		this.detailerImage1 = detailerImage1;
+		this.detailerImage2 = detailerImage2;
+		this.detailerImage3 = detailerImage3;
 
 		this.events.emit("scene-awake");
 	}
 
-	private detailer_value!: Phaser.GameObjects.Image;
-	private homeButton!: HomeButton;
-	private prevBtn!: Phaser.GameObjects.Image;
+	private nextBtn!: Phaser.GameObjects.Image;
+	private detailerImage1!: Phaser.GameObjects.Image;
+	private detailerImage2!: Phaser.GameObjects.Image;
+	private detailerImage3!: Phaser.GameObjects.Image;
 
 	/* START-USER-CODE */
 
@@ -59,23 +54,49 @@ export default class DetailerPage4 extends Phaser.Scene {
 	create() {
 		this.editorCreate();
 
-		this.homeButton.makeDark();
+		this.detailerImage1.alpha = 0;
+		this.detailerImage1.setPosition(
+			this.detailerImage1.x,
+			this.detailerImage1.y - 100
+		);
 
-		this.detailer_value.alpha = 0;
-		this.detailer_value.setPosition(
-			this.detailer_value.x,
-			this.detailer_value.y + 100
+		this.detailerImage2.alpha = 0;
+		this.detailerImage2.setPosition(
+			this.detailerImage2.x - 100,
+			this.detailerImage2.y
+		);
+
+		this.detailerImage3.alpha = 0;
+		this.detailerImage3.setPosition(
+			this.detailerImage3.x + 100,
+			this.detailerImage3.y
 		);
 
 		this.tweens.add({
-			targets: this.detailer_value,
-			y: 384,
+			targets: this.detailerImage1,
+			y: 55,
 			alpha: 1,
 			duration: 1000,
 			ease: "Sine.easeOut",
 		});
 
-		this.prevBtn.on("pointerdown", () => this.scene.start("DetailerPage3"));
+		this.tweens.add({
+			targets: this.detailerImage2,
+			x: 285,
+			alpha: 1,
+			duration: 1000,
+			ease: "Sine.easeOut",
+		});
+
+		this.tweens.add({
+			targets: this.detailerImage3,
+			x: 762,
+			alpha: 1,
+			duration: 1000,
+			ease: "Sine.easeOut",
+		});
+
+		this.nextBtn.on("pointerdown", () => this.scene.start("DetailerPage5"));
 	}
 
 	/* END-USER-CODE */
