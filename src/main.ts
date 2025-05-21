@@ -25,7 +25,7 @@ const config: Types.Core.GameConfig = {
 	// @ts-expect-error: 'resolution' exists at runtime but not in typings
 	resolution: window.devicePixelRatio, // <- this is valid at runtime, but TS doesn't know it
 	scale: {
-		mode: Phaser.AUTO,
+		mode: Phaser.Scale.FIT,
 		autoCenter: Phaser.Scale.CENTER_BOTH,
 	},
 	scene: [
