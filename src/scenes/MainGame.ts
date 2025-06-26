@@ -44,6 +44,21 @@ export default class MainGame extends Phaser.Scene {
 		// background_game
 		this.add.image(512, 384, "background_game");
 
+		switch (this.wordToGuess) {
+			case "CONVENIENCE":
+				this.add.image(150, 87, "level1Btn");
+				break;
+			case "COMPLIANCE":
+				this.add.image(150, 87, "level2Btn");
+				break;
+			case "COST-EFFECTIVE":
+				this.add.image(150, 87, "level3Btn");
+				break;
+			default:
+				this.add.image(150, 87, "level1Btn");
+				break;
+		}
+
 		// containerInput
 		const containerInput = this.add.image(512, 258, "container_game_input");
 		containerInput.alpha = 0.7;

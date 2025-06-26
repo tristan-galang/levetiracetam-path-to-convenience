@@ -20,7 +20,7 @@ const config: Types.Core.GameConfig = {
 	width: 1024,
 	height: 768,
 	parent: "game-container",
-	backgroundColor: "#028af8",
+	backgroundColor: "black",
 	pixelArt: true,
 	// @ts-expect-error: 'resolution' exists at runtime but not in typings
 	resolution: window.devicePixelRatio, // <- this is valid at runtime, but TS doesn't know it

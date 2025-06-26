@@ -81,11 +81,7 @@ export default class DetailerPage2 extends Phaser.Scene {
 		});
 
 		this.nextBtn.on("pointerdown", () => {
-			this.scene.start("MainGame", {
-				wordToGuess: "COST-EFFECTIVE",
-				allLetters: "COST-EFFECTIVE",
-				nextScene: "DetailerPage3",
-			});
+			this.nextBtn.on("pointerdown", () => this.scene.start("DetailerPage4"));
 		});
 	}
 

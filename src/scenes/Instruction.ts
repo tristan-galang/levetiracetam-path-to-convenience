@@ -27,7 +27,7 @@ export default class Instruction extends Phaser.Scene {
 		mechanicsContainer.alphaBottomRight = 0.5;
 
 		// mechanicsLabel
-		const mechanicsLabel = this.add.image(512, 384, "label_mechanics");
+		const mechanicsLabel = this.add.image(512, 384, this.instructionName);
 
 		// playBtn
 		const playBtn = this.add.image(512, 662, "menu_play");
@@ -46,10 +46,15 @@ export default class Instruction extends Phaser.Scene {
 	private mechanicsContainer!: Phaser.GameObjects.Image;
 	private mechanicsLabel!: Phaser.GameObjects.Image;
 	private playBtn!: Phaser.GameObjects.Image;
+	private instructionName: string;
 
 	/* START-USER-CODE */
 
 	// Write your code here
+
+	init(data: { instructionName: string }) {
+		this.instructionName = data.instructionName;
+	}
 
 	create() {
 		this.editorCreate();
@@ -59,11 +64,35 @@ export default class Instruction extends Phaser.Scene {
 		this.mechanicsLabel.setAlpha(0);
 
 		this.playBtn.on("pointerdown", () => {
-			this.scene.start("MainGame", {
-				wordToGuess: "CONVENIENCE",
-				allLetters: "CONVENIENCEGDR",
-				nextScene: "DetailerPage1",
-			});
+			switch (this.instructionName) {
+				case "mechanicsLevel1":
+					this.scene.start("MainGame", {
+						wordToGuess: "CONVENIENCE",
+						allLetters: "CONVENIENCEGDR",
+						nextScene: "DetailerPage1",
+					});
+					break;
+				case "mechanicsLevel2":
+					this.scene.start("MainGame", {
+						wordToGuess: "COMPLIANCE",
+						allLetters: "COMPLIANCEKSDW",
+						nextScene: "DetailerPage2",
+					});
+					break;
+				case "mechanicsLevel3":
+					this.scene.start("MainGame", {
+						wordToGuess: "COST-EFFECTIVE",
+						allLetters: "COST-EFFECTIVE",
+						nextScene: "DetailerPage3",
+					});
+					break;
+				default:
+					this.scene.start("MainGame", {
+						wordToGuess: "CONVENIENCE",
+						allLetters: "CONVENIENCEGDR",
+						nextScene: "DetailerPage1",
+					});
+			}
 		});
 
 		this.tweens.add({

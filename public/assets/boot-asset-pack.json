@@ -1,262 +1,246 @@
 {
-    "section1": {
-        "files": [
-            {
-                "url": "assets/Asset 10.png",
-                "type": "image",
-                "key": "Asset 10"
-            },
-            {
-                "url": "assets/Asset 29.svg",
-                "type": "image",
-                "key": "Asset 29"
-            },
-            {
-                "url": "assets/bg.png",
-                "type": "image",
-                "key": "background"
-            },
-            {
-                "url": "assets/background_game.png",
-                "type": "image",
-                "key": "background_game"
-            },
-            {
-                "url": "assets/background_home.png",
-                "type": "image",
-                "key": "background_home"
-            },
-            {
-                "url": "assets/background_level_selection.png",
-                "type": "image",
-                "key": "background_level_selection"
-            },
-            {
-                "url": [
-                    "assets/bgm-levi.m4a"
-                ],
-                "type": "audio",
-                "key": "bgm-levi"
-            },
-            {
-                "url": "assets/detailer_next_button.png",
-                "type": "image",
-                "key": "detailer_next_button"
-            },
-            {
-                "url": "assets/detailer_page_1.png",
-                "type": "image",
-                "key": "detailer_page_1"
-            },
-            {
-                "url": "assets/detailer_page_1_title.png",
-                "type": "image",
-                "key": "detailer_page_1_title"
-            },
-            {
-                "url": "assets/detailer_page_2.png",
-                "type": "image",
-                "key": "detailer_page_2"
-            },
-            {
-                "url": "assets/detailer_page_3.png",
-                "type": "image",
-                "key": "detailer_page_3"
-            },
-            {
-                "url": "assets/detailer_previous_button.png",
-                "type": "image",
-                "key": "detailer_previous_button"
-            },
-            {
-                "url": "assets/fonts/digitalFont.ttf",
-                "format": "truetype",
-                "descriptors": {},
-                "type": "font",
-                "key": "digitalFont"
-            },
-            {
-                "url": "assets/footer.png",
-                "type": "image",
-                "key": "footer"
-            },
-            {
-                "url": "assets/game_label.png",
-                "type": "image",
-                "key": "game_label"
-            },
-            {
-                "url": "assets/game_level_clear.png",
-                "type": "image",
-                "key": "game_level_clear"
-            },
-            {
-                "url": "assets/game_next_button.png",
-                "type": "image",
-                "key": "game_next_button"
-            },
-            {
-                "url": "assets/game_over.png",
-                "type": "image",
-                "key": "game_over"
-            },
-            {
-                "url": "assets/game_retry_button.png",
-                "type": "image",
-                "key": "game_retry_button"
-            },
-            {
-                "url": "assets/game_skip_button.png",
-                "type": "image",
-                "key": "game_skip_button"
-            },
-            {
-                "url": "assets/header.png",
-                "type": "image",
-                "key": "header"
-            },
-            {
-                "url": "assets/home_asset_1.png",
-                "type": "image",
-                "key": "home_asset_1"
-            },
-            {
-                "url": "assets/home_asset_2.png",
-                "type": "image",
-                "key": "home_asset_2"
-            },
-            {
-                "url": "assets/home_button_dark.png",
-                "type": "image",
-                "key": "home_button_dark"
-            },
-            {
-                "url": "assets/home_button_light.png",
-                "type": "image",
-                "key": "home_button_light"
-            },
-            {
-                "url": "assets/level 1.png",
-                "type": "image",
-                "key": "level 1"
-            },
-            {
-                "url": "assets/Level 3.png",
-                "type": "image",
-                "key": "Level 3"
-            },
-            {
-                "url": "assets/level_1_button.png",
-                "type": "image",
-                "key": "level_1_button"
-            },
-            {
-                "url": "assets/level_2_button.png",
-                "type": "image",
-                "key": "level_2_button"
-            },
-            {
-                "url": "assets/level_3_button.png",
-                "type": "image",
-                "key": "level_3_button"
-            },
-            {
-                "url": "assets/mechanics_container.png",
-                "type": "image",
-                "key": "mechanics_container"
-            },
-            {
-                "url": "assets/player.png",
-                "type": "image",
-                "key": "player"
-            },
-            {
-                "url": "assets/score_a.png",
-                "type": "image",
-                "key": "score_a"
-            },
-            {
-                "url": "assets/score_day.png",
-                "type": "image",
-                "key": "score_day"
-            },
-            {
-                "url": "assets/score_once.png",
-                "type": "image",
-                "key": "score_once"
-            },
-            {
-                "url": "assets/scratch_bg.png",
-                "type": "image",
-                "key": "scratch_bg"
-            },
-            {
-                "url": [
-                    "assets/sfx-btn-start.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-btn-start"
-            },
-            {
-                "url": [
-                    "assets/sfx-complete.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-complete"
-            },
-            {
-                "url": [
-                    "assets/sfx-correct.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-correct"
-            },
-            {
-                "url": [
-                    "assets/sfx-game-over.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-game-over"
-            },
-            {
-                "url": [
-                    "assets/sfx-level-1.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-level-1"
-            },
-            {
-                "url": [
-                    "assets/sfx-level-2.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-level-2"
-            },
-            {
-                "url": [
-                    "assets/sfx-level-3.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-level-3"
-            },
-            {
-                "url": "assets/start_button.png",
-                "type": "image",
-                "key": "start_button"
-            },
-            {
-                "url": "assets/timer_container.png",
-                "type": "image",
-                "key": "timer_container"
-            }
-        ]
-    },
-    "meta": {
-        "app": "Phaser Editor 2D - Asset Pack Editor",
-        "contentType": "phasereditor2d.pack.core.AssetContentType",
-        "url": "https://phasereditor2d.com",
-        "version": 2,
-        "showAllFilesInBlocks": false,
-        "visible": true
-    }
+	"section1": {
+		"files": [
+			{
+				"url": "assets/Asset 10.png",
+				"type": "image",
+				"key": "Asset 10"
+			},
+			{
+				"url": "assets/Asset 29.svg",
+				"type": "image",
+				"key": "Asset 29"
+			},
+			{
+				"url": "assets/bg.png",
+				"type": "image",
+				"key": "background"
+			},
+			{
+				"url": "assets/background_game.png",
+				"type": "image",
+				"key": "background_game"
+			},
+			{
+				"url": "assets/version2/background_home.png",
+				"type": "image",
+				"key": "background_home"
+			},
+			{
+				"url": "assets/background_level_selection.png",
+				"type": "image",
+				"key": "background_level_selection"
+			},
+			{
+				"url": ["assets/bgm-levi.m4a"],
+				"type": "audio",
+				"key": "bgm-levi"
+			},
+			{
+				"url": "assets/detailer_next_button.png",
+				"type": "image",
+				"key": "detailer_next_button"
+			},
+			{
+				"url": "assets/detailer_page_1.png",
+				"type": "image",
+				"key": "detailer_page_1"
+			},
+			{
+				"url": "assets/detailer_page_1_title.png",
+				"type": "image",
+				"key": "detailer_page_1_title"
+			},
+			{
+				"url": "assets/detailer_page_2.png",
+				"type": "image",
+				"key": "detailer_page_2"
+			},
+			{
+				"url": "assets/detailer_page_3.png",
+				"type": "image",
+				"key": "detailer_page_3"
+			},
+			{
+				"url": "assets/detailer_previous_button.png",
+				"type": "image",
+				"key": "detailer_previous_button"
+			},
+			{
+				"url": "assets/fonts/digitalFont.ttf",
+				"format": "truetype",
+				"descriptors": {},
+				"type": "font",
+				"key": "digitalFont"
+			},
+			{
+				"url": "assets/footer.png",
+				"type": "image",
+				"key": "footer"
+			},
+			{
+				"url": "assets/game_label.png",
+				"type": "image",
+				"key": "game_label"
+			},
+			{
+				"url": "assets/game_level_clear.png",
+				"type": "image",
+				"key": "game_level_clear"
+			},
+			{
+				"url": "assets/game_next_button.png",
+				"type": "image",
+				"key": "game_next_button"
+			},
+			{
+				"url": "assets/game_over.png",
+				"type": "image",
+				"key": "game_over"
+			},
+			{
+				"url": "assets/game_retry_button.png",
+				"type": "image",
+				"key": "game_retry_button"
+			},
+			{
+				"url": "assets/game_skip_button.png",
+				"type": "image",
+				"key": "game_skip_button"
+			},
+			{
+				"url": "assets/header.png",
+				"type": "image",
+				"key": "header"
+			},
+			{
+				"url": "assets/home_asset_1.png",
+				"type": "image",
+				"key": "home_asset_1"
+			},
+			{
+				"url": "assets/home_asset_2.png",
+				"type": "image",
+				"key": "home_asset_2"
+			},
+			{
+				"url": "assets/home_button_dark.png",
+				"type": "image",
+				"key": "home_button_dark"
+			},
+			{
+				"url": "assets/home_button_light.png",
+				"type": "image",
+				"key": "home_button_light"
+			},
+			{
+				"url": "assets/level 1.png",
+				"type": "image",
+				"key": "level 1"
+			},
+			{
+				"url": "assets/Level 3.png",
+				"type": "image",
+				"key": "Level 3"
+			},
+			{
+				"url": "assets/level_1_button.png",
+				"type": "image",
+				"key": "level_1_button"
+			},
+			{
+				"url": "assets/level_2_button.png",
+				"type": "image",
+				"key": "level_2_button"
+			},
+			{
+				"url": "assets/level_3_button.png",
+				"type": "image",
+				"key": "level_3_button"
+			},
+			{
+				"url": "assets/mechanics_container.png",
+				"type": "image",
+				"key": "mechanics_container"
+			},
+			{
+				"url": "assets/player.png",
+				"type": "image",
+				"key": "player"
+			},
+			{
+				"url": "assets/score_a.png",
+				"type": "image",
+				"key": "score_a"
+			},
+			{
+				"url": "assets/score_day.png",
+				"type": "image",
+				"key": "score_day"
+			},
+			{
+				"url": "assets/score_once.png",
+				"type": "image",
+				"key": "score_once"
+			},
+			{
+				"url": "assets/scratch_bg.png",
+				"type": "image",
+				"key": "scratch_bg"
+			},
+			{
+				"url": ["assets/sfx-btn-start.m4a"],
+				"type": "audio",
+				"key": "sfx-btn-start"
+			},
+			{
+				"url": ["assets/sfx-complete.m4a"],
+				"type": "audio",
+				"key": "sfx-complete"
+			},
+			{
+				"url": ["assets/sfx-correct.m4a"],
+				"type": "audio",
+				"key": "sfx-correct"
+			},
+			{
+				"url": ["assets/sfx-game-over.m4a"],
+				"type": "audio",
+				"key": "sfx-game-over"
+			},
+			{
+				"url": ["assets/sfx-level-1.m4a"],
+				"type": "audio",
+				"key": "sfx-level-1"
+			},
+			{
+				"url": ["assets/sfx-level-2.m4a"],
+				"type": "audio",
+				"key": "sfx-level-2"
+			},
+			{
+				"url": ["assets/sfx-level-3.m4a"],
+				"type": "audio",
+				"key": "sfx-level-3"
+			},
+			{
+				"url": "assets/start_button.png",
+				"type": "image",
+				"key": "start_button"
+			},
+			{
+				"url": "assets/timer_container.png",
+				"type": "image",
+				"key": "timer_container"
+			}
+		]
+	},
+	"meta": {
+		"app": "Phaser Editor 2D - Asset Pack Editor",
+		"contentType": "phasereditor2d.pack.core.AssetContentType",
+		"url": "https://phasereditor2d.com",
+		"version": 2,
+		"showAllFilesInBlocks": false,
+		"visible": true
+	}
 }
