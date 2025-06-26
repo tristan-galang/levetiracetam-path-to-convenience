@@ -5,6 +5,30 @@
 import TimerPrefab from "./TimerPrefab";
 import LevelClearPrefab from "./LevelClearPrefab";
 /* START-USER-IMPORTS */
+
+class CustomText extends Phaser.GameObjects.Text {
+	public isCentered = false;
+	public originalPosition = { x: 0, y: 0 };
+
+	constructor(
+		scene: Phaser.Scene,
+		x: number,
+		y: number,
+		text: string,
+		style: Phaser.Types.GameObjects.Text.TextStyle
+	) {
+		const fixX = x + 40;
+		super(scene, fixX, y, text, {
+			...style,
+			fixedWidth: 80,
+			align: "center",
+		});
+		this.setOrigin(0.5, 0);
+		this.originalPosition = { x: fixX, y };
+		scene.add.existing(this); // add to scene manually
+	}
+}
+
 /* END-USER-IMPORTS */
 
 export default class MainGame extends Phaser.Scene {
@@ -147,9 +171,7 @@ export default class MainGame extends Phaser.Scene {
 		const letters = this.add.layer();
 
 		// letter
-		const letter = this.add.text(83, 473, "", {});
-		letter.text = "T";
-		letter.setStyle({
+		const letter = new CustomText(this, 83, 473, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -157,19 +179,16 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter);
 
 		// letter_1
-		const letter_1 = this.add.text(214, 473, "", {});
-		letter_1.text = "T";
-		letter_1.setStyle({
+		const letter_1 = new CustomText(this, 214, 473, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
 		});
+
 		letters.add(letter_1);
 
 		// letter_2
-		const letter_2 = this.add.text(350, 473, "", {});
-		letter_2.text = "T";
-		letter_2.setStyle({
+		const letter_2 = new CustomText(this, 350, 473, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -177,9 +196,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_2);
 
 		// letter_3
-		const letter_3 = this.add.text(481, 473, "", {});
-		letter_3.text = "T";
-		letter_3.setStyle({
+		const letter_3 = new CustomText(this, 481, 473, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -187,9 +204,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_3);
 
 		// letter_4
-		const letter_4 = this.add.text(615, 473, "", {});
-		letter_4.text = "T";
-		letter_4.setStyle({
+		const letter_4 = new CustomText(this, 615, 473, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -197,9 +212,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_4);
 
 		// letter_5
-		const letter_5 = this.add.text(753, 473, "", {});
-		letter_5.text = "T";
-		letter_5.setStyle({
+		const letter_5 = new CustomText(this, 753, 473, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -207,9 +220,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_5);
 
 		// letter_6
-		const letter_6 = this.add.text(884, 473, "", {});
-		letter_6.text = "T";
-		letter_6.setStyle({
+		const letter_6 = new CustomText(this, 884, 473, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -217,9 +228,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_6);
 
 		// letter_7
-		const letter_7 = this.add.text(81, 609, "", {});
-		letter_7.text = "T";
-		letter_7.setStyle({
+		const letter_7 = new CustomText(this, 81, 609, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -227,9 +236,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_7);
 
 		// letter_8
-		const letter_8 = this.add.text(214, 609, "", {});
-		letter_8.text = "T";
-		letter_8.setStyle({
+		const letter_8 = new CustomText(this, 214, 609, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -237,9 +244,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_8);
 
 		// letter_9
-		const letter_9 = this.add.text(347, 609, "", {});
-		letter_9.text = "T";
-		letter_9.setStyle({
+		const letter_9 = new CustomText(this, 347, 609, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -247,9 +252,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_9);
 
 		// letter_10
-		const letter_10 = this.add.text(484, 609, "", {});
-		letter_10.text = "T";
-		letter_10.setStyle({
+		const letter_10 = new CustomText(this, 484, 609, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -257,9 +260,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_10);
 
 		// letter_11
-		const letter_11 = this.add.text(615, 609, "", {});
-		letter_11.text = "T";
-		letter_11.setStyle({
+		const letter_11 = new CustomText(this, 615, 609, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -267,9 +268,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_11);
 
 		// letter_12
-		const letter_12 = this.add.text(748, 609, "", {});
-		letter_12.text = "T";
-		letter_12.setStyle({
+		const letter_12 = new CustomText(this, 748, 609, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -277,9 +276,7 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_12);
 
 		// letter_13
-		const letter_13 = this.add.text(880, 609, "", {});
-		letter_13.text = "T";
-		letter_13.setStyle({
+		const letter_13 = new CustomText(this, 880, 609, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
 			fontSize: "100px",
@@ -327,7 +324,7 @@ export default class MainGame extends Phaser.Scene {
 		// levelClearPrefab (prefab fields)
 		levelClearPrefab.onNext = this.onNext.bind(this);
 
-		this.containerInput = containerInput;
+		// this.containerInput = containerInput;
 		this.timer = timer;
 		this.levelClearPrefab = levelClearPrefab;
 		this.letterList = letterList;
@@ -335,10 +332,10 @@ export default class MainGame extends Phaser.Scene {
 		this.events.emit("scene-awake");
 	}
 
-	private containerInput!: Phaser.GameObjects.Image;
+	// private containerInput!: Phaser.GameObjects.Image;
 	private timer!: TimerPrefab;
 	private levelClearPrefab!: LevelClearPrefab;
-	private letterList!: Phaser.GameObjects.Text[];
+	private letterList!: CustomText[];
 
 	/* START-USER-CODE */
 
@@ -348,6 +345,7 @@ export default class MainGame extends Phaser.Scene {
 	private allLetters!: string;
 	private correctSound!: Phaser.Sound.BaseSound;
 	private completeSound!: Phaser.Sound.BaseSound;
+	private centerLetters: CustomText[] = [];
 
 	init(data: { wordToGuess: string; nextScene: string; allLetters: string }) {
 		this.wordToGuess = data.wordToGuess;
@@ -358,6 +356,8 @@ export default class MainGame extends Phaser.Scene {
 	create() {
 		this.editorCreate();
 
+		this.centerLetters = [];
+
 		this.correctSound = this.sound.add("sfx-correct", { volume: 0.8 });
 		this.completeSound = this.sound.add("sfx-complete", { volume: 0.8 });
 
@@ -366,25 +366,66 @@ export default class MainGame extends Phaser.Scene {
 		this.letterList.forEach((letter, index) => {
 			letter.setInteractive({ draggable: true });
 			letter.text = matchLetters[index];
-			this.input.setDraggable(letter);
+			letter.on("pointerdown", () => {
+				if (!letter.isCentered) {
+					letter.isCentered = true;
+					this.centerLetters.push(letter);
+					this.moveLettersCenter();
+				} else {
+					letter.isCentered = false;
+					this.centerLetters = this.centerLetters.filter((l) => l !== letter);
+
+					this.tweens.add({
+						targets: letter,
+						x: letter.originalPosition.x,
+						y: letter.originalPosition.y,
+						duration: 300,
+						ease: "Power2",
+					});
+
+					this.moveLettersCenter();
+				}
+			});
 		});
 
-		this.input.on(
-			"drag",
-			(
-				_pointer: Phaser.Input.Pointer,
-				gameObject: Phaser.GameObjects.Text,
-				dragX: number,
-				dragY: number
-			) => {
-				gameObject.x = dragX;
-				gameObject.y = dragY;
-			}
-		);
+		// this.input.on(
+		// 	"drag",
+		// 	(
+		// 		_pointer: Phaser.Input.Pointer,
+		// 		gameObject: Phaser.GameObjects.Text,
+		// 		dragX: number,
+		// 		dragY: number
+		// 	) => {
+		// 		gameObject.x = dragX;
+		// 		gameObject.y = dragY;
+		// 	}
+		// );
 
-		this.input.on("dragend", () => {
+		// this.input.on("dragend", () => {
+		// 	this.checkWord();
+		// });
+	}
+
+	moveLettersCenter() {
+		const centerX = this.scale.width / 2;
+		const centerY = this.scale.height / 3.8;
+		const spacing = 60;
+		const totalWidth = spacing * (this.centerLetters.length - 1);
+		const startX = centerX - totalWidth / 2;
+
+		this.centerLetters.forEach((letter, index) => {
+			this.tweens.add({
+				targets: letter,
+				x: startX + index * spacing,
+				y: centerY,
+				duration: 300,
+				ease: "Power2",
+			});
+		});
+
+		setTimeout(() => {
 			this.checkWord();
-		});
+		}, 600);
 	}
 
 	createGame(word: string) {
@@ -412,20 +453,14 @@ export default class MainGame extends Phaser.Scene {
 
 	checkWord() {
 		this.correctSound.play();
-		const dropZone = this.containerInput.getBounds();
 
-		const lettersInZone = this.letterList.filter((letter) =>
-			Phaser.Geom.Intersects.RectangleToRectangle(letter.getBounds(), dropZone)
-		);
-		const sorted = lettersInZone.sort((a, b) => a.x - b.x);
-		const formedWord = sorted
-			.map((letter) => (letter as Phaser.GameObjects.Text).text)
-			.join("")
-			.toLowerCase();
+		const centeredLettersText = this.centerLetters
+			.map((eachLetter) => eachLetter.text)
+			.join("");
 
-		if (formedWord.toLowerCase() === this.wordToGuess.toLowerCase()) {
+		if (centeredLettersText.toLowerCase() === this.wordToGuess.toLowerCase()) {
 			this.timer.stopTimer();
-			lettersInZone.forEach((letter) => this.glowLetters(letter));
+			this.centerLetters.forEach((letter) => this.glowLetters(letter));
 			setTimeout(() => {
 				this.completeSound.play();
 			}, 500);
