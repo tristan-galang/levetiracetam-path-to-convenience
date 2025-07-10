@@ -44,28 +44,29 @@ export default class MainGame extends Phaser.Scene {
 		// background_game
 		this.add.image(512, 384, "background_game");
 
-		switch (this.wordToGuess) {
-			case "CONVENIENCE":
-				this.add.image(150, 87, "level1Btn");
-				break;
-			case "COMPLIANCE":
-				this.add.image(150, 87, "level2Btn");
-				break;
-			case "COST-EFFECTIVE":
-				this.add.image(150, 87, "level3Btn");
-				break;
-			default:
-				this.add.image(150, 87, "level1Btn");
-				break;
-		}
-
 		// containerInput
-		const containerInput = this.add.image(512, 258, "container_game_input");
+		const containerInput = this.add.image(512, 300, "container_game_input");
 		containerInput.alpha = 0.7;
 		containerInput.alphaTopLeft = 0.7;
 		containerInput.alphaTopRight = 0.7;
 		containerInput.alphaBottomLeft = 0.7;
 		containerInput.alphaBottomRight = 0.7;
+
+		switch (this.wordToGuess) {
+			case "CONVENIENCE":
+				this.add.image(150, 50, "level1Btn").setScale(0.7);
+				this.add.image(512, 120, "clueLevel1");
+				break;
+			case "COMPLIANCE":
+				this.add.image(150, 50, "level2Btn").setScale(0.7);
+				break;
+			case "COST-EFFECTIVE":
+				this.add.image(150, 50, "level3Btn").setScale(0.7);
+				break;
+			default:
+				this.add.image(150, 50, "level1Btn").setScale(0.7);
+				break;
+		}
 
 		// textContainer
 		const textContainer = this.add.layer();
@@ -299,12 +300,12 @@ export default class MainGame extends Phaser.Scene {
 		letters.add(letter_13);
 
 		// container_timer
-		const container_timer = this.add.image(915, 87, "container_timer");
+		const container_timer = this.add.image(915, 55, "container_timer");
 		container_timer.scaleX = 0.7;
 		container_timer.scaleY = 0.7;
 
 		// timer
-		const timer = new TimerPrefab(this, 918, 82);
+		const timer = new TimerPrefab(this, 918, 48);
 		this.add.existing(timer);
 		timer.text = "19";
 		timer.setStyle({ align: "center" });
@@ -423,7 +424,7 @@ export default class MainGame extends Phaser.Scene {
 
 	moveLettersCenter() {
 		const centerX = this.scale.width / 2;
-		const centerY = this.scale.height / 3.8;
+		const centerY = this.scale.height / 3;
 		const spacing = 60;
 		const totalWidth = spacing * (this.centerLetters.length - 1);
 		const startX = centerX - totalWidth / 2;

@@ -167,6 +167,11 @@
 				"url": "assets/version2/lock_icon.png",
 				"type": "image",
 				"key": "lockIcon"
+			},
+			{
+				"url": "assets/version2/clue_level_1.png",
+				"type": "image",
+				"key": "clueLevel1"
 			}
 		]
 	},
