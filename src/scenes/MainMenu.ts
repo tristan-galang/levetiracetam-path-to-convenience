@@ -94,15 +94,15 @@ export default class MainMenu extends Phaser.Scene {
 			this.scene.start("Instruction", { instructionName: "mechanicsLevel1" });
 		});
 
-		this.level2Btn.on("pointerdown", () => {
-			this.startSound.play();
-			this.scene.start("Instruction", { instructionName: "mechanicsLevel2" });
-		});
+		// this.level2Btn.on("pointerdown", () => {
+		// 	this.startSound.play();
+		// 	// this.scene.start("Instruction", { instructionName: "mechanicsLevel2" });
+		// });
 
-		this.level3Btn.on("pointerdown", () => {
-			this.startSound.play();
-			this.scene.start("Instruction", { instructionName: "mechanicsLevel3" });
-		});
+		// this.level3Btn.on("pointerdown", () => {
+		// 	this.startSound.play();
+		// 	// this.scene.start("Instruction", { instructionName: "mechanicsLevel3" });
+		// });
 
 		this.level1Btn.setPosition(241, 900);
 		this.level2Btn.setPosition(512, 900);
