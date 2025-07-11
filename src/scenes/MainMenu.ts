@@ -19,29 +19,56 @@ export default class MainMenu extends Phaser.Scene {
 		const background_home = this.add.image(0, 0, "background_home");
 		background_home.setOrigin(0, 0);
 
-		// brand
-		const brand = this.add.image(512, 221, "home_asset_1");
-
 		// title
-		const title = this.add.image(512, 439, "home_asset_2");
+		const title = this.add.image(512, 362, "label_title");
 
 		// startButton
-		const startButton = this.add.image(512, 649, "start_button");
-		startButton.setInteractive(
+		// const startButton = this.add.image(512, 649, "menu_start");
+		// startButton.setInteractive(
+		// 	new Phaser.Geom.Rectangle(0, 0, 204, 75),
+		// 	Phaser.Geom.Rectangle.Contains
+		// );
+
+		// level1Btn
+		const level1Btn = this.add.image(241, 649, "level1Btn");
+		level1Btn.setInteractive(
 			new Phaser.Geom.Rectangle(0, 0, 204, 75),
 			Phaser.Geom.Rectangle.Contains
 		);
 
-		this.brand = brand;
+		const level2Btn = this.add.image(512, 649, "level2Btn");
+		level2Btn.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 204, 75),
+			Phaser.Geom.Rectangle.Contains
+		);
+
+		const level3Btn = this.add.image(780, 649, "level3Btn");
+		level3Btn.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 204, 75),
+			Phaser.Geom.Rectangle.Contains
+		);
+
+		const level2BtnLock = this.add.image(512, 649, "lockIcon");
+		const level3BtnLock = this.add.image(780, 649, "lockIcon");
+
 		this.title = title;
-		this.startButton = startButton;
+		this.level1Btn = level1Btn;
+		this.level2Btn = level2Btn;
+		this.level3Btn = level3Btn;
+		this.level2BtnLock = level2BtnLock;
+		this.level3BtnLock = level3BtnLock;
+		// this.startButton = startButton;
 
 		this.events.emit("scene-awake");
 	}
 
-	private brand!: Phaser.GameObjects.Image;
 	private title!: Phaser.GameObjects.Image;
-	private startButton!: Phaser.GameObjects.Image;
+	// private startButton!: Phaser.GameObjects.Image;
+	private level1Btn!: Phaser.GameObjects.Image;
+	private level2Btn!: Phaser.GameObjects.Image;
+	private level3Btn!: Phaser.GameObjects.Image;
+	private level2BtnLock!: Phaser.GameObjects.Image;
+	private level3BtnLock!: Phaser.GameObjects.Image;
 
 	/* START-USER-CODE */
 	private bgm!: Phaser.Sound.BaseSound;
@@ -57,24 +84,34 @@ export default class MainMenu extends Phaser.Scene {
 		this.startSound = this.sound.add("sfx-btn-start", { volume: 0.8 });
 		this.bgm.play();
 
-		this.startButton.on("pointerdown", () => {
+		// this.startButton.on("pointerdown", () => {
+		// 	this.startSound.play();
+		// 	this.scene.start("Instruction");
+		// });
+
+		this.level1Btn.on("pointerdown", () => {
 			this.startSound.play();
-			this.scene.start("LevelSelection");
+			this.scene.start("Instruction", { instructionName: "mechanicsLevel1" });
 		});
 
-		this.brand.setPosition(512, -500);
-		this.startButton.setPosition(512, 800);
-		this.brand.alpha = 0;
+		// this.level2Btn.on("pointerdown", () => {
+		// 	this.startSound.play();
+		// 	// this.scene.start("Instruction", { instructionName: "mechanicsLevel2" });
+		// });
+
+		// this.level3Btn.on("pointerdown", () => {
+		// 	this.startSound.play();
+		// 	// this.scene.start("Instruction", { instructionName: "mechanicsLevel3" });
+		// });
+
+		this.level1Btn.setPosition(241, 900);
+		this.level2Btn.setPosition(512, 900);
+		this.level3Btn.setPosition(780, 900);
+		this.level2BtnLock.setAlpha(0);
+		this.level3BtnLock.setAlpha(0);
+
 		this.title.setScale(0.4, 0.4);
 		this.title.alpha = 0;
-
-		this.tweens.add({
-			targets: this.brand,
-			y: 211,
-			alpha: 1,
-			duration: 1000,
-			ease: "Sine.easeOut",
-		});
 
 		this.tweens.add({
 			targets: this.title,
@@ -86,11 +123,43 @@ export default class MainMenu extends Phaser.Scene {
 		});
 
 		this.tweens.add({
-			targets: this.startButton,
+			targets: this.level1Btn,
 			y: 649,
 			duration: 1000,
 			ease: "Sine.easeOut",
-			delay: 600,
+			delay: 500,
+		});
+
+		this.tweens.add({
+			targets: this.level2Btn,
+			y: 649,
+			duration: 1000,
+			ease: "Sine.easeOut",
+			delay: 700,
+		});
+
+		this.tweens.add({
+			targets: this.level2BtnLock,
+			alpha: 1,
+			duration: 1000,
+			ease: "Sine.easeOut",
+			delay: 1500,
+		});
+
+		this.tweens.add({
+			targets: this.level3Btn,
+			y: 649,
+			duration: 1000,
+			ease: "Sine.easeOut",
+			delay: 800,
+		});
+
+		this.tweens.add({
+			targets: this.level3BtnLock,
+			alpha: 1,
+			duration: 1000,
+			ease: "Sine.easeOut",
+			delay: 1700,
 		});
 	}
 	/* END-USER-CODE */

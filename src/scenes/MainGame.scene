@@ -1,0 +1,434 @@
+{
+    "id": "a09d0384-678e-4209-91b1-144da5d48fe0",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "displayName": "MainGame",
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "MainGame",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1024,
+        "borderHeight": 768
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "46a6f059-2ea8-495a-8a58-3b4b149a2aaa",
+            "label": "background_game",
+            "texture": {
+                "key": "background_game"
+            },
+            "x": 512,
+            "y": 384
+        },
+        {
+            "type": "Image",
+            "id": "a6bb3148-559e-437d-aacf-78afa3d31b41",
+            "label": "containerInput",
+            "scope": "CLASS",
+            "texture": {
+                "key": "container_game_input"
+            },
+            "x": 512,
+            "y": 258,
+            "alpha": 0.7,
+            "alphaTopLeft": 0.7,
+            "alphaTopRight": 0.7,
+            "alphaBottomLeft": 0.7,
+            "alphaBottomRight": 0.7
+        },
+        {
+            "type": "Layer",
+            "id": "f733f555-933b-4b44-bb31-ee11e8b6519c",
+            "label": "textContainer",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "7f98bb99-fd97-436b-923f-13c7e6bdd084",
+                    "label": "button_container_text",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 114,
+                    "y": 519
+                },
+                {
+                    "type": "Image",
+                    "id": "44e3f384-0255-4d94-a2b9-747b30603140",
+                    "label": "button_container_text_1",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 247,
+                    "y": 519
+                },
+                {
+                    "type": "Image",
+                    "id": "d90292bf-aff3-4cbd-a4ac-1bc7e194b4e8",
+                    "label": "button_container_text_2",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 380,
+                    "y": 519
+                },
+                {
+                    "type": "Image",
+                    "id": "bb2113a6-6e0d-407a-968b-237d67e32295",
+                    "label": "button_container_text_3",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 513,
+                    "y": 519
+                },
+                {
+                    "type": "Image",
+                    "id": "f1593bfc-b1f8-465e-801d-9b8080b18842",
+                    "label": "button_container_text_4",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 647,
+                    "y": 519
+                },
+                {
+                    "type": "Image",
+                    "id": "340a9a86-82db-4fc7-85ff-2c836629fa36",
+                    "label": "button_container_text_5",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 781,
+                    "y": 519
+                },
+                {
+                    "type": "Image",
+                    "id": "75222451-10b6-438d-a9ac-cabea12d00c9",
+                    "label": "button_container_text_6",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 913,
+                    "y": 519
+                },
+                {
+                    "type": "Image",
+                    "id": "ff34340b-a08a-4a48-98b0-0e69da225d61",
+                    "label": "button_container_text_7",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 114,
+                    "y": 655
+                },
+                {
+                    "type": "Image",
+                    "id": "9ea5ec19-994c-4c55-aa67-3fc4f7c73479",
+                    "label": "button_container_text_8",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 247,
+                    "y": 655
+                },
+                {
+                    "type": "Image",
+                    "id": "35ffcdf4-35d8-4090-ae77-648eec0087e8",
+                    "label": "button_container_text_9",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 380,
+                    "y": 655
+                },
+                {
+                    "type": "Image",
+                    "id": "4a2b6171-834b-4363-b0b0-e40bc3e1b0bd",
+                    "label": "button_container_text_10",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 513,
+                    "y": 655
+                },
+                {
+                    "type": "Image",
+                    "id": "074e61d6-197e-48cb-b3df-182a162eae38",
+                    "label": "button_container_text_11",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 647,
+                    "y": 655
+                },
+                {
+                    "type": "Image",
+                    "id": "c55b3ca7-88c1-4a7a-bbaf-c79c532a53ac",
+                    "label": "button_container_text_12",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 781,
+                    "y": 655
+                },
+                {
+                    "type": "Image",
+                    "id": "8908b4f4-b626-416b-9b29-cf2955947113",
+                    "label": "button_container_text_13",
+                    "texture": {
+                        "key": "button_container_text"
+                    },
+                    "x": 913,
+                    "y": 655
+                }
+            ]
+        },
+        {
+            "type": "Layer",
+            "id": "784a86ae-9876-49e8-bf48-2a836505d7f5",
+            "label": "letters",
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "a1b4a471-c572-43be-bb9f-b0169c594cc4",
+                    "label": "letter",
+                    "x": 83,
+                    "y": 473,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "bc0b088f-3da8-4a32-b63a-7c76845ea80a",
+                    "label": "letter_1",
+                    "x": 214,
+                    "y": 473,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "a28007e6-2854-480e-8082-faa5084d73d9",
+                    "label": "letter_2",
+                    "x": 350,
+                    "y": 473,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "03377c27-d747-43b3-aa4e-b7cfbb7f69c0",
+                    "label": "letter_3",
+                    "x": 481,
+                    "y": 473,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "aafa3bb0-a137-4915-b68e-f31b44650f4b",
+                    "label": "letter_4",
+                    "x": 615,
+                    "y": 473,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "d1e461bc-8f89-4ea8-b5d7-77343ae0d506",
+                    "label": "letter_5",
+                    "x": 753,
+                    "y": 473,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "8ea1d133-d946-482d-b54a-4598a5a86b0b",
+                    "label": "letter_6",
+                    "x": 884,
+                    "y": 473,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "88e9b422-6d72-4a1f-96a5-c04e665b088f",
+                    "label": "letter_7",
+                    "x": 81,
+                    "y": 609,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "66340d58-a84c-4705-abea-a69278beb3df",
+                    "label": "letter_8",
+                    "x": 214,
+                    "y": 609,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "d1a941c7-630c-44a8-b83e-0307b3c1c95b",
+                    "label": "letter_9",
+                    "x": 347,
+                    "y": 609,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "471fb49d-0dea-4c99-bfa2-cd4ab1eff81d",
+                    "label": "letter_10",
+                    "x": 484,
+                    "y": 609,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "2ac40a91-706a-46b7-9ba9-20cc418b941e",
+                    "label": "letter_11",
+                    "x": 615,
+                    "y": 609,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "f31f9b14-59ee-4d84-8ce5-c25de84f386c",
+                    "label": "letter_12",
+                    "x": 748,
+                    "y": 609,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "7b7c0acd-98b4-47f6-a48f-bef28571bce0",
+                    "label": "letter_13",
+                    "x": 880,
+                    "y": 609,
+                    "text": "T",
+                    "fontFamily": "funny",
+                    "fontSize": "100px",
+                    "color": "#000000ff"
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "834982b3-5435-4054-a0f6-02623e9fe2f8",
+            "label": "container_timer",
+            "texture": {
+                "key": "container_timer"
+            },
+            "x": 915,
+            "y": 87,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "prefabId": "eaa69d6f-7001-49a9-8192-83c0fc68f1d0",
+            "id": "7d6fd2c7-e2fd-4762-b92d-3fcc7ce0a13e",
+            "unlock": [
+                "x",
+                "y",
+                "duration",
+                "text",
+                "align",
+                "paddingLeft",
+                "paddingTop",
+                "paddingRight",
+                "paddingBottom",
+                "onComplete"
+            ],
+            "label": "timer",
+            "scope": "CLASS",
+            "duration": 30,
+            "onComplete": "this.showLevelClear.bind(this)",
+            "x": 918,
+            "y": 82,
+            "text": "19",
+            "paddingLeft": 0,
+            "paddingTop": 0,
+            "paddingRight": 15,
+            "paddingBottom": 0,
+            "align": "center"
+        },
+        {
+            "prefabId": "d9ac11a0-3ada-4729-949f-315faf32dd7a",
+            "id": "50315f07-8095-4552-90eb-72b31dff1e80",
+            "unlock": [
+                "x",
+                "y",
+                "onNext"
+            ],
+            "label": "levelClearPrefab",
+            "scope": "CLASS",
+            "onNext": "this.onNext.bind(this)",
+            "x": 0,
+            "y": 768
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "lists": [
+        {
+            "id": "c6c11215-0b7c-47af-b08b-ef365c6c499e",
+            "label": "letterList",
+            "objectIds": [
+                "7b7c0acd-98b4-47f6-a48f-bef28571bce0",
+                "f31f9b14-59ee-4d84-8ce5-c25de84f386c",
+                "2ac40a91-706a-46b7-9ba9-20cc418b941e",
+                "471fb49d-0dea-4c99-bfa2-cd4ab1eff81d",
+                "d1a941c7-630c-44a8-b83e-0307b3c1c95b",
+                "66340d58-a84c-4705-abea-a69278beb3df",
+                "88e9b422-6d72-4a1f-96a5-c04e665b088f",
+                "8ea1d133-d946-482d-b54a-4598a5a86b0b",
+                "d1e461bc-8f89-4ea8-b5d7-77343ae0d506",
+                "aafa3bb0-a137-4915-b68e-f31b44650f4b",
+                "03377c27-d747-43b3-aa4e-b7cfbb7f69c0",
+                "a28007e6-2854-480e-8082-faa5084d73d9",
+                "bc0b088f-3da8-4a32-b63a-7c76845ea80a",
+                "a1b4a471-c572-43be-bb9f-b0169c594cc4"
+            ]
+        }
+    ]
+}

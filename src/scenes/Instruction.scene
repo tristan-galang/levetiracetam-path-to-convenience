@@ -1,0 +1,74 @@
+{
+    "id": "b05bdba9-3ccf-4ccd-8ec1-01ca6870898a",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Instruction",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1024,
+        "borderHeight": 768
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "11136046-ef25-4989-9ed8-cb136470cb68",
+            "label": "background_menu",
+            "texture": {
+                "key": "background_menu"
+            },
+            "x": 512,
+            "y": 384
+        },
+        {
+            "type": "Image",
+            "id": "e1b240fa-ebf9-40b6-864c-ce17d179aa7f",
+            "label": "mechanicsContainer",
+            "scope": "CLASS",
+            "texture": {
+                "key": "container_mechanics"
+            },
+            "x": 512,
+            "y": 384,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5
+        },
+        {
+            "type": "Image",
+            "id": "4bf9a781-f65c-4c15-a736-0c81c887cb4e",
+            "label": "mechanicsLabel",
+            "scope": "CLASS",
+            "texture": {
+                "key": "label_mechanics"
+            },
+            "x": 512,
+            "y": 384
+        },
+        {
+            "type": "Image",
+            "id": "0ec030bd-f4a9-4c02-81e1-e1cc0306ba37",
+            "label": "playBtn",
+            "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 260,
+            "hitArea.height": 101,
+            "texture": {
+                "key": "menu_play"
+            },
+            "x": 512,
+            "y": 662
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

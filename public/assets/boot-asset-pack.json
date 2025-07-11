@@ -1,602 +1,246 @@
 {
-    "section1": {
-        "files": [
-            {
-                "url": "assets/Asset 10.png",
-                "type": "image",
-                "key": "Asset 10"
-            },
-            {
-                "url": "assets/Asset 29.svg",
-                "type": "image",
-                "key": "Asset 29"
-            },
-            {
-                "url": "assets/bg.png",
-                "type": "image",
-                "key": "background"
-            },
-            {
-                "url": "assets/background_game.png",
-                "type": "image",
-                "key": "background_game"
-            },
-            {
-                "url": "assets/background_home.png",
-                "type": "image",
-                "key": "background_home"
-            },
-            {
-                "url": "assets/background_level_selection.png",
-                "type": "image",
-                "key": "background_level_selection"
-            },
-            {
-                "url": [
-                    "assets/bgm-levi.m4a"
-                ],
-                "type": "audio",
-                "key": "bgm-levi"
-            },
-            {
-                "url": "assets/detailer_next_button.png",
-                "type": "image",
-                "key": "detailer_next_button"
-            },
-            {
-                "url": "assets/detailer_page_1.png",
-                "type": "image",
-                "key": "detailer_page_1"
-            },
-            {
-                "url": "assets/detailer_page_1_title.png",
-                "type": "image",
-                "key": "detailer_page_1_title"
-            },
-            {
-                "url": "assets/detailer_page_2.png",
-                "type": "image",
-                "key": "detailer_page_2"
-            },
-            {
-                "url": "assets/detailer_page_3.png",
-                "type": "image",
-                "key": "detailer_page_3"
-            },
-            {
-                "url": "assets/detailer_previous_button.png",
-                "type": "image",
-                "key": "detailer_previous_button"
-            },
-            {
-                "url": "assets/fonts/digitalFont.ttf",
-                "format": "truetype",
-                "descriptors": {},
-                "type": "font",
-                "key": "digitalFont"
-            },
-            {
-                "url": "assets/footer.png",
-                "type": "image",
-                "key": "footer"
-            },
-            {
-                "url": "assets/game_label.png",
-                "type": "image",
-                "key": "game_label"
-            },
-            {
-                "url": "assets/game_level_clear.png",
-                "type": "image",
-                "key": "game_level_clear"
-            },
-            {
-                "url": "assets/game_next_button.png",
-                "type": "image",
-                "key": "game_next_button"
-            },
-            {
-                "url": "assets/game_over.png",
-                "type": "image",
-                "key": "game_over"
-            },
-            {
-                "url": "assets/game_retry_button.png",
-                "type": "image",
-                "key": "game_retry_button"
-            },
-            {
-                "url": "assets/game_skip_button.png",
-                "type": "image",
-                "key": "game_skip_button"
-            },
-            {
-                "url": "assets/header.png",
-                "type": "image",
-                "key": "header"
-            },
-            {
-                "url": "assets/home_asset_1.png",
-                "type": "image",
-                "key": "home_asset_1"
-            },
-            {
-                "url": "assets/home_asset_2.png",
-                "type": "image",
-                "key": "home_asset_2"
-            },
-            {
-                "url": "assets/home_button_dark.png",
-                "type": "image",
-                "key": "home_button_dark"
-            },
-            {
-                "url": "assets/home_button_light.png",
-                "type": "image",
-                "key": "home_button_light"
-            },
-            {
-                "url": "assets/level 1.png",
-                "type": "image",
-                "key": "level 1"
-            },
-            {
-                "url": "assets/Level 3.png",
-                "type": "image",
-                "key": "Level 3"
-            },
-            {
-                "url": "assets/level_1_button.png",
-                "type": "image",
-                "key": "level_1_button"
-            },
-            {
-                "url": "assets/level_2_button.png",
-                "type": "image",
-                "key": "level_2_button"
-            },
-            {
-                "url": "assets/level_3_button.png",
-                "type": "image",
-                "key": "level_3_button"
-            },
-            {
-                "url": "assets/mechanics_container.png",
-                "type": "image",
-                "key": "mechanics_container"
-            },
-            {
-                "url": "assets/player.png",
-                "type": "image",
-                "key": "player"
-            },
-            {
-                "url": "assets/score_a.png",
-                "type": "image",
-                "key": "score_a"
-            },
-            {
-                "url": "assets/score_day.png",
-                "type": "image",
-                "key": "score_day"
-            },
-            {
-                "url": "assets/score_once.png",
-                "type": "image",
-                "key": "score_once"
-            },
-            {
-                "url": "assets/scratch_bg.png",
-                "type": "image",
-                "key": "scratch_bg"
-            },
-            {
-                "url": [
-                    "assets/sfx-btn-start.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-btn-start"
-            },
-            {
-                "url": [
-                    "assets/sfx-complete.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-complete"
-            },
-            {
-                "url": [
-                    "assets/sfx-correct.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-correct"
-            },
-            {
-                "url": [
-                    "assets/sfx-game-over.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-game-over"
-            },
-            {
-                "url": [
-                    "assets/sfx-level-1.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-level-1"
-            },
-            {
-                "url": [
-                    "assets/sfx-level-2.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-level-2"
-            },
-            {
-                "url": [
-                    "assets/sfx-level-3.m4a"
-                ],
-                "type": "audio",
-                "key": "sfx-level-3"
-            },
-            {
-                "url": "assets/start_button.png",
-                "type": "image",
-                "key": "start_button"
-            },
-            {
-                "url": "assets/timer_container.png",
-                "type": "image",
-                "key": "timer_container"
-            },
-            {
-                "url": "assets/wall_level_1__0000.png",
-                "type": "image",
-                "key": "wall_level_1__0000"
-            },
-            {
-                "url": "assets/wall_level_1__0001.png",
-                "type": "image",
-                "key": "wall_level_1__0001"
-            },
-            {
-                "url": "assets/wall_level_1__0004.png",
-                "type": "image",
-                "key": "wall_level_1__0004"
-            },
-            {
-                "url": "assets/wall_level_1__0005.png",
-                "type": "image",
-                "key": "wall_level_1__0005"
-            },
-            {
-                "url": "assets/wall_level_1__0006.png",
-                "type": "image",
-                "key": "wall_level_1__0006"
-            },
-            {
-                "url": "assets/wall_level_1__0007.png",
-                "type": "image",
-                "key": "wall_level_1__0007"
-            },
-            {
-                "url": "assets/wall_level_1__0008.png",
-                "type": "image",
-                "key": "wall_level_1__0008"
-            },
-            {
-                "url": "assets/wall_level_1__0009.png",
-                "type": "image",
-                "key": "wall_level_1__0009"
-            },
-            {
-                "url": "assets/wall_level_1__0010_Layer-3.png",
-                "type": "image",
-                "key": "wall_level_1__0010_Layer-3"
-            },
-            {
-                "url": "assets/wall_level_1__0011_Layer-4.png",
-                "type": "image",
-                "key": "wall_level_1__0011_Layer-4"
-            },
-            {
-                "url": "assets/wall_level_1__0012_Layer-5.png",
-                "type": "image",
-                "key": "wall_level_1__0012_Layer-5"
-            },
-            {
-                "url": "assets/wall_level_1__0013_Layer-6.png",
-                "type": "image",
-                "key": "wall_level_1__0013_Layer-6"
-            },
-            {
-                "url": "assets/wall_level_1__0014_Layer-7.png",
-                "type": "image",
-                "key": "wall_level_1__0014_Layer-7"
-            },
-            {
-                "url": "assets/wall_level_1__0015_Layer-8.png",
-                "type": "image",
-                "key": "wall_level_1__0015_Layer-8"
-            },
-            {
-                "url": "assets/wall_level_1__0016_Layer-9.png",
-                "type": "image",
-                "key": "wall_level_1__0016_Layer-9"
-            },
-            {
-                "url": "assets/wall_level_1__0017_Layer-10.png",
-                "type": "image",
-                "key": "wall_level_1__0017_Layer-10"
-            },
-            {
-                "url": "assets/wall_level_1__0018_Layer-11.png",
-                "type": "image",
-                "key": "wall_level_1__0018_Layer-11"
-            },
-            {
-                "url": "assets/wall_level_1__0019_Layer-12.png",
-                "type": "image",
-                "key": "wall_level_1__0019_Layer-12"
-            },
-            {
-                "url": "assets/wall_level_1__0020_Layer-13.png",
-                "type": "image",
-                "key": "wall_level_1__0020_Layer-13"
-            },
-            {
-                "url": "assets/wall_level_1__0021_Layer-14.png",
-                "type": "image",
-                "key": "wall_level_1__0021_Layer-14"
-            },
-            {
-                "url": "assets/wall_level_1__0022_Layer-15.png",
-                "type": "image",
-                "key": "wall_level_1__0022_Layer-15"
-            },
-            {
-                "url": "assets/wall_level_1__0023_Layer-16.png",
-                "type": "image",
-                "key": "wall_level_1__0023_Layer-16"
-            },
-            {
-                "url": "assets/wall_level_1__0024_Layer-17.png",
-                "type": "image",
-                "key": "wall_level_1__0024_Layer-17"
-            },
-            {
-                "url": "assets/wall_level_1__0025_Layer-18.png",
-                "type": "image",
-                "key": "wall_level_1__0025_Layer-18"
-            },
-            {
-                "url": "assets/wall_level_1__0026_Layer-19.png",
-                "type": "image",
-                "key": "wall_level_1__0026_Layer-19"
-            },
-            {
-                "url": "assets/wall_level_1__0027_Layer-20.png",
-                "type": "image",
-                "key": "wall_level_1__0027_Layer-20"
-            },
-            {
-                "url": "assets/wall_level_1__0028_Layer-21.png",
-                "type": "image",
-                "key": "wall_level_1__0028_Layer-21"
-            },
-            {
-                "url": "assets/wall_level_1__0029_Layer-22.png",
-                "type": "image",
-                "key": "wall_level_1__0029_Layer-22"
-            },
-            {
-                "url": "assets/wall_level_1__0030_Layer-23.png",
-                "type": "image",
-                "key": "wall_level_1__0030_Layer-23"
-            },
-            {
-                "url": "assets/wall_level_1__0031_Layer-24.png",
-                "type": "image",
-                "key": "wall_level_1__0031_Layer-24"
-            },
-            {
-                "url": "assets/wall_level_1__0032_Layer-25.png",
-                "type": "image",
-                "key": "wall_level_1__0032_Layer-25"
-            },
-            {
-                "url": "assets/wall_level_1__0033_Layer-26.png",
-                "type": "image",
-                "key": "wall_level_1__0033_Layer-26"
-            },
-            {
-                "url": "assets/wall_level_1__0034_Layer-27.png",
-                "type": "image",
-                "key": "wall_level_1__0034_Layer-27"
-            },
-            {
-                "url": "assets/wall_level_1__0035_Layer-28.png",
-                "type": "image",
-                "key": "wall_level_1__0035_Layer-28"
-            },
-            {
-                "url": "assets/wall_level_1__0036_Layer-29.png",
-                "type": "image",
-                "key": "wall_level_1__0036_Layer-29"
-            },
-            {
-                "url": "assets/wall_level_1__0037_Layer-30.png",
-                "type": "image",
-                "key": "wall_level_1__0037_Layer-30"
-            },
-            {
-                "url": "assets/wall_level_1__0038_Layer-31.png",
-                "type": "image",
-                "key": "wall_level_1__0038_Layer-31"
-            },
-            {
-                "url": "assets/wall_level_1__0039_Layer-32.png",
-                "type": "image",
-                "key": "wall_level_1__0039_Layer-32"
-            },
-            {
-                "url": "assets/wall_level_1__0040_Layer-33.png",
-                "type": "image",
-                "key": "wall_level_1__0040_Layer-33"
-            },
-            {
-                "url": "assets/wall_level_1__0041_Layer-34.png",
-                "type": "image",
-                "key": "wall_level_1__0041_Layer-34"
-            },
-            {
-                "url": "assets/wall_level_1__0042_Layer-35.png",
-                "type": "image",
-                "key": "wall_level_1__0042_Layer-35"
-            },
-            {
-                "url": "assets/wall_level_1__0043_Layer-36.png",
-                "type": "image",
-                "key": "wall_level_1__0043_Layer-36"
-            },
-            {
-                "url": "assets/wall_level_1__0044_Layer-37.png",
-                "type": "image",
-                "key": "wall_level_1__0044_Layer-37"
-            },
-            {
-                "url": "assets/wall_level_1__0045_Layer-38.png",
-                "type": "image",
-                "key": "wall_level_1__0045_Layer-38"
-            },
-            {
-                "url": "assets/wall_level_1__0046_Layer-39.png",
-                "type": "image",
-                "key": "wall_level_1__0046_Layer-39"
-            },
-            {
-                "url": "assets/wall_level_1__0047_Layer-40.png",
-                "type": "image",
-                "key": "wall_level_1__0047_Layer-40"
-            },
-            {
-                "url": "assets/wall_level_1__0048_Layer-41.png",
-                "type": "image",
-                "key": "wall_level_1__0048_Layer-41"
-            },
-            {
-                "url": "assets/wall_level_1__0049_Layer-42.png",
-                "type": "image",
-                "key": "wall_level_1__0049_Layer-42"
-            },
-            {
-                "url": "assets/wall_level_1__0050_Layer-43.png",
-                "type": "image",
-                "key": "wall_level_1__0050_Layer-43"
-            },
-            {
-                "url": "assets/wall_level_1__0051_Layer-44.png",
-                "type": "image",
-                "key": "wall_level_1__0051_Layer-44"
-            },
-            {
-                "url": "assets/wall_level_1__0052_Layer-45.png",
-                "type": "image",
-                "key": "wall_level_1__0052_Layer-45"
-            },
-            {
-                "url": "assets/wall_level_1__0053_Layer-46.png",
-                "type": "image",
-                "key": "wall_level_1__0053_Layer-46"
-            },
-            {
-                "url": "assets/wall_level_1__0054_Layer-47.png",
-                "type": "image",
-                "key": "wall_level_1__0054_Layer-47"
-            },
-            {
-                "url": "assets/wall_level_1__0055_Layer-48.png",
-                "type": "image",
-                "key": "wall_level_1__0055_Layer-48"
-            },
-            {
-                "url": "assets/wall_level_1__0056_Layer-49.png",
-                "type": "image",
-                "key": "wall_level_1__0056_Layer-49"
-            },
-            {
-                "url": "assets/wall_level_1__0057_Layer-50.png",
-                "type": "image",
-                "key": "wall_level_1__0057_Layer-50"
-            },
-            {
-                "url": "assets/wall_level_1__0058_Layer-51.png",
-                "type": "image",
-                "key": "wall_level_1__0058_Layer-51"
-            },
-            {
-                "url": "assets/wall_level_1__0059_Layer-52.png",
-                "type": "image",
-                "key": "wall_level_1__0059_Layer-52"
-            },
-            {
-                "url": "assets/wall_level_1__0060_Layer-53.png",
-                "type": "image",
-                "key": "wall_level_1__0060_Layer-53"
-            },
-            {
-                "url": "assets/wall_level_1__0061_Layer-54.png",
-                "type": "image",
-                "key": "wall_level_1__0061_Layer-54"
-            },
-            {
-                "url": "assets/wall_level_1__0062_Layer-55.png",
-                "type": "image",
-                "key": "wall_level_1__0062_Layer-55"
-            },
-            {
-                "url": "assets/wall_level_1__0063_Layer-56.png",
-                "type": "image",
-                "key": "wall_level_1__0063_Layer-56"
-            },
-            {
-                "url": "assets/wall_level_1__0064_Layer-57.png",
-                "type": "image",
-                "key": "wall_level_1__0064_Layer-57"
-            },
-            {
-                "url": "assets/wall_level_1__0065_Layer-58.png",
-                "type": "image",
-                "key": "wall_level_1__0065_Layer-58"
-            },
-            {
-                "url": "assets/wall_level_1__0066_Layer-59.png",
-                "type": "image",
-                "key": "wall_level_1__0066_Layer-59"
-            },
-            {
-                "url": "assets/wall_level_1__0067_Layer-60.png",
-                "type": "image",
-                "key": "wall_level_1__0067_Layer-60"
-            },
-            {
-                "url": "assets/wall_level_1__0068_Layer-61.png",
-                "type": "image",
-                "key": "wall_level_1__0068_Layer-61"
-            },
-            {
-                "url": "assets/wall_level_1__0069_Layer-62.png",
-                "type": "image",
-                "key": "wall_level_1__0069_Layer-62"
-            }
-        ]
-    },
-    "meta": {
-        "app": "Phaser Editor 2D - Asset Pack Editor",
-        "contentType": "phasereditor2d.pack.core.AssetContentType",
-        "url": "https://phasereditor2d.com",
-        "version": 2,
-        "showAllFilesInBlocks": false,
-        "visible": true
-    }
+	"section1": {
+		"files": [
+			{
+				"url": "assets/Asset 10.png",
+				"type": "image",
+				"key": "Asset 10"
+			},
+			{
+				"url": "assets/Asset 29.svg",
+				"type": "image",
+				"key": "Asset 29"
+			},
+			{
+				"url": "assets/bg.png",
+				"type": "image",
+				"key": "background"
+			},
+			{
+				"url": "assets/background_game.png",
+				"type": "image",
+				"key": "background_game"
+			},
+			{
+				"url": "assets/version2/background_home.png",
+				"type": "image",
+				"key": "background_home"
+			},
+			{
+				"url": "assets/background_level_selection.png",
+				"type": "image",
+				"key": "background_level_selection"
+			},
+			{
+				"url": ["assets/bgm-levi.m4a"],
+				"type": "audio",
+				"key": "bgm-levi"
+			},
+			{
+				"url": "assets/detailer_next_button.png",
+				"type": "image",
+				"key": "detailer_next_button"
+			},
+			{
+				"url": "assets/detailer_page_1.png",
+				"type": "image",
+				"key": "detailer_page_1"
+			},
+			{
+				"url": "assets/detailer_page_1_title.png",
+				"type": "image",
+				"key": "detailer_page_1_title"
+			},
+			{
+				"url": "assets/detailer_page_2.png",
+				"type": "image",
+				"key": "detailer_page_2"
+			},
+			{
+				"url": "assets/detailer_page_3.png",
+				"type": "image",
+				"key": "detailer_page_3"
+			},
+			{
+				"url": "assets/detailer_previous_button.png",
+				"type": "image",
+				"key": "detailer_previous_button"
+			},
+			{
+				"url": "assets/fonts/digitalFont.ttf",
+				"format": "truetype",
+				"descriptors": {},
+				"type": "font",
+				"key": "digitalFont"
+			},
+			{
+				"url": "assets/footer.png",
+				"type": "image",
+				"key": "footer"
+			},
+			{
+				"url": "assets/game_label.png",
+				"type": "image",
+				"key": "game_label"
+			},
+			{
+				"url": "assets/game_level_clear.png",
+				"type": "image",
+				"key": "game_level_clear"
+			},
+			{
+				"url": "assets/game_next_button.png",
+				"type": "image",
+				"key": "game_next_button"
+			},
+			{
+				"url": "assets/game_over.png",
+				"type": "image",
+				"key": "game_over"
+			},
+			{
+				"url": "assets/game_retry_button.png",
+				"type": "image",
+				"key": "game_retry_button"
+			},
+			{
+				"url": "assets/game_skip_button.png",
+				"type": "image",
+				"key": "game_skip_button"
+			},
+			{
+				"url": "assets/header.png",
+				"type": "image",
+				"key": "header"
+			},
+			{
+				"url": "assets/home_asset_1.png",
+				"type": "image",
+				"key": "home_asset_1"
+			},
+			{
+				"url": "assets/home_asset_2.png",
+				"type": "image",
+				"key": "home_asset_2"
+			},
+			{
+				"url": "assets/home_button_dark.png",
+				"type": "image",
+				"key": "home_button_dark"
+			},
+			{
+				"url": "assets/home_button_light.png",
+				"type": "image",
+				"key": "home_button_light"
+			},
+			{
+				"url": "assets/level 1.png",
+				"type": "image",
+				"key": "level 1"
+			},
+			{
+				"url": "assets/Level 3.png",
+				"type": "image",
+				"key": "Level 3"
+			},
+			{
+				"url": "assets/level_1_button.png",
+				"type": "image",
+				"key": "level_1_button"
+			},
+			{
+				"url": "assets/level_2_button.png",
+				"type": "image",
+				"key": "level_2_button"
+			},
+			{
+				"url": "assets/level_3_button.png",
+				"type": "image",
+				"key": "level_3_button"
+			},
+			{
+				"url": "assets/mechanics_container.png",
+				"type": "image",
+				"key": "mechanics_container"
+			},
+			{
+				"url": "assets/player.png",
+				"type": "image",
+				"key": "player"
+			},
+			{
+				"url": "assets/score_a.png",
+				"type": "image",
+				"key": "score_a"
+			},
+			{
+				"url": "assets/score_day.png",
+				"type": "image",
+				"key": "score_day"
+			},
+			{
+				"url": "assets/score_once.png",
+				"type": "image",
+				"key": "score_once"
+			},
+			{
+				"url": "assets/scratch_bg.png",
+				"type": "image",
+				"key": "scratch_bg"
+			},
+			{
+				"url": ["assets/sfx-btn-start.m4a"],
+				"type": "audio",
+				"key": "sfx-btn-start"
+			},
+			{
+				"url": ["assets/sfx-complete.m4a"],
+				"type": "audio",
+				"key": "sfx-complete"
+			},
+			{
+				"url": ["assets/sfx-correct.m4a"],
+				"type": "audio",
+				"key": "sfx-correct"
+			},
+			{
+				"url": ["assets/sfx-game-over.m4a"],
+				"type": "audio",
+				"key": "sfx-game-over"
+			},
+			{
+				"url": ["assets/sfx-level-1.m4a"],
+				"type": "audio",
+				"key": "sfx-level-1"
+			},
+			{
+				"url": ["assets/sfx-level-2.m4a"],
+				"type": "audio",
+				"key": "sfx-level-2"
+			},
+			{
+				"url": ["assets/sfx-level-3.m4a"],
+				"type": "audio",
+				"key": "sfx-level-3"
+			},
+			{
+				"url": "assets/start_button.png",
+				"type": "image",
+				"key": "start_button"
+			},
+			{
+				"url": "assets/timer_container.png",
+				"type": "image",
+				"key": "timer_container"
+			}
+		]
+	},
+	"meta": {
+		"app": "Phaser Editor 2D - Asset Pack Editor",
+		"contentType": "phasereditor2d.pack.core.AssetContentType",
+		"url": "https://phasereditor2d.com",
+		"version": 2,
+		"showAllFilesInBlocks": false,
+		"visible": true
+	}
 }

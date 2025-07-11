@@ -2,13 +2,10 @@
 
 /* START OF COMPILED CODE */
 
-import DetailerHeader from "../../public/assets/DetailerHeader";
-import HomeButton from "./HomeButton";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
 export default class DetailerPage1 extends Phaser.Scene {
-
 	constructor() {
 		super("DetailerPage1");
 
@@ -18,38 +15,32 @@ export default class DetailerPage1 extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
-
 		// rectangle_1
 		const rectangle_1 = this.add.rectangle(512, 384, 1024, 768);
 		rectangle_1.isFilled = true;
 
 		// detailer_value
-		const detailer_value = this.add.image(512, 384, "detailer_page_1");
+		const detailer_value = this.add.image(512, 472, "detailer_1_asset_1");
 
 		// detailerHeader
-		const detailerHeader = new DetailerHeader(this, 410, 47);
-		this.add.existing(detailerHeader);
-
-		// homeButton
-		const homeButton = new HomeButton(this, 70, 700);
-		this.add.existing(homeButton);
+		const detailerHeader = this.add.image(512, 148, "detailer_1_asset_2");
 
 		// nextBtn
-		const nextBtn = this.add.image(966, 700, "detailer_next_button");
-		nextBtn.setInteractive(new Phaser.Geom.Rectangle(0, 0, 39, 49), Phaser.Geom.Rectangle.Contains);
-
-		// homeButton (prefab fields)
-		homeButton.isDark = true;
+		const nextBtn = this.add.image(913, 690, "button_next");
+		nextBtn.setInteractive(
+			new Phaser.Geom.Rectangle(0, 0, 138, 100),
+			Phaser.Geom.Rectangle.Contains
+		);
 
 		this.detailer_value = detailer_value;
-		this.homeButton = homeButton;
+		this.detailerHeader = detailerHeader;
 		this.nextBtn = nextBtn;
 
 		this.events.emit("scene-awake");
 	}
 
 	private detailer_value!: Phaser.GameObjects.Image;
-	private homeButton!: HomeButton;
+	private detailerHeader!: Phaser.GameObjects.Image;
 	private nextBtn!: Phaser.GameObjects.Image;
 
 	/* START-USER-CODE */
@@ -58,7 +49,6 @@ export default class DetailerPage1 extends Phaser.Scene {
 
 	create() {
 		this.editorCreate();
-		this.homeButton.makeDark();
 
 		this.detailer_value.alpha = 0;
 		this.detailer_value.setPosition(
@@ -66,15 +56,32 @@ export default class DetailerPage1 extends Phaser.Scene {
 			this.detailer_value.y + 100
 		);
 
+		this.detailerHeader.alpha = 0;
+		this.detailerHeader.setPosition(
+			this.detailerHeader.x,
+			this.detailer_value.y - 100
+		);
+
 		this.tweens.add({
 			targets: this.detailer_value,
-			y: 384,
+			y: 472,
+			alpha: 1,
+			duration: 1000,
+			ease: "Sine.easeOut",
+			delay: 700,
+		});
+
+		this.tweens.add({
+			targets: this.detailerHeader,
+			y: 148,
 			alpha: 1,
 			duration: 1000,
 			ease: "Sine.easeOut",
 		});
 
-		this.nextBtn.on("pointerdown", () => this.scene.start("DetailerPage2"));
+		this.nextBtn.on("pointerdown", () => {
+			this.nextBtn.on("pointerdown", () => this.scene.start("DetailerPage4"));
+		});
 	}
 
 	/* END-USER-CODE */

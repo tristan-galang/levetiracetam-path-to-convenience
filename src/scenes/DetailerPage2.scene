@@ -25,66 +25,38 @@
         {
             "type": "Image",
             "id": "82d06836-f8ea-4db6-8a3f-3ff4a91538e9",
-            "label": "detailer_value",
+            "label": "detailerImage1",
             "scope": "CLASS",
             "texture": {
-                "key": "detailer_page_2"
+                "key": "detailer_2_asset_1"
             },
             "x": 511,
             "y": 382
         },
         {
-            "prefabId": "cb46083b-7ba8-44df-af63-24a11023fc4a",
-            "id": "67e2a91f-585f-4857-b585-8a1236414831",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "detailerHeader",
-            "x": 409,
-            "y": 45
-        },
-        {
-            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
-            "id": "9cc91a86-b113-4e1f-8b98-928abeef8805",
-            "unlock": [
-                "x",
-                "y",
-                "isDark"
-            ],
-            "label": "homeButton",
+            "type": "Image",
+            "id": "bf859265-c97d-4f3d-8a0a-41f67d284493",
+            "label": "detailerImage2",
             "scope": "CLASS",
-            "isDark": true,
-            "x": 69,
-            "y": 698
+            "texture": {
+                "key": "detailer_2_asset_2"
+            },
+            "x": 753,
+            "y": 357
         },
         {
             "type": "Image",
-            "id": "254de3e6-75d7-435c-8b26-8c91f0994521",
+            "id": "d54afb00-f816-413a-bb91-20ff39ed3bd1",
             "label": "nextBtn",
             "scope": "CLASS",
             "hitArea.shape": "RECTANGLE",
-            "hitArea.width": 39,
-            "hitArea.height": 49,
+            "hitArea.width": 138,
+            "hitArea.height": 100,
             "texture": {
-                "key": "detailer_next_button"
+                "key": "button_next"
             },
-            "x": 966,
-            "y": 700
-        },
-        {
-            "type": "Image",
-            "id": "e0f4c178-42a9-4e1e-ac38-0f3bbeb899e5",
-            "label": "prevBtn",
-            "scope": "CLASS",
-            "hitArea.shape": "RECTANGLE",
-            "hitArea.width": 38,
-            "hitArea.height": 48,
-            "texture": {
-                "key": "detailer_previous_button"
-            },
-            "x": 914,
-            "y": 700
+            "x": 913,
+            "y": 690
         }
     ],
     "plainObjects": [],

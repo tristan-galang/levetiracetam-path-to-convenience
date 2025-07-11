@@ -1,12 +1,12 @@
 {
-    "id": "1a17ca63-4a58-4c69-92ad-8d6b6fce2f08",
+    "id": "f0ba1e90-4434-4488-9bd5-9e4006d4bbb9",
     "sceneType": "SCENE",
     "settings": {
         "exportClass": true,
         "autoImport": true,
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
-        "sceneKey": "DetailerPage1",
+        "sceneKey": "DetailerPage6",
         "compilerOutputLanguage": "TYPE_SCRIPT",
         "borderWidth": 1024,
         "borderHeight": 768
@@ -14,7 +14,7 @@
     "displayList": [
         {
             "type": "Rectangle",
-            "id": "c974d426-5591-49f0-84a1-88d94db3deed",
+            "id": "ed7adbf5-b800-4d4f-b319-8c273459b268",
             "label": "rectangle_1",
             "x": 512,
             "y": 384,
@@ -24,38 +24,38 @@
         },
         {
             "type": "Image",
-            "id": "ac784497-7fef-4d1d-b6e7-3c2d7576d4c3",
-            "label": "detailer_value",
+            "id": "e648f5f9-0df4-486e-b13b-2e1c58c8f525",
+            "label": "detailerImage2",
             "scope": "CLASS",
             "texture": {
-                "key": "detailer_1_asset_1"
+                "key": "detailer_6_asset_1"
             },
             "x": 512,
-            "y": 472
+            "y": 469
         },
         {
             "type": "Image",
-            "id": "2a8aeb2c-503b-4fc1-b641-747b51f42bb9",
-            "label": "detailerHeader",
+            "id": "d59ceebf-15f0-47dd-a29f-8ed3674339f4",
+            "label": "detailerImage1",
             "scope": "CLASS",
             "texture": {
                 "key": "detailer_1_asset_2"
             },
             "x": 512,
-            "y": 148
+            "y": 159
         },
         {
             "type": "Image",
-            "id": "9b48c2e2-5472-407b-a8da-e45ffbcb63fd",
-            "label": "nextBtn",
+            "id": "2b5637c1-addb-4716-b6c0-4eaf33267124",
+            "label": "btnHome",
             "scope": "CLASS",
             "hitArea.shape": "RECTANGLE",
             "hitArea.width": 138,
             "hitArea.height": 100,
             "texture": {
-                "key": "button_next"
+                "key": "button_home"
             },
-            "x": 913,
+            "x": 99,
             "y": 690
         }
     ],

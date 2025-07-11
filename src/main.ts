@@ -1,16 +1,15 @@
 import Boot from "./scenes/Boot";
-import MainGame from "./scenes/Game";
 import GameOver from "./scenes/GameOver";
 import MainMenu from "./scenes/MainMenu";
+import Instruction from "./scenes/Instruction";
 import Preloader from "./scenes/Preloader";
-import Levelone from "./scenes/LevelOne";
-import LevelTwo from "./scenes/LevelTwo";
-import LevelThree from "./scenes/LevelThree";
-import LevelSelection from "./scenes/LevelSelection";
 import DetailerPage1 from "./scenes/DetailerPage1";
 import DetailerPage2 from "./scenes/DetailerPage2";
 import DetailerPage3 from "./scenes/DetailerPage3";
 import DetailerPage4 from "./scenes/DetailerPage4";
+import DetailerPage5 from "./scenes/DetailerPage5";
+import DetailerPage6 from "./scenes/DetailerPage6";
+import MainGame from "./scenes/MainGame";
 
 import { Game, Types } from "phaser";
 
@@ -21,28 +20,27 @@ const config: Types.Core.GameConfig = {
 	width: 1024,
 	height: 768,
 	parent: "game-container",
-	backgroundColor: "#028af8",
+	backgroundColor: "black",
 	pixelArt: true,
 	// @ts-expect-error: 'resolution' exists at runtime but not in typings
 	resolution: window.devicePixelRatio, // <- this is valid at runtime, but TS doesn't know it
 	scale: {
-		mode: Phaser.AUTO,
+		mode: Phaser.Scale.FIT,
 		autoCenter: Phaser.Scale.CENTER_BOTH,
 	},
 	scene: [
 		Boot,
 		Preloader,
-		Levelone,
-		LevelTwo,
-		LevelThree,
 		MainMenu,
 		MainGame,
-		LevelSelection,
 		GameOver,
+		Instruction,
 		DetailerPage1,
 		DetailerPage2,
 		DetailerPage3,
 		DetailerPage4,
+		DetailerPage5,
+		DetailerPage6,
 	],
 	physics: {
 		default: "arcade",

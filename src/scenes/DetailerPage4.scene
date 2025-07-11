@@ -24,53 +24,50 @@
         },
         {
             "type": "Image",
-            "id": "c0cdf65d-86d7-4536-9ab6-8c76aa6ff016",
-            "label": "detailer_value",
+            "id": "7122925b-5d9e-4e40-ab40-4f4e58cbf8dd",
+            "label": "nextBtn",
             "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 138,
+            "hitArea.height": 100,
             "texture": {
-                "key": "Asset 29"
+                "key": "button_next"
             },
-            "x": 511,
-            "y": 384
-        },
-        {
-            "prefabId": "cb46083b-7ba8-44df-af63-24a11023fc4a",
-            "id": "b15cd176-a30a-42bd-b797-80b10fbbd574",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "detailerHeader",
-            "x": 409,
-            "y": 47
-        },
-        {
-            "prefabId": "707aa760-dba6-44ba-8291-9c2a5fa30eed",
-            "id": "88dcfc78-62df-4134-bc07-8844f8fb859a",
-            "unlock": [
-                "x",
-                "y",
-                "isDark"
-            ],
-            "label": "homeButton",
-            "scope": "CLASS",
-            "isDark": true,
-            "x": 69,
-            "y": 700
+            "x": 913,
+            "y": 690
         },
         {
             "type": "Image",
-            "id": "15072c77-498b-41d3-aa78-9cb2b5ed6983",
-            "label": "prevBtn",
+            "id": "a3a8e249-dfb5-4316-aca7-1fa9e09e6e07",
+            "label": "detailerImage1",
             "scope": "CLASS",
-            "hitArea.shape": "RECTANGLE",
-            "hitArea.width": 38,
-            "hitArea.height": 48,
             "texture": {
-                "key": "detailer_previous_button"
+                "key": "detailer_4_asset_1"
             },
-            "x": 914,
-            "y": 700
+            "x": 512,
+            "y": 55
+        },
+        {
+            "type": "Image",
+            "id": "8d8e60a9-95dd-431d-b5a7-4de0d4f31978",
+            "label": "detailerImage2",
+            "scope": "CLASS",
+            "texture": {
+                "key": "detailer_4_asset_2"
+            },
+            "x": 285,
+            "y": 384
+        },
+        {
+            "type": "Image",
+            "id": "90fcc5f9-3e36-4377-9405-49237e1d65b7",
+            "label": "detailerImage3",
+            "scope": "CLASS",
+            "texture": {
+                "key": "detailer_4_asset_3"
+            },
+            "x": 734,
+            "y": 384
         }
     ],
     "plainObjects": [],
