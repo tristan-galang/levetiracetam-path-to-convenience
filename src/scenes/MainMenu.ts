@@ -94,10 +94,10 @@ export default class MainMenu extends Phaser.Scene {
 			this.scene.start("Instruction", { instructionName: "mechanicsLevel1" });
 		});
 
-		// this.level2Btn.on("pointerdown", () => {
-		// 	this.startSound.play();
-		// 	// this.scene.start("Instruction", { instructionName: "mechanicsLevel2" });
-		// });
+		this.level2Btn.on("pointerdown", () => {
+			this.startSound.play();
+			this.scene.start("Instruction", { instructionName: "mechanicsLevel2" });
+		});
 
 		// this.level3Btn.on("pointerdown", () => {
 		// 	this.startSound.play();
@@ -138,13 +138,13 @@ export default class MainMenu extends Phaser.Scene {
 			delay: 700,
 		});
 
-		this.tweens.add({
-			targets: this.level2BtnLock,
-			alpha: 1,
-			duration: 1000,
-			ease: "Sine.easeOut",
-			delay: 1500,
-		});
+		// this.tweens.add({
+		// 	targets: this.level2BtnLock,
+		// 	alpha: 1,
+		// 	duration: 1000,
+		// 	ease: "Sine.easeOut",
+		// 	delay: 1500,
+		// });
 
 		this.tweens.add({
 			targets: this.level3Btn,
