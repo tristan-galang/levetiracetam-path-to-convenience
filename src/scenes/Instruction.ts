@@ -75,7 +75,7 @@ export default class Instruction extends Phaser.Scene {
 				case "mechanicsLevel2":
 					this.scene.start("MainGame", {
 						wordToGuess: "COMPLIANCE",
-						allLetters: "COMPLIANCEKSDW",
+						allLetters: "COMPLIANCE----",
 						nextScene: "DetailerPage2",
 					});
 					break;

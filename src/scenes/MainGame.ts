@@ -235,7 +235,7 @@ export default class MainGame extends Phaser.Scene {
 		});
 		letters.add(letter_5);
 
-		// letter_6
+		// letter_6?
 		const letter_6 = new CustomText(this, 884, 473, "T", {
 			color: "#000000ff",
 			fontFamily: "funny",
@@ -380,8 +380,10 @@ export default class MainGame extends Phaser.Scene {
 		const matchLetters = this.shuffleWords(this.allLetters);
 
 		this.letterList.forEach((letter, index) => {
-			letter.setInteractive({ draggable: true });
+			const isBlock: boolean = matchLetters[index] === "-";
+			letter.setInteractive({ draggable: !isBlock });
 			letter.text = matchLetters[index];
+			letter.alpha = isBlock ? 0 : 1;
 			letter.on("pointerdown", () => {
 				if (!letter.isCentered) {
 					letter.isCentered = true;
