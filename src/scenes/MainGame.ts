@@ -32,6 +32,22 @@ class CustomText extends Phaser.GameObjects.Text {
 /* END-USER-IMPORTS */
 
 export default class MainGame extends Phaser.Scene {
+	// private containerInput!: Phaser.GameObjects.Image;
+	private timer!: TimerPrefab;
+	private levelClearPrefab!: LevelClearPrefab;
+	// private letterList!: CustomText[];
+	// private horizontalSpacing = 133;
+
+	/* START-USER-CODE */
+
+	// Write your code here
+	private wordToGuess!: string;
+	private nextScene!: string;
+	private allLetters!: string;
+	private correctSound!: Phaser.Sound.BaseSound;
+	private completeSound!: Phaser.Sound.BaseSound;
+	private centerLetters: CustomText[] = [];
+
 	constructor() {
 		super("MainGame");
 
@@ -68,237 +84,6 @@ export default class MainGame extends Phaser.Scene {
 				break;
 		}
 
-		// textContainer
-		const textContainer = this.add.layer();
-
-		// button_container_text
-		const button_container_text = this.add.image(
-			114,
-			519,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text);
-
-		// button_container_text_1
-		const button_container_text_1 = this.add.image(
-			247,
-			519,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_1);
-
-		// button_container_text_2
-		const button_container_text_2 = this.add.image(
-			380,
-			519,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_2);
-
-		// button_container_text_3
-		const button_container_text_3 = this.add.image(
-			513,
-			519,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_3);
-
-		// button_container_text_4
-		const button_container_text_4 = this.add.image(
-			647,
-			519,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_4);
-
-		// button_container_text_5
-		const button_container_text_5 = this.add.image(
-			781,
-			519,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_5);
-
-		// button_container_text_6
-		const button_container_text_6 = this.add.image(
-			913,
-			519,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_6);
-
-		// button_container_text_7
-		const button_container_text_7 = this.add.image(
-			114,
-			655,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_7);
-
-		// button_container_text_8
-		const button_container_text_8 = this.add.image(
-			247,
-			655,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_8);
-
-		// button_container_text_9
-		const button_container_text_9 = this.add.image(
-			380,
-			655,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_9);
-
-		// button_container_text_10
-		const button_container_text_10 = this.add.image(
-			513,
-			655,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_10);
-
-		// button_container_text_11
-		const button_container_text_11 = this.add.image(
-			647,
-			655,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_11);
-
-		// button_container_text_12
-		const button_container_text_12 = this.add.image(
-			781,
-			655,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_12);
-
-		// button_container_text_13
-		const button_container_text_13 = this.add.image(
-			913,
-			655,
-			"button_container_text"
-		);
-		textContainer.add(button_container_text_13);
-
-		// letters
-		const letters = this.add.layer();
-
-		// letter
-		const letter = new CustomText(this, 83, 473, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter);
-
-		// letter_1
-		const letter_1 = new CustomText(this, 214, 473, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-
-		letters.add(letter_1);
-
-		// letter_2
-		const letter_2 = new CustomText(this, 350, 473, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_2);
-
-		// letter_3
-		const letter_3 = new CustomText(this, 481, 473, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_3);
-
-		// letter_4
-		const letter_4 = new CustomText(this, 615, 473, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_4);
-
-		// letter_5
-		const letter_5 = new CustomText(this, 753, 473, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_5);
-
-		// letter_6?
-		const letter_6 = new CustomText(this, 884, 473, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_6);
-
-		// letter_7
-		const letter_7 = new CustomText(this, 81, 609, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_7);
-
-		// letter_8
-		const letter_8 = new CustomText(this, 214, 609, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_8);
-
-		// letter_9
-		const letter_9 = new CustomText(this, 347, 609, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_9);
-
-		// letter_10
-		const letter_10 = new CustomText(this, 484, 609, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_10);
-
-		// letter_11
-		const letter_11 = new CustomText(this, 615, 609, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_11);
-
-		// letter_12
-		const letter_12 = new CustomText(this, 748, 609, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_12);
-
-		// letter_13
-		const letter_13 = new CustomText(this, 880, 609, "T", {
-			color: "#000000ff",
-			fontFamily: "funny",
-			fontSize: "100px",
-		});
-		letters.add(letter_13);
-
 		// container_timer
 		const container_timer = this.add.image(915, 55, "container_timer");
 		container_timer.scaleX = 0.7;
@@ -314,24 +99,7 @@ export default class MainGame extends Phaser.Scene {
 		// levelClearPrefab
 		const levelClearPrefab = new LevelClearPrefab(this, 0, 768);
 		this.add.existing(levelClearPrefab);
-
-		// lists
-		const letterList = [
-			letter_13,
-			letter_12,
-			letter_11,
-			letter_10,
-			letter_9,
-			letter_8,
-			letter_7,
-			letter_6,
-			letter_5,
-			letter_4,
-			letter_3,
-			letter_2,
-			letter_1,
-			letter,
-		];
+		levelClearPrefab.setDepth(999);
 
 		// timer (prefab fields)
 		timer.duration = 30;
@@ -343,25 +111,10 @@ export default class MainGame extends Phaser.Scene {
 		// this.containerInput = containerInput;
 		this.timer = timer;
 		this.levelClearPrefab = levelClearPrefab;
-		this.letterList = letterList;
+		// this.letterList = letterList;
 
 		this.events.emit("scene-awake");
 	}
-
-	// private containerInput!: Phaser.GameObjects.Image;
-	private timer!: TimerPrefab;
-	private levelClearPrefab!: LevelClearPrefab;
-	private letterList!: CustomText[];
-
-	/* START-USER-CODE */
-
-	// Write your code here
-	private wordToGuess!: string;
-	private nextScene!: string;
-	private allLetters!: string;
-	private correctSound!: Phaser.Sound.BaseSound;
-	private completeSound!: Phaser.Sound.BaseSound;
-	private centerLetters: CustomText[] = [];
 
 	init(data: { wordToGuess: string; nextScene: string; allLetters: string }) {
 		this.wordToGuess = data.wordToGuess;
@@ -379,11 +132,43 @@ export default class MainGame extends Phaser.Scene {
 
 		const matchLetters = this.shuffleWords(this.allLetters);
 
-		this.letterList.forEach((letter, index) => {
-			const isBlock: boolean = matchLetters[index] === "-";
-			letter.setInteractive({ draggable: !isBlock });
+		const maxPerRow = 7;
+		const spacing = 133;
+		const firstLineY = 519;
+		const secondLineY = 650;
+		const centerX = this.cameras.main.centerX;
+
+		matchLetters.forEach((text, index) => {
+			// Determine which row
+			const row = Math.floor(index / maxPerRow);
+			const col = index % maxPerRow;
+
+			// Determine how many letters are in this row
+			const rowLetters =
+				row === 0
+					? Math.min(matchLetters.length, maxPerRow)
+					: matchLetters.length - maxPerRow;
+
+			// Compute total width occupied by this row
+			const totalWidth = (rowLetters - 1) * spacing;
+
+			// Compute x starting so that it’s centered
+			const startX = centerX - totalWidth / 2;
+
+			// Compute actual position
+			const x = startX + col * spacing;
+			const y = row === 0 ? firstLineY : secondLineY;
+
+			// Add your letter sprite or text
+			this.add.image(x, y, "button_container_text");
+			const letter = new CustomText(this, x - 40, y - 45, text, {
+				color: "#000000ff",
+				fontFamily: "funny",
+				fontSize: "100px",
+			});
+
 			letter.text = matchLetters[index];
-			letter.alpha = isBlock ? 0 : 1;
+			letter.setInteractive();
 			letter.on("pointerdown", () => {
 				if (!letter.isCentered) {
 					letter.isCentered = true;
@@ -496,7 +281,7 @@ export default class MainGame extends Phaser.Scene {
 			[chars[i], chars[j]] = [chars[j], chars[i]];
 		}
 
-		return chars;
+		return chars.filter((value) => value !== "-");
 	}
 
 	onCompleteTimer() {
