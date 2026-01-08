@@ -281,7 +281,7 @@ export default class MainGame extends Phaser.Scene {
 			[chars[i], chars[j]] = [chars[j], chars[i]];
 		}
 
-		return chars.filter((value) => value !== "-");
+		return chars.filter((value) => value !== "_");
 	}
 
 	onCompleteTimer() {
